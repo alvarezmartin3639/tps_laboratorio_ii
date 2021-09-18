@@ -238,7 +238,7 @@ namespace Entidades
         /// </summary>
         /// <param name="strNumero"></param>
         /// <returns name="double.Parse(strNumero)"> El numero convertido</returns>
-        /// <returns name="double.MinValue"> Si no se pudo validar</returns>
+        /// <returns name="0"> Si no se pudo validar</returns>
         public static double ValidarOperando(string strNumero)
         {
              if (strNumero.All(char.IsDigit))
@@ -246,7 +246,7 @@ namespace Entidades
                 return double.Parse(strNumero);
              }
 
-            return double.MinValue;
+            return 0;
         }
 
 
