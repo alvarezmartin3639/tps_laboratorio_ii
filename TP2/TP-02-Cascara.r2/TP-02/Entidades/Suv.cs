@@ -28,6 +28,7 @@ namespace Entidades
         /// <returns></returns>
         public override sealed string Mostrar()
         {
+            //PUESTO PARA RESPETAR ESQUEMA
             return base.Mostrar();
         }
 

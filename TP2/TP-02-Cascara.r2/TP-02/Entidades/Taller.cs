@@ -71,21 +71,21 @@ namespace Entidades
                     case ETipo.Ciclomotor:
                         if (v.GetType() == typeof(Ciclomotor))
                         {
-                            sb.AppendLine(((Ciclomotor)v).Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         }
                         break;
 
                     case ETipo.Sedan:
                         if (v.GetType() == typeof(Sedan))
                         {
-                            sb.AppendLine(((Sedan)v).Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         }
                         break;
 
                     case ETipo.SUV:
                         if (v.GetType() == typeof(Suv))
                         {
-                            sb.AppendLine(((Suv)v).Mostrar());
+                            sb.AppendLine(v.Mostrar());
                         }
                         break;
                     case ETipo.Todos:

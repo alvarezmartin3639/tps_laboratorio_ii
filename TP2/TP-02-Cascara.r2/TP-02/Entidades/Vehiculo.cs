@@ -48,10 +48,17 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
+
+            //MUESTRO EL TYPE EN MAYUS, REMOVIENDO LA CADENA 'ENTIDADES.'.
+            //SI EL TYPE NO COINCIDE CON EL NOMBRE DE CLASE SE BORRA EN LA DERIVADA CON UN STRING.REMOVE.
+            sb.AppendFormat("\n{0}", p.ToString().Remove(0, 10).ToUpper());
+            sb.AppendLine("\n---------------------");
             sb.AppendFormat("CHASIS: {0}\r\n", p.chasis);
             sb.AppendFormat("MARCA : {0}\r\n", p.marca.ToString());
             sb.AppendFormat("COLOR : {0}\r\n", p.color.ToString());
             sb.AppendLine("---------------------");
+            sb.AppendFormat("TAMAÑO : {0}", p.Tamanio);
+            sb.AppendLine("\n---------------------");
 
             return sb.ToString();
         }
@@ -75,7 +82,7 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator !=(Vehiculo v1, Vehiculo v2)
         {
-            return !(v1.chasis == v2.chasis);
+            return !(v1 == v2);
         }
 
         /// <summary>
