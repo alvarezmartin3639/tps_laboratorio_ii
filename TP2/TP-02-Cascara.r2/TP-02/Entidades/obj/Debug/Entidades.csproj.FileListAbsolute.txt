@@ -17,3 +17,9 @@ D:\Programación\Visual Studio Proyectos\Tp2\TP-02-Cascara.r2\TP-02\Entidades\ob
 D:\Programación\Visual Studio Proyectos\Tp2\TP-02-Cascara.r2\TP-02\Entidades\obj\Debug\Entidades.pdb
 D:\Programación\Visual Studio Proyectos\Tp2\TP-02-Cascara.r2\TP-02\Entidades\bin\Debug\Entidades.dll
 D:\Programación\Visual Studio Proyectos\Tp2\TP-02-Cascara.r2\TP-02\Entidades\bin\Debug\Entidades.pdb
+D:\Programación\Mi Github\tps_laboratorio_ii\TP2\TP-02-Cascara.r2\TP-02\Entidades\bin\Debug\Entidades.dll
+D:\Programación\Mi Github\tps_laboratorio_ii\TP2\TP-02-Cascara.r2\TP-02\Entidades\bin\Debug\Entidades.pdb
+D:\Programación\Mi Github\tps_laboratorio_ii\TP2\TP-02-Cascara.r2\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\Programación\Mi Github\tps_laboratorio_ii\TP2\TP-02-Cascara.r2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Programación\Mi Github\tps_laboratorio_ii\TP2\TP-02-Cascara.r2\TP-02\Entidades\obj\Debug\Entidades.dll
+D:\Programación\Mi Github\tps_laboratorio_ii\TP2\TP-02-Cascara.r2\TP-02\Entidades\obj\Debug\Entidades.pdb

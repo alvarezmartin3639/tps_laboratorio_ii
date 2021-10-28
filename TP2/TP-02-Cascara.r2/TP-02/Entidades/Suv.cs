@@ -28,15 +28,7 @@ namespace Entidades
         /// <returns></returns>
         public override sealed string Mostrar()
         {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("SUV");
-            sb.AppendLine(base.Mostrar());
-            sb.AppendFormat("TAMAÑO : {0}", this.Tamanio);
-            sb.AppendLine("");
-            sb.AppendLine("---------------------");
-
-            return sb.ToString();
+            return base.Mostrar();
         }
 
         /// <summary>
