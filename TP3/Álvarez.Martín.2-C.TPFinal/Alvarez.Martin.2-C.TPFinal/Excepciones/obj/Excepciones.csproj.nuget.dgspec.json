@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj": {}
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
         "projectName": "Excepciones",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

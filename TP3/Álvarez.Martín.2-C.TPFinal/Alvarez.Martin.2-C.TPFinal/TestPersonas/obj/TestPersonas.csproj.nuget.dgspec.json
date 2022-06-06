@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj": {}
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj",
         "projectName": "TestPersonas",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +90,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
               }
             }
           }

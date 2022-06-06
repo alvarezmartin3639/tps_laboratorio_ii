@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj": {}
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
         "projectName": "GestorArchivos",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -123,14 +123,14 @@
         }
       }
     },
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj",
         "projectName": "MostrarLista",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -151,14 +151,14 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj"
               },
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj"
               }
             }
           }
@@ -194,14 +194,14 @@
         }
       }
     },
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj",
         "projectName": "MostrarUnPaciente",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -222,14 +222,14 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj"
               },
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj"
               }
             }
           }
@@ -265,14 +265,14 @@
         }
       }
     },
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj",
         "projectName": "NuevaAtencion",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\NuevaAtencion.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\NuevaAtencion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -293,17 +293,17 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarListaDePacientes\\MostrarLista.csproj"
               },
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\MostrarUnPaciente\\MostrarUnPaciente.csproj"
               },
-              "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj": {
-                "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj"
+              "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj": {
+                "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj"
               }
             }
           }
@@ -339,14 +339,14 @@
         }
       }
     },
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj",
         "projectName": "VentanaEmergenteConInformacion",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\VentanaEmergenteConInformacion.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInformacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -400,14 +400,14 @@
         }
       }
     },
-    "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj": {
+    "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj",
+        "projectUniqueName": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj",
         "projectName": "VentanaEmergenteConInputBox",
-        "projectPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj",
+        "projectPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\VentanaEmergenteConInputBox.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\obj\\",
+        "outputPath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\VentanaEmergenteConInputBox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

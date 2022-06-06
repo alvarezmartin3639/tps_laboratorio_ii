@@ -10,7 +10,6 @@
     <ProjectReference Include="..\..\Entidades\Entidades.csproj" />
     <ProjectReference Include="..\..\GestorArchivos\GestorArchivos.csproj" />
     <ProjectReference Include="..\..\MostrarListaDePacientes\MostrarLista.csproj" />
-    <ProjectReference Include="..\..\MostrarPaciente\NuevoPaciente.csproj" />
     <ProjectReference Include="..\..\NuevaAtencion\NuevaAtencion.csproj" />
     <ProjectReference Include="..\..\NuevoPaciente\NuevoPaciente.csproj" />
     <ProjectReference Include="..\..\VentanaEmergenteConInformacion\VentanaEmergenteConInformacion.csproj" />

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BPdYSf+leIdDR8FvdhE0JZmrId+3PYTPDpH9LBRR45upwToKQwvCFJmvSRCSePrIuzlDf9sDYWrkbgJCRIFi6w==",
+  "dgSpecHash": "jrWeW3sLUHO4Zov9WZdzrzmcOG0bxptUsv3XFlBM+0N2k6c6Hggqb573OGL/EYguIpyD9t9phUcYgNYX6td6dA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kenyn\\Desktop\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj",
+  "projectFilePath": "C:\\Users\\kenyn\\Desktop\\tps_laboratorio_ii\\TP3\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\TestPersonas\\TestPersonas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenyn\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\kenyn\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

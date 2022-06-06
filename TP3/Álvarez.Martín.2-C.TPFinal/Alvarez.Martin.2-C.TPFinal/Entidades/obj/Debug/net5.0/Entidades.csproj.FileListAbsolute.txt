@@ -10,3 +10,15 @@ C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\E
 C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.dll
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\kenyn\Desktop\tps_laboratorio_ii\TP3\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb
