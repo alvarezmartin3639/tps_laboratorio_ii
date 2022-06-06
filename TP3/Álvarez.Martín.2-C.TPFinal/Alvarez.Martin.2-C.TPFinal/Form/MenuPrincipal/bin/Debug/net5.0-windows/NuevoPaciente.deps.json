@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "NuevoPaciente/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "Excepciones": "1.0.0",
+          "VentanaEmergenteConInputBox": "1.0.0"
+        },
+        "runtime": {
+          "NuevoPaciente.dll": {}
+        }
+      },
+      "Entidades/1.0.0": {
+        "runtime": {
+          "Entidades.dll": {}
+        }
+      },
+      "Excepciones/1.0.0": {
+        "runtime": {
+          "Excepciones.dll": {}
+        }
+      },
+      "VentanaEmergenteConInputBox/1.0.0": {
+        "runtime": {
+          "VentanaEmergenteConInputBox.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NuevoPaciente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Excepciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VentanaEmergenteConInputBox/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

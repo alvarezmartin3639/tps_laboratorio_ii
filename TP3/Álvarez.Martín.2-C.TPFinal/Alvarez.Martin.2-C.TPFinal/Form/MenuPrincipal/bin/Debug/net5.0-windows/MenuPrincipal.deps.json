@@ -1,0 +1,155 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "MenuPrincipal/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "GestorArchivos": "1.0.0",
+          "MostrarLista": "1.0.0",
+          "MostrarPaciente": "1.0.0",
+          "NuevaAtencion": "1.0.0",
+          "NuevoPaciente": "1.0.0",
+          "VentanaEmergenteConInformacion": "1.0.0",
+          "VentanaEmergenteConInputBox": "1.0.0",
+          "VentanaEmergenteConInputBoxSimple": "1.0.0"
+        },
+        "runtime": {
+          "MenuPrincipal.dll": {}
+        }
+      },
+      "Entidades/1.0.0": {
+        "runtime": {
+          "Entidades.dll": {}
+        }
+      },
+      "Excepciones/1.0.0": {
+        "runtime": {
+          "Excepciones.dll": {}
+        }
+      },
+      "GestorArchivos/1.0.0": {
+        "runtime": {
+          "GestorArchivos.dll": {}
+        }
+      },
+      "MostrarLista/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "GestorArchivos": "1.0.0",
+          "VentanaEmergenteConInformacion": "1.0.0"
+        },
+        "runtime": {
+          "MostrarLista.dll": {}
+        }
+      },
+      "MostrarUnPaciente/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "MostrarLista": "1.0.0",
+          "VentanaEmergenteConInformacion": "1.0.0"
+        },
+        "runtime": {
+          "MostrarUnPaciente.dll": {}
+        }
+      },
+      "NuevaAtencion/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "MostrarLista": "1.0.0",
+          "MostrarUnPaciente": "1.0.0",
+          "VentanaEmergenteConInputBox": "1.0.0"
+        },
+        "runtime": {
+          "NuevaAtencion.dll": {}
+        }
+      },
+      "NuevoPaciente/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "Excepciones": "1.0.0",
+          "VentanaEmergenteConInputBox": "1.0.0"
+        },
+        "runtime": {
+          "NuevoPaciente.dll": {}
+        }
+      },
+      "VentanaEmergenteConInformacion/1.0.0": {
+        "runtime": {
+          "VentanaEmergenteConInformacion.dll": {}
+        }
+      },
+      "VentanaEmergenteConInputBox/1.0.0": {
+        "runtime": {
+          "VentanaEmergenteConInputBox.dll": {}
+        }
+      },
+      "VentanaEmergenteConInputBoxSimple/1.0.0": {
+        "runtime": {
+          "VentanaEmergenteConInputBoxSimple.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MenuPrincipal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Excepciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestorArchivos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MostrarLista/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MostrarUnPaciente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NuevaAtencion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NuevoPaciente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VentanaEmergenteConInformacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VentanaEmergenteConInputBox/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VentanaEmergenteConInputBoxSimple/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

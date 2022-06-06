@@ -1,0 +1,12 @@
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\Excepciones.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\Excepciones.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\ref\Excepciones.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\Excepciones.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.csproj.AssemblyReference.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.AssemblyInfoInputs.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.AssemblyInfo.cs
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\ref\Excepciones.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.pdb

@@ -1,0 +1,17 @@
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\bin\Debug\net5.0-windows\AgregarMedico.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\bin\Debug\net5.0-windows\AgregarMedico.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\bin\Debug\net5.0-windows\AgregarMedico.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\bin\Debug\net5.0-windows\AgregarMedico.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\bin\Debug\net5.0-windows\AgregarMedico.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\bin\Debug\net5.0-windows\ref\AgregarMedico.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\bin\Debug\net5.0-windows\AgregarMedico.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\MostrarMedico.frmMostrarMedico.resources
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.csproj.GenerateResource.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.AssemblyInfoInputs.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.AssemblyInfo.cs
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.csproj.CoreCompileInputs.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\ref\AgregarMedico.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\MostrarMedico\obj\Debug\net5.0-windows\AgregarMedico.genruntimeconfig.cache

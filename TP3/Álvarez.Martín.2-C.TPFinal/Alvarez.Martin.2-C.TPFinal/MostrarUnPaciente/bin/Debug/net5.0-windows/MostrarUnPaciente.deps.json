@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "MostrarUnPaciente/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "MostrarLista": "1.0.0",
+          "VentanaEmergenteConInformacion": "1.0.0"
+        },
+        "runtime": {
+          "MostrarUnPaciente.dll": {}
+        }
+      },
+      "Entidades/1.0.0": {
+        "runtime": {
+          "Entidades.dll": {}
+        }
+      },
+      "GestorArchivos/1.0.0": {
+        "runtime": {
+          "GestorArchivos.dll": {}
+        }
+      },
+      "MostrarLista/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "GestorArchivos": "1.0.0",
+          "VentanaEmergenteConInformacion": "1.0.0"
+        },
+        "runtime": {
+          "MostrarLista.dll": {}
+        }
+      },
+      "VentanaEmergenteConInformacion/1.0.0": {
+        "runtime": {
+          "VentanaEmergenteConInformacion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MostrarUnPaciente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestorArchivos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MostrarLista/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VentanaEmergenteConInformacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
