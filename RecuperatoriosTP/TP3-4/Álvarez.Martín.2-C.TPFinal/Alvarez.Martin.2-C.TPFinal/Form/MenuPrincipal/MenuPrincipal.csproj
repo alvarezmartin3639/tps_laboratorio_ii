@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Entidades\Entidades.csproj" />
+    <ProjectReference Include="..\..\Excepciones\Excepciones.csproj" />
+    <ProjectReference Include="..\..\ExtensionList\Extension.csproj" />
+    <ProjectReference Include="..\..\GestorArchivos\GestorArchivos.csproj" />
+    <ProjectReference Include="..\..\GestorSql\GestorSql.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormMostrarLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMostrarUnPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormNuevaAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormNuevoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormVentanaEmergenteConInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormVentanaEmergenteConInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormVentanaEmergenteConInputBoxSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMedico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Medico>
+    <Dni>363434343</Dni>
+    <Edad>30</Edad>
+    <Nombre>Álvarez Martín Andrés</Nombre>
+    <Sexo>Hombre</Sexo>
+    <IdDeMedico>1</IdDeMedico>
+    <Matricula>23232</Matricula>
+    <PacientesAtendidos>
+      <Atencion>
+        <IdDeAtencion>1</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
+        <Tratamiento>En observación</Tratamiento>
+        <Diagnostico>Esperando resultados de los analisis</Diagnostico>
+        <FechaDeLaAtencion>2022-07-24T10:11:41.6255236-03:00</FechaDeLaAtencion>
+      </Atencion>
+      <Atencion>
+        <IdDeAtencion>2</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
+        <Tratamiento>Medicamento xxx</Tratamiento>
+        <Diagnostico>Cancer</Diagnostico>
+        <FechaDeLaAtencion>2022-07-24T10:11:41.6255277-03:00</FechaDeLaAtencion>
+      </Atencion>
+    </PacientesAtendidos>
+  </Medico>
+  <Medico>
+    <Dni>232323211</Dni>
+    <Edad>34</Edad>
+    <Nombre>Roberto de la fuente</Nombre>
+    <Sexo>Hombre</Sexo>
+    <IdDeMedico>2</IdDeMedico>
+    <Matricula>4242</Matricula>
+    <PacientesAtendidos>
+      <Atencion>
+        <IdDeAtencion>3</IdDeAtencion>
+        <IdDeMedico>2</IdDeMedico>
+        <IdDePaciente>2</IdDePaciente>
+        <MotivoDeLaConsulta>Dolor de cabeza</MotivoDeLaConsulta>
+        <Tratamiento>Medicamento yyy</Tratamiento>
+        <Diagnostico>Esperando resultados de los analisis</Diagnostico>
+        <FechaDeLaAtencion>2022-07-24T10:11:41.6255279-03:00</FechaDeLaAtencion>
+      </Atencion>
+    </PacientesAtendidos>
+  </Medico>
+  <Medico>
+    <Dni>6666666</Dni>
+    <Edad>35</Edad>
+    <Nombre>Julia Lopez</Nombre>
+    <Sexo>Mujer</Sexo>
+    <IdDeMedico>3</IdDeMedico>
+    <Matricula>666656</Matricula>
+    <PacientesAtendidos>
+      <Atencion>
+        <IdDeAtencion>4</IdDeAtencion>
+        <IdDeMedico>3</IdDeMedico>
+        <IdDePaciente>3</IdDePaciente>
+        <MotivoDeLaConsulta>Fatiga </MotivoDeLaConsulta>
+        <Tratamiento>Vitaminas aaa</Tratamiento>
+        <Diagnostico>falta de vitamina</Diagnostico>
+        <FechaDeLaAtencion>2022-07-24T10:11:41.6255282-03:00</FechaDeLaAtencion>
+      </Atencion>
+    </PacientesAtendidos>
+  </Medico>
+  <Medico>
+    <Dni>77777</Dni>
+    <Edad>36</Edad>
+    <Nombre>Roberta Lopez</Nombre>
+    <Sexo>Mujer</Sexo>
+    <IdDeMedico>4</IdDeMedico>
+    <Matricula>34343</Matricula>
+    <PacientesAtendidos>
+      <Atencion>
+        <IdDeAtencion>5</IdDeAtencion>
+        <IdDeMedico>4</IdDeMedico>
+        <IdDePaciente>4</IdDePaciente>
+        <MotivoDeLaConsulta>Dolor de rodilla </MotivoDeLaConsulta>
+        <Tratamiento>Descanso</Tratamiento>
+        <Diagnostico>dolor articular</Diagnostico>
+        <FechaDeLaAtencion>2022-07-24T10:11:41.6255284-03:00</FechaDeLaAtencion>
+      </Atencion>
+    </PacientesAtendidos>
+  </Medico>
+  <Medico>
+    <Dni>22222</Dni>
+    <Edad>22</Edad>
+    <Nombre>Josefa Hernesta</Nombre>
+    <Sexo>Mujer</Sexo>
+    <IdDeMedico>5</IdDeMedico>
+    <Matricula>212122</Matricula>
+    <PacientesAtendidos>
+      <Atencion>
+        <IdDeAtencion>6</IdDeAtencion>
+        <IdDeMedico>5</IdDeMedico>
+        <IdDePaciente>5</IdDePaciente>
+        <MotivoDeLaConsulta>Descamación en la piel </MotivoDeLaConsulta>
+        <Tratamiento>Pomada xxx</Tratamiento>
+        <Diagnostico>Hongos</Diagnostico>
+        <FechaDeLaAtencion>2022-07-24T10:11:41.6255286-03:00</FechaDeLaAtencion>
+      </Atencion>
+    </PacientesAtendidos>
+  </Medico>
+</ArrayOfMedico>

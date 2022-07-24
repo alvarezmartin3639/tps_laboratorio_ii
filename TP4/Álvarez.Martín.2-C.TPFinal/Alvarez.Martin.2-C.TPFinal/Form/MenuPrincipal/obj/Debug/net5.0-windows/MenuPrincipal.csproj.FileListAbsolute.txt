@@ -1,0 +1,152 @@
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.AssemblyReference.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.FormMenuPrincipal.resources
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.GenerateResource.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfoInputs.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfo.cs
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CoreCompileInputs.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\ref\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\ref\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.genruntimeconfig.cache
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInformacion.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInformacion.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInformacion.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInformacion.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInformacion.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInformacion.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CopyComplete
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarLista.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarLista.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarLista.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarLista.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBox.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBox.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBox.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBox.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarLista.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBox.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarLista.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBox.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.Properties.Resources.resources
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevaAtencion.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevaAtencion.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevaAtencion.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevaAtencion.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevaAtencion.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevaAtencion.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarUnPaciente.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarUnPaciente.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarUnPaciente.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarUnPaciente.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarUnPaciente.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MostrarUnPaciente.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBoxSimple.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBoxSimple.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBoxSimple.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBoxSimple.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBoxSimple.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\VentanaEmergenteConInputBoxSimple.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.pdb
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevoPaciente.deps.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevoPaciente.runtimeconfig.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevoPaciente.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevoPaciente.exe
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevoPaciente.dll
+C:\Users\kenyn\Desktop\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\NuevoPaciente.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\ref\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.exe
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.deps.json
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.json
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.dev.json
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\ref\MenuPrincipal.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.AssemblyReference.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.FormMenuPrincipal.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.Properties.Resources.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.GenerateResource.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfoInputs.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfo.cs
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CoreCompileInputs.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CopyComplete
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.genruntimeconfig.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmMostrarLista.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmMostrarUnPaciente.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmNuevaAtencion.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmNuevoPaciente.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInformacion.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInputBox.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInputBoxSimple.resources
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorSql.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorSql.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.exe
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.deps.json
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.json
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.dev.json
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\ref\MenuPrincipal.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Extension.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorSql.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Extension.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorSql.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.AssemblyReference.cache
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.FormMenuPrincipal.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmMostrarLista.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmMostrarUnPaciente.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmNuevaAtencion.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmNuevoPaciente.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInformacion.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInputBox.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInputBoxSimple.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.Properties.Resources.resources
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.GenerateResource.cache
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfoInputs.cache
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfo.cs
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CoreCompileInputs.cache
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CopyComplete
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\ref\MenuPrincipal.dll
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.pdb
+D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.genruntimeconfig.cache

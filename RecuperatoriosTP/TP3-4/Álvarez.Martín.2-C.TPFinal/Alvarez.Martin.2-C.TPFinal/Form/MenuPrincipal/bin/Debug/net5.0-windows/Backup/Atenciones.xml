@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAtencion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Atencion>
+    <IdDeAtencion>1</IdDeAtencion>
+    <IdDeMedico>1</IdDeMedico>
+    <IdDePaciente>1</IdDePaciente>
+    <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
+    <Tratamiento>En observación</Tratamiento>
+    <Diagnostico>Esperando resultados de los analisis</Diagnostico>
+    <FechaDeLaAtencion>2022-07-24T10:11:41.6200847-03:00</FechaDeLaAtencion>
+  </Atencion>
+  <Atencion>
+    <IdDeAtencion>2</IdDeAtencion>
+    <IdDeMedico>1</IdDeMedico>
+    <IdDePaciente>1</IdDePaciente>
+    <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
+    <Tratamiento>Medicamento xxx</Tratamiento>
+    <Diagnostico>Cancer</Diagnostico>
+    <FechaDeLaAtencion>2022-07-24T10:11:41.6235758-03:00</FechaDeLaAtencion>
+  </Atencion>
+  <Atencion>
+    <IdDeAtencion>3</IdDeAtencion>
+    <IdDeMedico>2</IdDeMedico>
+    <IdDePaciente>2</IdDePaciente>
+    <MotivoDeLaConsulta>Dolor de cabeza</MotivoDeLaConsulta>
+    <Tratamiento>Medicamento yyy</Tratamiento>
+    <Diagnostico>Esperando resultados de los analisis</Diagnostico>
+    <FechaDeLaAtencion>2022-07-24T10:11:41.6235833-03:00</FechaDeLaAtencion>
+  </Atencion>
+  <Atencion>
+    <IdDeAtencion>4</IdDeAtencion>
+    <IdDeMedico>3</IdDeMedico>
+    <IdDePaciente>3</IdDePaciente>
+    <MotivoDeLaConsulta>Fatiga </MotivoDeLaConsulta>
+    <Tratamiento>Vitaminas aaa</Tratamiento>
+    <Diagnostico>falta de vitamina</Diagnostico>
+    <FechaDeLaAtencion>2022-07-24T10:11:41.6235836-03:00</FechaDeLaAtencion>
+  </Atencion>
+  <Atencion>
+    <IdDeAtencion>5</IdDeAtencion>
+    <IdDeMedico>4</IdDeMedico>
+    <IdDePaciente>4</IdDePaciente>
+    <MotivoDeLaConsulta>Dolor de rodilla </MotivoDeLaConsulta>
+    <Tratamiento>Descanso</Tratamiento>
+    <Diagnostico>dolor articular</Diagnostico>
+    <FechaDeLaAtencion>2022-07-24T10:11:41.6235838-03:00</FechaDeLaAtencion>
+  </Atencion>
+  <Atencion>
+    <IdDeAtencion>6</IdDeAtencion>
+    <IdDeMedico>5</IdDeMedico>
+    <IdDePaciente>5</IdDePaciente>
+    <MotivoDeLaConsulta>Descamación en la piel </MotivoDeLaConsulta>
+    <Tratamiento>Pomada xxx</Tratamiento>
+    <Diagnostico>Hongos</Diagnostico>
+    <FechaDeLaAtencion>2022-07-24T10:11:41.6235851-03:00</FechaDeLaAtencion>
+  </Atencion>
+</ArrayOfAtencion>

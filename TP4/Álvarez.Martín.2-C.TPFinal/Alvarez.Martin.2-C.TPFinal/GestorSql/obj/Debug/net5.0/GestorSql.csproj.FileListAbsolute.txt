@@ -1,0 +1,15 @@
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.deps.json
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\ref\GestorSql.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.pdb
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.AssemblyReference.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfoInputs.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfo.cs
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CoreCompileInputs.cache
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CopyComplete
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\ref\GestorSql.dll
+C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.pdb
