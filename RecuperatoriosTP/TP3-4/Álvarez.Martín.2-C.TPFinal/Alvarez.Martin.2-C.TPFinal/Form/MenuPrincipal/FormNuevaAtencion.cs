@@ -113,7 +113,8 @@ namespace MenuPrincipal
 
             try
             {
-                if (!int.TryParse(txtIdDePaciente.Text, out int auxNum)) // SI SE VALIDA TODOS LOS DATOS SE CREA LA ATENCIÓN AGREGANDOLA AL PACIENTE Y MEDICO
+                // SI SE VALIDA TODOS LOS DATOS SE CREA LA ATENCIÓN AGREGANDOLA AL PACIENTE Y MEDICO
+                if (!int.TryParse(txtIdDePaciente.Text, out int auxNum)) 
                 {
                     MessageBox.Show("El id  de paciente no puede contener caracteres", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     sePuedeCrearAtencion = false;

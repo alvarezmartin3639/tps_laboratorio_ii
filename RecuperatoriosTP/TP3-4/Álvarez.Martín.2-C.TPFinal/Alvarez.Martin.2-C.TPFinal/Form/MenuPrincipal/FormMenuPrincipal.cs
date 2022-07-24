@@ -583,22 +583,28 @@ namespace MenuPrincipal
         /// <returns>el paciente si lo econtró, null si no está en la lista</returns>
         public Medico BuscarMedicoPorId()
         {
-
-            if (this.listaMedicosSeleccionados is not null)
+            try
             {
-                int id;
-                frmVentanaEmergenteConInputBoxSimple frmPidiendoId;
-                Medico auxMedico;
+                if (this.listaMedicosSeleccionados is not null)
+                {
+                    int id;
+                    frmVentanaEmergenteConInputBoxSimple frmPidiendoId;
+                    Medico auxMedico;
 
-                frmPidiendoId = new frmVentanaEmergenteConInputBoxSimple("Buscar paciente por id", "Ingrese el id del paciente:");
-                frmPidiendoId.ShowDialog();
-                id = int.Parse(frmPidiendoId.InformacionEscrita);
-                auxMedico = Medico.BuscarPacienteEnListaMedianteId(id, this.listaMedicosSeleccionados);
-                if (auxMedico is not null)
-                    return auxMedico;
+                    frmPidiendoId = new frmVentanaEmergenteConInputBoxSimple("Buscar paciente por id", "Ingrese el id del paciente:");
+                    frmPidiendoId.ShowDialog();
+                    id = int.Parse(frmPidiendoId.InformacionEscrita);
+                    auxMedico = Medico.BuscarPacienteEnListaMedianteId(id, this.listaMedicosSeleccionados);
+                    if (auxMedico is not null)
+                        return auxMedico;
+                }
+                else
+                    MessageBox.Show("Lista vacia", "Error al buscar el medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error al buscar el medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show("Lista vacia", "Error al buscar el medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
 
             return null;
         }
