@@ -765,9 +765,9 @@ namespace MenuPrincipal
                 {
                     try
                     {
-                        PacienteSql nuevoPaciente = new("Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
-                        AtencionSql nuevaAtencion = new("Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
-                        MedicoSql nuevoMedico = new("Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
+                        PacienteSql nuevoPaciente = new(strConexionSql);
+                        AtencionSql nuevaAtencion = new(strConexionSql);
+                        MedicoSql nuevoMedico = new(strConexionSql);
 
                         // INCIALIZO LAS LISTAS CON LOS DATOS SQL
                         this.listaPacientesSeleccionados = nuevoPaciente.Leer();
@@ -804,14 +804,12 @@ namespace MenuPrincipal
                     {
                         PacienteSql nuevoPaciente = new(strConexionSql);
                         AtencionSql nuevaAtencion = new(strConexionSql);
-                        MedicoSql nuevoMedico = new(strConexionSql);
 
                         foreach (Paciente item in this.listaPacientesSeleccionados)
                             nuevoPaciente.Agregar(item);
                         foreach (Atencion item in this.listaAtencionesSeleccionadas)
                             nuevaAtencion.Agregar(item);
-                        foreach (Medico item in this.listaMedicosSeleccionados)
-                            nuevoMedico.Agregar(item);
+        
                     }
                     catch (Exception ex)
                     {
