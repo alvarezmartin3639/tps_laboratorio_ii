@@ -22,3 +22,15 @@ C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TP
 C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.deps.json
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.pdb
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb

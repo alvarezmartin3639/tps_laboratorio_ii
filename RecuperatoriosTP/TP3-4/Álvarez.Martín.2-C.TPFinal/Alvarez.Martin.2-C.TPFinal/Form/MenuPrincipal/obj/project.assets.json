@@ -549,11 +549,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\MenuPrincipal.csproj",
+      "projectUniqueName": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\MenuPrincipal.csproj",
       "projectName": "MenuPrincipal",
-      "projectPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\MenuPrincipal.csproj",
+      "projectPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\MenuPrincipal.csproj",
       "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\obj\\",
+      "outputPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -574,20 +574,20 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
-              "projectPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
+            "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
             },
-            "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj": {
-              "projectPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj"
+            "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj": {
+              "projectPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj"
             },
-            "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\ExtensionList\\Extension.csproj": {
-              "projectPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\ExtensionList\\Extension.csproj"
+            "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\ExtensionList\\Extension.csproj": {
+              "projectPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\ExtensionList\\Extension.csproj"
             },
-            "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
-              "projectPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj"
+            "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
+              "projectPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj"
             },
-            "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorSql\\GestorSql.csproj": {
-              "projectPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorSql\\GestorSql.csproj"
+            "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorSql\\GestorSql.csproj": {
+              "projectPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorSql\\GestorSql.csproj"
             }
           }
         }

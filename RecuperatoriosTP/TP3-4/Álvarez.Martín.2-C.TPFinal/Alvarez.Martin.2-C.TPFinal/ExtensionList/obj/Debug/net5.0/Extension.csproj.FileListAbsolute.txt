@@ -13,3 +13,18 @@ D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvare
 D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.dll
 D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\ref\Extension.dll
 D:\Github\Github ultimo cuatri\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.pdb
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\Extension.deps.json
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\Extension.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\ref\Extension.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\Extension.pdb
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\Entidades.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\Entidades.pdb
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.csproj.AssemblyReference.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.AssemblyInfoInputs.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.AssemblyInfo.cs
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.csproj.CoreCompileInputs.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.csproj.CopyComplete
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\ref\Extension.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.pdb

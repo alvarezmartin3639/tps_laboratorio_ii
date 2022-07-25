@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
+      "projectUniqueName": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
       "projectName": "Excepciones",
-      "projectPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
+      "projectPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\Excepciones.csproj",
       "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\obj\\",
+      "outputPath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Excepciones\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

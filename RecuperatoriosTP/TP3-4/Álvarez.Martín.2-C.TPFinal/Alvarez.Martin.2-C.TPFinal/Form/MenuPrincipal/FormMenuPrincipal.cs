@@ -20,7 +20,7 @@ namespace MenuPrincipal
         public event ComprobadorConexionSqlHandler OnCambioEnElEstadoDelServidorSql;
         private Thread threadVerificarConexionSql;
         private CancellationTokenSource cancellationToken;
-
+        private string strConexionSql;
 
         #region CONSTRUCTORES Y PROPIEDADES
 
@@ -39,6 +39,7 @@ namespace MenuPrincipal
             this.tlsmiArchivo.Available = false;
             this.cancellationToken = new();
             this.lblErrorSql.Text = "No se puede conectar con el servidor SQL, abra un ticket o trabaje de manera \n offline hasta que se solucione \nTrabaje de manera offline utilizando archivos, al terminar envielos a x@soporte.com";
+            this.strConexionSql = "Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;";
         }
 
         #endregion
@@ -630,6 +631,7 @@ namespace MenuPrincipal
 
 
 
+
         /// <summary>
         /// Harcodea Médicos para una correción mas rápida del TP
         /// </summary>
@@ -800,14 +802,16 @@ namespace MenuPrincipal
                 {
                     try
                     {
-                        PacienteSql nuevoPaciente = new("Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
-                        AtencionSql nuevaAtencion = new("Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
-                        MedicoSql nuevoMedico = new("Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
+                        PacienteSql nuevoPaciente = new(strConexionSql);
+                        AtencionSql nuevaAtencion = new(strConexionSql);
+                        MedicoSql nuevoMedico = new(strConexionSql);
 
                         foreach (Paciente item in this.listaPacientesSeleccionados)
                             nuevoPaciente.Agregar(item);
                         foreach (Atencion item in this.listaAtencionesSeleccionadas)
                             nuevaAtencion.Agregar(item);
+                        foreach (Medico item in this.listaMedicosSeleccionados)
+                            nuevoMedico.Agregar(item);
                     }
                     catch (Exception ex)
                     {

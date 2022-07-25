@@ -51,7 +51,26 @@ namespace Entidades
         /// </summary>
         public List<Atencion> PacientesAtendidos { get => atencionesRealizadas; set => atencionesRealizadas = value; }
 
+        /// <summary>
+        /// Verifica que una lista tenga el medico con el id pasado por parametro
+        /// </summary>
+        /// <param name="list">La lista donde buscar</param>
+        /// <param name="idDelMedico">El id del medico a buscar</param>
+        /// <returns>True si se encuentra en la lista, false si no se encuentra.</returns>
+        public static bool ExisteMedicoEnLalista(List<Medico> list, int idDelMedico)
+        {
+         bool   retorno = false;
+            if(list != null)
+            {
+                foreach (Medico item in list)
+                {
+                    if (item.idDeMedico == idDelMedico)
+                        return true;
+                }
+            }
 
+            return retorno;
+        }
 
         /// <summary>
         /// Busca el id de un medico en la lista pasada como parametro

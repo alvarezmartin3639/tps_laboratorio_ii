@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8bpdSqdEPdbj5nw+M68AX9agRsFq91PDV/8iqrQIuu7O/5yhP2tPJaV0k2eCKvkwTQn9IuCzsHFq8xDClYXMVQ==",
+  "dgSpecHash": "hlmo35E5UoRIkMdFBiB/Nh1pIIy1SoMUO7PXqmQ9+NChbXI1tlIs1l5sw6ZCgV8Mysk/z/2z/VIIR6cJ6mGV7A==",
   "success": true,
-  "projectFilePath": "D:\\Github\\Github ultimo cuatri\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\MenuPrincipal.csproj",
+  "projectFilePath": "D:\\Github\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Form\\MenuPrincipal\\MenuPrincipal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenyn\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\kenyn\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
