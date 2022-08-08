@@ -28,6 +28,7 @@ D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C
 D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.dll
 D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\ref\GestorSql.dll
 D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.pdb
+<<<<<<< HEAD
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.AssemblyReference.cache
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfoInputs.cache
@@ -43,3 +44,5 @@ D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.pdb
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CopyComplete
+=======
+>>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7

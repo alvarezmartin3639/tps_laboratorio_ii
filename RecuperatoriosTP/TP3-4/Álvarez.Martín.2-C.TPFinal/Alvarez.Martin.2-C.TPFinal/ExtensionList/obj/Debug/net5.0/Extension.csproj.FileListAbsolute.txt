@@ -28,6 +28,7 @@ D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C
 D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.dll
 D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\ref\Extension.dll
 D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.pdb
+<<<<<<< HEAD
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\Extension.deps.json
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\Extension.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\bin\Debug\net5.0\ref\Extension.dll
@@ -43,3 +44,5 @@ D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\ref\Extension.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\ExtensionList\obj\Debug\net5.0\Extension.pdb
+=======
+>>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7

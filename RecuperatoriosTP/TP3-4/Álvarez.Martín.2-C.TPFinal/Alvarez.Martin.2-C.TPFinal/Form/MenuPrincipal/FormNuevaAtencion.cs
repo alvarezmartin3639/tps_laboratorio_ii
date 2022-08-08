@@ -155,6 +155,10 @@ namespace MenuPrincipal
                         {
                             MessageBox.Show("El id  del medico no puede contener caracteres", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             sePuedeCrearAtencion = false;
+                        }else if (!Medico.ExisteMedicoEnLalista(this.listaDeMedicosNueva,int.Parse(txtIdDeMedico.Text)))
+                        {
+                            MessageBox.Show("No existe el medico con ese id dentro de los registros", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            sePuedeCrearAtencion = false;
                         }
                         else if (!Medico.ExisteMedicoEnLalista(this.listaDeMedicosNueva, int.Parse(txtIdDeMedico.Text)))
                         {
