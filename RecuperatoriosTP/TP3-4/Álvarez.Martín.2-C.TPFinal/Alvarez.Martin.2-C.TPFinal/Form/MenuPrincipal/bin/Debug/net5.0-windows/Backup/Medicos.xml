@@ -15,7 +15,7 @@
         <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
         <Tratamiento>En observación</Tratamiento>
         <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6255236-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8234537-03:00</FechaDeLaAtencion>
       </Atencion>
       <Atencion>
         <IdDeAtencion>2</IdDeAtencion>
@@ -24,7 +24,7 @@
         <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
         <Tratamiento>Medicamento xxx</Tratamiento>
         <Diagnostico>Cancer</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6255277-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8234558-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
@@ -43,7 +43,7 @@
         <MotivoDeLaConsulta>Dolor de cabeza</MotivoDeLaConsulta>
         <Tratamiento>Medicamento yyy</Tratamiento>
         <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6255279-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8234561-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
@@ -62,7 +62,7 @@
         <MotivoDeLaConsulta>Fatiga </MotivoDeLaConsulta>
         <Tratamiento>Vitaminas aaa</Tratamiento>
         <Diagnostico>falta de vitamina</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6255282-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8234563-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
@@ -81,7 +81,7 @@
         <MotivoDeLaConsulta>Dolor de rodilla </MotivoDeLaConsulta>
         <Tratamiento>Descanso</Tratamiento>
         <Diagnostico>dolor articular</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6255284-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8234566-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
@@ -100,7 +100,7 @@
         <MotivoDeLaConsulta>Descamación en la piel </MotivoDeLaConsulta>
         <Tratamiento>Pomada xxx</Tratamiento>
         <Diagnostico>Hongos</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6255286-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8234568-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>

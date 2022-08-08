@@ -60,7 +60,7 @@ namespace MenuPrincipal
             this.rtbInformacionEscrita.Location = new System.Drawing.Point(12, 37);
             this.rtbInformacionEscrita.Name = "rtbInformacionEscrita";
             this.rtbInformacionEscrita.Size = new System.Drawing.Size(520, 293);
-            this.rtbInformacionEscrita.TabIndex = 4;
+            this.rtbInformacionEscrita.TabIndex = 1;
             this.rtbInformacionEscrita.Text = "";
             // 
             // bttnDeshacerCambios
@@ -68,7 +68,7 @@ namespace MenuPrincipal
             this.bttnDeshacerCambios.Location = new System.Drawing.Point(420, 336);
             this.bttnDeshacerCambios.Name = "bttnDeshacerCambios";
             this.bttnDeshacerCambios.Size = new System.Drawing.Size(112, 23);
-            this.bttnDeshacerCambios.TabIndex = 5;
+            this.bttnDeshacerCambios.TabIndex = 3;
             this.bttnDeshacerCambios.Text = "Deshacer cambios";
             this.bttnDeshacerCambios.UseVisualStyleBackColor = true;
             this.bttnDeshacerCambios.Click += new System.EventHandler(this.bttnDeshacerCambios_Click);

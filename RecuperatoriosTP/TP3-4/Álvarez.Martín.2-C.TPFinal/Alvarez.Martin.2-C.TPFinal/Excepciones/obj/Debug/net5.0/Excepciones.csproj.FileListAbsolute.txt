@@ -22,3 +22,15 @@ C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TP
 C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.dll
 C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\ref\Excepciones.dll
 C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.pdb
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\Excepciones.deps.json
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\Excepciones.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\ref\Excepciones.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\bin\Debug\net5.0\Excepciones.pdb
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.csproj.AssemblyReference.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.AssemblyInfoInputs.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.AssemblyInfo.cs
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.csproj.CoreCompileInputs.cache
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\ref\Excepciones.dll
+D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Excepciones\obj\Debug\net5.0\Excepciones.pdb

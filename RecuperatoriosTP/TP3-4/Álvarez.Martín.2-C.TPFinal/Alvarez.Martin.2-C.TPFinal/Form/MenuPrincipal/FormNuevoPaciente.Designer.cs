@@ -48,31 +48,31 @@ namespace MenuPrincipal
             this.bttnRedactarAntecedentesMedicos.Location = new System.Drawing.Point(448, 87);
             this.bttnRedactarAntecedentesMedicos.Name = "bttnRedactarAntecedentesMedicos";
             this.bttnRedactarAntecedentesMedicos.Size = new System.Drawing.Size(66, 23);
-            this.bttnRedactarAntecedentesMedicos.TabIndex = 30;
+            this.bttnRedactarAntecedentesMedicos.TabIndex = 10;
             this.bttnRedactarAntecedentesMedicos.Text = "Redactar";
             this.bttnRedactarAntecedentesMedicos.UseVisualStyleBackColor = true;
             this.bttnRedactarAntecedentesMedicos.Click += new System.EventHandler(this.bttnRedactarAntecedentesMedicos_Click);
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(688, 33);
+            this.txtEdad.Location = new System.Drawing.Point(688, 30);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 23);
-            this.txtEdad.TabIndex = 28;
+            this.txtEdad.TabIndex = 6;
             // 
             // txtDni
             // 
             this.txtDni.Location = new System.Drawing.Point(448, 30);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(100, 23);
-            this.txtDni.TabIndex = 27;
+            this.txtDni.TabIndex = 4;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(76, 30);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(158, 23);
-            this.txtNombre.TabIndex = 25;
+            this.txtNombre.TabIndex = 1;
             // 
             // lblAntecedentesMedicos
             // 
@@ -80,7 +80,7 @@ namespace MenuPrincipal
             this.lblAntecedentesMedicos.Location = new System.Drawing.Point(309, 90);
             this.lblAntecedentesMedicos.Name = "lblAntecedentesMedicos";
             this.lblAntecedentesMedicos.Size = new System.Drawing.Size(130, 15);
-            this.lblAntecedentesMedicos.TabIndex = 22;
+            this.lblAntecedentesMedicos.TabIndex = 9;
             this.lblAntecedentesMedicos.Text = "Antecedentes medicos:";
             // 
             // lblSexo
@@ -89,7 +89,7 @@ namespace MenuPrincipal
             this.lblSexo.Location = new System.Drawing.Point(16, 90);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(35, 15);
-            this.lblSexo.TabIndex = 20;
+            this.lblSexo.TabIndex = 7;
             this.lblSexo.Text = "Sexo:";
             // 
             // lblEdad
@@ -98,7 +98,7 @@ namespace MenuPrincipal
             this.lblEdad.Location = new System.Drawing.Point(586, 33);
             this.lblEdad.Name = "lblEdad";
             this.lblEdad.Size = new System.Drawing.Size(36, 15);
-            this.lblEdad.TabIndex = 19;
+            this.lblEdad.TabIndex = 5;
             this.lblEdad.Text = "Edad:";
             // 
             // lblDni
@@ -107,7 +107,7 @@ namespace MenuPrincipal
             this.lblDni.Location = new System.Drawing.Point(309, 33);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(28, 15);
-            this.lblDni.TabIndex = 18;
+            this.lblDni.TabIndex = 3;
             this.lblDni.Text = "Dni:";
             // 
             // lblNombre
@@ -116,24 +116,25 @@ namespace MenuPrincipal
             this.lblNombre.Location = new System.Drawing.Point(16, 33);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(54, 15);
-            this.lblNombre.TabIndex = 17;
+            this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
             // cmbSexo
             // 
             this.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSexo.FormattingEnabled = true;
+            this.cmbSexo.ItemHeight = 15;
             this.cmbSexo.Location = new System.Drawing.Point(76, 87);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(158, 23);
-            this.cmbSexo.TabIndex = 33;
+            this.cmbSexo.TabIndex = 8;
             // 
             // bttnAceptar
             // 
             this.bttnAceptar.Location = new System.Drawing.Point(297, 142);
             this.bttnAceptar.Name = "bttnAceptar";
             this.bttnAceptar.Size = new System.Drawing.Size(181, 33);
-            this.bttnAceptar.TabIndex = 34;
+            this.bttnAceptar.TabIndex = 11;
             this.bttnAceptar.Text = "Aceptar";
             this.bttnAceptar.UseVisualStyleBackColor = true;
             this.bttnAceptar.Click += new System.EventHandler(this.bttnAceptar_Click);

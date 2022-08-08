@@ -51,29 +51,27 @@ namespace GestorArchivos
         /// Propiedad que retorna un path validado para ser .Xml o .Json
         /// </summary>
         /// <exception cref="Exception">Cuando se elige una extensión invalida.</exception>
-        public string PathXmlOJsonValido
+        public SaveFileDialog PathXmlOJsonValido()
         {
 
-            get
+            try
             {
-                try
+                using (SaveFileDialog rutaDelArchivoParaAbrir = new SaveFileDialog())
                 {
-                    using (SaveFileDialog rutaDelArchivoParaAbrir = new SaveFileDialog())
-                    {
-                        rutaDelArchivoParaAbrir.Filter = "Xml Files (*.xml)|*.xml | Json Files (*.json)|*.json ";
-                        rutaDelArchivoParaAbrir.DefaultExt = "xml";
-                        rutaDelArchivoParaAbrir.AddExtension = true;
+                    rutaDelArchivoParaAbrir.Filter = "Xml Files (*.xml)|*.xml | Json Files (*.json)|*.json ";
+                    rutaDelArchivoParaAbrir.DefaultExt = "xml";
+                    rutaDelArchivoParaAbrir.AddExtension = true;
 
-                        if (rutaDelArchivoParaAbrir.ShowDialog() == DialogResult.OK)
-                            return rutaDelArchivoParaAbrir.FileName;
+                    if (rutaDelArchivoParaAbrir.ShowDialog() == DialogResult.OK)
+                        return rutaDelArchivoParaAbrir;
 
-                        throw new Exception("Error al seleccionar ruta xml o json");
-                    }
+                    throw new Exception("Error al seleccionar ruta xml o json");
                 }
-                catch (Exception ex)
-                { throw new Exception("Se encontró un problema en la propiedad PathXmlOJsonValido de la clase Serializador", ex); }
-
             }
+            catch (Exception ex)
+            { throw new Exception("Se encontró un problema en la propiedad PathXmlOJsonValido de la clase Serializador", ex); }
+
+
         }
 
         /// <summary>
@@ -213,6 +211,7 @@ namespace GestorArchivos
         {
             try
             {
+
                 using (XmlTextWriter xmlTextWriter = new XmlTextWriter(path, Encoding.UTF8))
                 {
                     xmlTextWriter.Formatting = Formatting.Indented;
@@ -264,21 +263,24 @@ namespace GestorArchivos
         }
 
         /// <summary>
-        /// Escribe un DataGridView en un archivo.
+        /// Pregunta el path donde guardar un objeto Json
         /// </summary>
-        /// <param name="tabla">El DataGridView que se va a guardar en el archivo</param>
-        /// <exception cref="Exception">Cuando sucede un error al serializar.</exception>
-        public void EscribirDataGridViewPreguntandoRuta(DataGridView tabla)
+        /// <param name="dato">Lo que va a guardar en el archivo</param>
+        /// <returns></returns>
+        public void EscribirJsonPreguntandoRuta(T dato)
         {
-            try
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
-                string output = JsonSerializer.Serialize(tabla);
-                System.IO.File.WriteAllText("json.json", output);
-            }
-            catch (Exception ex)
-            { throw new Exception("Se encontró un problema en el metodo EscribirDataGridViewPreguntandoRuta de la clase Serializador", ex); }
-        }
+                saveFileDialog.Filter = $"json Files (*.json)|*.json";
+                saveFileDialog.DefaultExt = "json";
+                saveFileDialog.AddExtension = true;
 
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Serializador<T>.EscribirJson(dato, saveFileDialog.FileName);
+                }
+            }
+        }
         /// <summary>
         /// Da la opcion al usuario a elegir un archivo .json o .xml y lo deserealiza retornandoló como objeto
         /// </summary>

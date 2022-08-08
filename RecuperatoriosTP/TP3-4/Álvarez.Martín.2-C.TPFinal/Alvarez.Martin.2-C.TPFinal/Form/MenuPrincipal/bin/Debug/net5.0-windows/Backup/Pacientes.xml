@@ -14,7 +14,7 @@
         <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
         <Tratamiento>En observación</Tratamiento>
         <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6242473-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8224042-03:00</FechaDeLaAtencion>
       </Atencion>
       <Atencion>
         <IdDeAtencion>2</IdDeAtencion>
@@ -23,7 +23,7 @@
         <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
         <Tratamiento>Medicamento xxx</Tratamiento>
         <Diagnostico>Cancer</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.624254-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8224073-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
     <AntecedentesMedicos>AntecedentesMedico de Roberto juan</AntecedentesMedicos>
@@ -43,7 +43,7 @@
         <MotivoDeLaConsulta>Dolor de cabeza</MotivoDeLaConsulta>
         <Tratamiento>Medicamento yyy</Tratamiento>
         <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6242543-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8224075-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
     <AntecedentesMedicos>AntecedentesMedico de Perez juan</AntecedentesMedicos>
@@ -63,7 +63,7 @@
         <MotivoDeLaConsulta>Fatiga </MotivoDeLaConsulta>
         <Tratamiento>Vitaminas aaa</Tratamiento>
         <Diagnostico>falta de vitamina</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6242545-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8224078-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
     <AntecedentesMedicos>AntecedentesMedico de Hernesto juan</AntecedentesMedicos>
@@ -83,7 +83,7 @@
         <MotivoDeLaConsulta>Dolor de rodilla </MotivoDeLaConsulta>
         <Tratamiento>Descanso</Tratamiento>
         <Diagnostico>dolor articular</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6242547-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8224081-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
     <AntecedentesMedicos>AntecedentesMedico de Francisco</AntecedentesMedicos>
@@ -103,7 +103,7 @@
         <MotivoDeLaConsulta>Descamación en la piel </MotivoDeLaConsulta>
         <Tratamiento>Pomada xxx</Tratamiento>
         <Diagnostico>Hongos</Diagnostico>
-        <FechaDeLaAtencion>2022-07-24T10:11:41.6242549-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-08T01:12:51.8224084-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
     <AntecedentesMedicos>AntecedentesMedico de Julia Lopez</AntecedentesMedicos>

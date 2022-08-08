@@ -1,6 +1,7 @@
 ﻿using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace MenuPrincipal
@@ -11,6 +12,7 @@ namespace MenuPrincipal
         private List<Medico> listaDeMedicosNueva;
         private List<Atencion> listaDeAtencionNueva;
         private Atencion atencionCreada;
+        private bool sePudoCrearAtencion;
 
         #region CONSTRUCTORES Y PROPIEDADES
 
@@ -22,6 +24,7 @@ namespace MenuPrincipal
             InitializeComponent();
             this.atencionCreada = new();
             this.ListaDeAtencionNueva = new();
+            this.SePudoCrearAtencion = false;
         }
 
         /// <summary>
@@ -29,6 +32,8 @@ namespace MenuPrincipal
         /// </summary>
         /// <param name="listaDeMedicos">lista completa de los medicos del sistema</param>
         /// <param name="listaDePacientes">lista completa de los pacientes del sistema</param>
+        /// <param name="listaDeAtecion">lista completa de las atenciones del sistema</param>
+
         public frmNuevaAtencion(List<Medico> listaDeMedicos, List<Paciente> listaDePacientes, List<Atencion> listaDeAtecion) : this()
         {
             this.listaDePacientesNueva = listaDePacientes;
@@ -36,6 +41,22 @@ namespace MenuPrincipal
             this.listaDeAtencionNueva = listaDeAtecion;
         }
 
+        /// <summary>
+        /// Constructor de frmNuevaAtencon, inicializa los controles,la atencionCreada junto con las listas de pacientes y medicos
+        /// </summary>
+        /// <param name="listaDeMedicos">lista completa de los medicos del sistema</param>
+        /// <param name="listaDePacientes">lista completa de los pacientes del sistema</param>
+        /// <param name="listaDeAtecion">lista completa de las atenciones del sistema</param>
+        /// <param name="idDeMedico">Id del medico que brinda la atención</param>
+        /// <param name="idDePaciente">Id del paciente que recibe  la atención</param>
+        public frmNuevaAtencion(List<Medico> listaDeMedicos, List<Paciente> listaDePacientes, List<Atencion> listaDeAtecion, int idDeMedico, int idDePaciente) : this(listaDeMedicos, listaDePacientes, listaDeAtecion)
+        {
+
+            this.txtIdDeMedico.Enabled = false;
+            this.txtIdDePaciente.Enabled = false;
+            this.txtIdDeMedico.Text = idDeMedico.ToString();
+            this.txtIdDePaciente.Text = idDePaciente.ToString();
+        }
         /// <summary>
         /// Propiedad de listaDePacientesNueva, remplaza o da un valor a dicho atributo
         /// </summary>
@@ -50,6 +71,7 @@ namespace MenuPrincipal
         /// Propiedad de listaDeAtencionNueva, remplaza o da un valor a dicho atributo
         /// </summary>
         public List<Atencion> ListaDeAtencionNueva { get => listaDeAtencionNueva; set => listaDeAtencionNueva = value; }
+        public bool SePudoCrearAtencion { get => sePudoCrearAtencion; set => sePudoCrearAtencion = value; }
 
         #endregion
 
@@ -114,7 +136,7 @@ namespace MenuPrincipal
             try
             {
                 // SI SE VALIDA TODOS LOS DATOS SE CREA LA ATENCIÓN AGREGANDOLA AL PACIENTE Y MEDICO
-                if (!int.TryParse(txtIdDePaciente.Text, out int auxNum)) 
+                if (!int.TryParse(txtIdDePaciente.Text, out int auxNum))
                 {
                     MessageBox.Show("El id  de paciente no puede contener caracteres", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     sePuedeCrearAtencion = false;
@@ -134,6 +156,11 @@ namespace MenuPrincipal
                             MessageBox.Show("El id  del medico no puede contener caracteres", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             sePuedeCrearAtencion = false;
                         }
+                        else if (!Medico.ExisteMedicoEnLalista(this.listaDeMedicosNueva, int.Parse(txtIdDeMedico.Text)))
+                        {
+                            MessageBox.Show("No existe el medico con ese id dentro de los registros", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            sePuedeCrearAtencion = false;
+                        }
                         else
                         {
                             Medico auxMedico = Medico.BuscarPacienteEnListaMedianteId(int.Parse(txtIdDePaciente.Text), this.ListaDeMedicosNueva);
@@ -144,10 +171,9 @@ namespace MenuPrincipal
                             }
                             else
                             {
-                                if (sePuedeCrearAtencion == false && string.IsNullOrEmpty(this.atencionCreada.MotivoDeLaConsulta) && string.IsNullOrEmpty(this.atencionCreada.Tratamiento) && string.IsNullOrEmpty(this.atencionCreada.Diagnostico))
+                                if (sePuedeCrearAtencion == false || string.IsNullOrEmpty(this.atencionCreada.MotivoDeLaConsulta) || string.IsNullOrEmpty(this.atencionCreada.Tratamiento) || string.IsNullOrEmpty(this.atencionCreada.Diagnostico))
                                 {
                                     MessageBox.Show("Existen campos incompletos necesarios para crear una atención", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                                 }
                                 else
                                 {
@@ -165,6 +191,7 @@ namespace MenuPrincipal
                                     this.listaDeAtencionNueva.Add(atencionCreada);
 
                                     MessageBox.Show("¡Atención generado con exito!", "Se finalizó la atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    SePudoCrearAtencion = true;
                                     this.Close();
                                 }
                             }
@@ -174,7 +201,12 @@ namespace MenuPrincipal
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error al finalizar atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Medico auxMedico = Medico.BuscarPacienteEnListaMedianteId(int.Parse(txtIdDePaciente.Text), this.ListaDeMedicosNueva);
+                if (auxMedico is null)
+                {
+                    MessageBox.Show("No coincide ningun médico con la id brindada", "Error al crear Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    sePuedeCrearAtencion = false;
+                }
             }
 
         }
@@ -193,6 +225,76 @@ namespace MenuPrincipal
                 frmMostrarUnPaciente frmMostrarPaciente = new(auxPaciente);
                 frmMostrarPaciente.Show();
             }
+        }
+
+        /// <summary>
+        /// Evento lanzado cuando se deselecciona el control txtIdDePaciente, verifica que exista un paciente con ese id y lo muestra en el label lblNombrePaciente
+        /// </summary>
+        /// <param name="sender">emisor del evento</param>
+        /// <param name="e">Información de dicho evento</param>
+        private void txtIdDePaciente_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                string nombrePaciente;
+                Paciente auxPaciente;
+                if (!string.IsNullOrEmpty(txtIdDeMedico.Text))
+                {
+                    lblNombrePaciente.Text = string.Empty;
+                    auxPaciente = listaDePacientesNueva.First((d) => d.IdDePaciente == int.Parse(txtIdDePaciente.Text));
+                    if (auxPaciente is not null)
+                    {
+                        if (auxPaciente.Nombre.Length > 13)
+                            nombrePaciente = $"{auxPaciente.Nombre.Substring(0, 14)}...";
+
+                        else
+                            nombrePaciente = auxPaciente.Nombre;
+
+                        lblNombrePaciente.Text = $"({nombrePaciente})";
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                lblNombrePaciente.Text = "(Desconocido)";
+
+            }
+
+        }
+
+        /// <summary>
+        /// Evento lanzado cuando se deselecciona el control txtIdDeMedico, verifica que exista un paciente con ese id y lo muestra en el label lblNombreMedico
+        /// </summary>
+        /// <param name="sender">emisor del evento</param>
+        /// <param name="e">Información de dicho evento</param>
+        private void txtIdDeMedico_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                string nombreMedico;
+                Medico auxMedico;
+                if (!string.IsNullOrEmpty(txtIdDeMedico.Text))
+                {
+                    lblNombreMedico.Text = string.Empty;
+                    auxMedico = listaDeMedicosNueva.First((d) => d.IdDeMedico == int.Parse(txtIdDeMedico.Text));
+                    if (auxMedico is not null)
+                    {
+                        if (auxMedico.Nombre.Length > 13)
+                            nombreMedico = $"{auxMedico.Nombre.Substring(0, 14)}...";
+
+                        else
+                            nombreMedico = auxMedico.Nombre;
+
+                        lblNombreMedico.Text = $"({nombreMedico})";
+
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                lblNombreMedico.Text = "(Desconocido)";
+            }
+
         }
 
     }

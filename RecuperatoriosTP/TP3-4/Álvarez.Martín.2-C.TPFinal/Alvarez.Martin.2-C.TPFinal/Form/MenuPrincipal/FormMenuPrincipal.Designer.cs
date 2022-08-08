@@ -63,11 +63,24 @@ namespace MenuPrincipal
             this.txtConexionSql = new System.Windows.Forms.TextBox();
             this.grbSqlError = new System.Windows.Forms.GroupBox();
             this.lblErrorSql = new System.Windows.Forms.Label();
+            this.grpProximaAtencion = new System.Windows.Forms.GroupBox();
+            this.bttnIngresarIdMedico = new System.Windows.Forms.Button();
+            this.txtIngreseSuIdDeMedico = new System.Windows.Forms.TextBox();
+            this.lblIngreseSuIdDeMedico = new System.Windows.Forms.Label();
+            this.bttnVerInformacion = new System.Windows.Forms.Button();
+            this.bttnComenzarAtencion = new System.Windows.Forms.Button();
+            this.bttnVerTurnosRestantes = new System.Windows.Forms.Button();
+            this.lblVerTurnosRestantes = new System.Windows.Forms.Label();
+            this.lblAtender = new System.Windows.Forms.Label();
+            this.lblVerInformacion = new System.Windows.Forms.Label();
+            this.txtNombrePaciente = new System.Windows.Forms.TextBox();
+            this.lblProximoPaciente = new System.Windows.Forms.Label();
             this.mnsOpciones.SuspendLayout();
             this.pnlSql.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSql)).BeginInit();
             this.pnlSqlTitulo.SuspendLayout();
             this.grbSqlError.SuspendLayout();
+            this.grpProximaAtencion.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsOpciones
@@ -101,7 +114,7 @@ namespace MenuPrincipal
             this.tlsmiArchivoImportarMedicos,
             this.tlsmiArchivoImportarAtenciones});
             this.tlsmiArchivoImportar.Name = "tlsmiArchivoImportar";
-            this.tlsmiArchivoImportar.Size = new System.Drawing.Size(180, 22);
+            this.tlsmiArchivoImportar.Size = new System.Drawing.Size(120, 22);
             this.tlsmiArchivoImportar.Text = "Importar";
             // 
             // tlsmiArchivoImportarPacientes
@@ -132,7 +145,7 @@ namespace MenuPrincipal
             this.tlsmiArchivoExportarMedicos,
             this.tlsmiArchivoExportarAtenciones});
             this.tlsmiArchivoExportar.Name = "tlsmiArchivoExportar";
-            this.tlsmiArchivoExportar.Size = new System.Drawing.Size(180, 22);
+            this.tlsmiArchivoExportar.Size = new System.Drawing.Size(120, 22);
             this.tlsmiArchivoExportar.Text = "Exportar";
             // 
             // tlsmiArchivoExportarPacientes
@@ -186,6 +199,7 @@ namespace MenuPrincipal
             this.tlsmiMostrarTodosMisPacientes.Name = "tlsmiMostrarTodosMisPacientes";
             this.tlsmiMostrarTodosMisPacientes.Size = new System.Drawing.Size(226, 22);
             this.tlsmiMostrarTodosMisPacientes.Text = "Mostrar todos mis pacientes.";
+            this.tlsmiMostrarTodosMisPacientes.Click += new System.EventHandler(this.tlsmiMostrarTodosMisPacientes_Click);
             // 
             // tlsmiBuscarPacientePorId
             // 
@@ -343,7 +357,7 @@ namespace MenuPrincipal
             // 
             this.grbSqlError.Controls.Add(this.lblErrorSql);
             this.grbSqlError.Controls.Add(this.pnlSql);
-            this.grbSqlError.Location = new System.Drawing.Point(69, 125);
+            this.grbSqlError.Location = new System.Drawing.Point(71, 132);
             this.grbSqlError.Name = "grbSqlError";
             this.grbSqlError.Size = new System.Drawing.Size(561, 159);
             this.grbSqlError.TabIndex = 42;
@@ -358,12 +372,132 @@ namespace MenuPrincipal
             this.lblErrorSql.Size = new System.Drawing.Size(0, 15);
             this.lblErrorSql.TabIndex = 50;
             // 
+            // grpProximaAtencion
+            // 
+            this.grpProximaAtencion.Controls.Add(this.bttnIngresarIdMedico);
+            this.grpProximaAtencion.Controls.Add(this.txtIngreseSuIdDeMedico);
+            this.grpProximaAtencion.Controls.Add(this.lblIngreseSuIdDeMedico);
+            this.grpProximaAtencion.Controls.Add(this.bttnVerInformacion);
+            this.grpProximaAtencion.Controls.Add(this.bttnComenzarAtencion);
+            this.grpProximaAtencion.Controls.Add(this.bttnVerTurnosRestantes);
+            this.grpProximaAtencion.Controls.Add(this.lblVerTurnosRestantes);
+            this.grpProximaAtencion.Controls.Add(this.lblAtender);
+            this.grpProximaAtencion.Controls.Add(this.lblVerInformacion);
+            this.grpProximaAtencion.Controls.Add(this.txtNombrePaciente);
+            this.grpProximaAtencion.Controls.Add(this.lblProximoPaciente);
+            this.grpProximaAtencion.Location = new System.Drawing.Point(162, 110);
+            this.grpProximaAtencion.Name = "grpProximaAtencion";
+            this.grpProximaAtencion.Size = new System.Drawing.Size(362, 208);
+            this.grpProximaAtencion.TabIndex = 1;
+            this.grpProximaAtencion.TabStop = false;
+            this.grpProximaAtencion.Text = "Proxima atención";
+            // 
+            // bttnIngresarIdMedico
+            // 
+            this.bttnIngresarIdMedico.Location = new System.Drawing.Point(97, 53);
+            this.bttnIngresarIdMedico.Name = "bttnIngresarIdMedico";
+            this.bttnIngresarIdMedico.Size = new System.Drawing.Size(59, 23);
+            this.bttnIngresarIdMedico.TabIndex = 2;
+            this.bttnIngresarIdMedico.Text = "Ingresar";
+            this.bttnIngresarIdMedico.UseVisualStyleBackColor = true;
+            this.bttnIngresarIdMedico.Click += new System.EventHandler(this.bttnIngresarIdMedico_Click);
+            // 
+            // txtIngreseSuIdDeMedico
+            // 
+            this.txtIngreseSuIdDeMedico.Location = new System.Drawing.Point(8, 53);
+            this.txtIngreseSuIdDeMedico.Name = "txtIngreseSuIdDeMedico";
+            this.txtIngreseSuIdDeMedico.Size = new System.Drawing.Size(83, 23);
+            this.txtIngreseSuIdDeMedico.TabIndex = 1;
+            // 
+            // lblIngreseSuIdDeMedico
+            // 
+            this.lblIngreseSuIdDeMedico.AutoSize = true;
+            this.lblIngreseSuIdDeMedico.Location = new System.Drawing.Point(6, 30);
+            this.lblIngreseSuIdDeMedico.Name = "lblIngreseSuIdDeMedico";
+            this.lblIngreseSuIdDeMedico.Size = new System.Drawing.Size(132, 15);
+            this.lblIngreseSuIdDeMedico.TabIndex = 10;
+            this.lblIngreseSuIdDeMedico.Text = "Ingrese su id de Medico";
+            // 
+            // bttnVerInformacion
+            // 
+            this.bttnVerInformacion.Location = new System.Drawing.Point(16, 164);
+            this.bttnVerInformacion.Name = "bttnVerInformacion";
+            this.bttnVerInformacion.Size = new System.Drawing.Size(75, 23);
+            this.bttnVerInformacion.TabIndex = 4;
+            this.bttnVerInformacion.Text = "Ver";
+            this.bttnVerInformacion.UseVisualStyleBackColor = true;
+            this.bttnVerInformacion.Click += new System.EventHandler(this.bttnVerInformacion_Click);
+            // 
+            // bttnComenzarAtencion
+            // 
+            this.bttnComenzarAtencion.Location = new System.Drawing.Point(139, 164);
+            this.bttnComenzarAtencion.Name = "bttnComenzarAtencion";
+            this.bttnComenzarAtencion.Size = new System.Drawing.Size(75, 23);
+            this.bttnComenzarAtencion.TabIndex = 5;
+            this.bttnComenzarAtencion.Text = "Atender";
+            this.bttnComenzarAtencion.UseVisualStyleBackColor = true;
+            this.bttnComenzarAtencion.Click += new System.EventHandler(this.bttnComenzarAtencion_Click);
+            // 
+            // bttnVerTurnosRestantes
+            // 
+            this.bttnVerTurnosRestantes.Location = new System.Drawing.Point(257, 164);
+            this.bttnVerTurnosRestantes.Name = "bttnVerTurnosRestantes";
+            this.bttnVerTurnosRestantes.Size = new System.Drawing.Size(75, 23);
+            this.bttnVerTurnosRestantes.TabIndex = 6;
+            this.bttnVerTurnosRestantes.Text = "Ver";
+            this.bttnVerTurnosRestantes.UseVisualStyleBackColor = true;
+            this.bttnVerTurnosRestantes.Click += new System.EventHandler(this.bttnVerTurnosRestantes_Click);
+            // 
+            // lblVerTurnosRestantes
+            // 
+            this.lblVerTurnosRestantes.AutoSize = true;
+            this.lblVerTurnosRestantes.Location = new System.Drawing.Point(238, 146);
+            this.lblVerTurnosRestantes.Name = "lblVerTurnosRestantes";
+            this.lblVerTurnosRestantes.Size = new System.Drawing.Size(110, 15);
+            this.lblVerTurnosRestantes.TabIndex = 6;
+            this.lblVerTurnosRestantes.Text = "Ver turnos restantes";
+            // 
+            // lblAtender
+            // 
+            this.lblAtender.AutoSize = true;
+            this.lblAtender.Location = new System.Drawing.Point(122, 146);
+            this.lblAtender.Name = "lblAtender";
+            this.lblAtender.Size = new System.Drawing.Size(110, 15);
+            this.lblAtender.TabIndex = 5;
+            this.lblAtender.Text = "Comenzar atención";
+            // 
+            // lblVerInformacion
+            // 
+            this.lblVerInformacion.AutoSize = true;
+            this.lblVerInformacion.Location = new System.Drawing.Point(6, 146);
+            this.lblVerInformacion.Name = "lblVerInformacion";
+            this.lblVerInformacion.Size = new System.Drawing.Size(104, 15);
+            this.lblVerInformacion.TabIndex = 4;
+            this.lblVerInformacion.Text = "Datos del paciente";
+            // 
+            // txtNombrePaciente
+            // 
+            this.txtNombrePaciente.Location = new System.Drawing.Point(8, 109);
+            this.txtNombrePaciente.Name = "txtNombrePaciente";
+            this.txtNombrePaciente.Size = new System.Drawing.Size(342, 23);
+            this.txtNombrePaciente.TabIndex = 3;
+            // 
+            // lblProximoPaciente
+            // 
+            this.lblProximoPaciente.AutoSize = true;
+            this.lblProximoPaciente.Location = new System.Drawing.Point(6, 91);
+            this.lblProximoPaciente.Name = "lblProximoPaciente";
+            this.lblProximoPaciente.Size = new System.Drawing.Size(102, 15);
+            this.lblProximoPaciente.TabIndex = 2;
+            this.lblProximoPaciente.Text = "Nombre paciente:";
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(745, 428);
+            this.Controls.Add(this.grpProximaAtencion);
             this.Controls.Add(this.grbSqlError);
             this.Controls.Add(this.mnsOpciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -383,6 +517,8 @@ namespace MenuPrincipal
             this.pnlSqlTitulo.PerformLayout();
             this.grbSqlError.ResumeLayout(false);
             this.grbSqlError.PerformLayout();
+            this.grpProximaAtencion.ResumeLayout(false);
+            this.grpProximaAtencion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,6 +570,19 @@ namespace MenuPrincipal
         private System.Windows.Forms.ToolStripMenuItem onToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem offToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tlsmiArchivoImportarTurnosMedicos;
+        private System.Windows.Forms.GroupBox grpProximaAtencion;
+        private System.Windows.Forms.Label lblProximoPaciente;
+        private System.Windows.Forms.Label lblVerInformacion;
+        private System.Windows.Forms.TextBox txtNombrePaciente;
+        private System.Windows.Forms.Label lblVerTurnosRestantes;
+        private System.Windows.Forms.Label lblAtender;
+        private System.Windows.Forms.Button bttnVerInformacion;
+        private System.Windows.Forms.Button bttnComenzarAtencion;
+        private System.Windows.Forms.Button bttnVerTurnosRestantes;
+        private System.Windows.Forms.Button bttnIngresarIdMedico;
+        private System.Windows.Forms.TextBox txtIngreseSuIdDeMedico;
+        private System.Windows.Forms.Label lblIngreseSuIdDeMedico;
     }
 }
 

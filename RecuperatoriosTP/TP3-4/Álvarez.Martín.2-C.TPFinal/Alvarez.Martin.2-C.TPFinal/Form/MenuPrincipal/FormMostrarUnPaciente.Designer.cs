@@ -63,7 +63,7 @@ namespace MenuPrincipal
             this.lblDni.Location = new System.Drawing.Point(299, 22);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(28, 15);
-            this.lblDni.TabIndex = 1;
+            this.lblDni.TabIndex = 2;
             this.lblDni.Text = "Dni:";
             // 
             // lblEdad
@@ -72,7 +72,7 @@ namespace MenuPrincipal
             this.lblEdad.Location = new System.Drawing.Point(540, 22);
             this.lblEdad.Name = "lblEdad";
             this.lblEdad.Size = new System.Drawing.Size(36, 15);
-            this.lblEdad.TabIndex = 2;
+            this.lblEdad.TabIndex = 4;
             this.lblEdad.Text = "Edad:";
             // 
             // lblSexo
@@ -81,7 +81,7 @@ namespace MenuPrincipal
             this.lblSexo.Location = new System.Drawing.Point(12, 94);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(35, 15);
-            this.lblSexo.TabIndex = 3;
+            this.lblSexo.TabIndex = 6;
             this.lblSexo.Text = "Sexo:";
             // 
             // lblIdDePaciente
@@ -90,7 +90,7 @@ namespace MenuPrincipal
             this.lblIdDePaciente.Location = new System.Drawing.Point(299, 94);
             this.lblIdDePaciente.Name = "lblIdDePaciente";
             this.lblIdDePaciente.Size = new System.Drawing.Size(84, 15);
-            this.lblIdDePaciente.TabIndex = 4;
+            this.lblIdDePaciente.TabIndex = 8;
             this.lblIdDePaciente.Text = "Id de paciente:";
             // 
             // lblAntecedentesMedicos
@@ -99,7 +99,7 @@ namespace MenuPrincipal
             this.lblAntecedentesMedicos.Location = new System.Drawing.Point(303, 170);
             this.lblAntecedentesMedicos.Name = "lblAntecedentesMedicos";
             this.lblAntecedentesMedicos.Size = new System.Drawing.Size(130, 15);
-            this.lblAntecedentesMedicos.TabIndex = 5;
+            this.lblAntecedentesMedicos.TabIndex = 14;
             this.lblAntecedentesMedicos.Text = "Antecedentes medicos:";
             // 
             // lblAtencionesPrevias
@@ -108,7 +108,7 @@ namespace MenuPrincipal
             this.lblAtencionesPrevias.Location = new System.Drawing.Point(12, 170);
             this.lblAtencionesPrevias.Name = "lblAtencionesPrevias";
             this.lblAtencionesPrevias.Size = new System.Drawing.Size(112, 15);
-            this.lblAtencionesPrevias.TabIndex = 6;
+            this.lblAtencionesPrevias.TabIndex = 12;
             this.lblAtencionesPrevias.Text = "Atenciones previas: ";
             // 
             // lblTratamientoEnCurso
@@ -117,7 +117,7 @@ namespace MenuPrincipal
             this.lblTratamientoEnCurso.Location = new System.Drawing.Point(540, 94);
             this.lblTratamientoEnCurso.Name = "lblTratamientoEnCurso";
             this.lblTratamientoEnCurso.Size = new System.Drawing.Size(124, 15);
-            this.lblTratamientoEnCurso.TabIndex = 7;
+            this.lblTratamientoEnCurso.TabIndex = 10;
             this.lblTratamientoEnCurso.Text = "Tratamiento en curso: ";
             // 
             // txtNombre
@@ -125,42 +125,42 @@ namespace MenuPrincipal
             this.txtNombre.Location = new System.Drawing.Point(130, 19);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 23);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 1;
             // 
             // txtSexo
             // 
             this.txtSexo.Location = new System.Drawing.Point(130, 91);
             this.txtSexo.Name = "txtSexo";
             this.txtSexo.Size = new System.Drawing.Size(100, 23);
-            this.txtSexo.TabIndex = 9;
+            this.txtSexo.TabIndex = 7;
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(426, 22);
+            this.txtDni.Location = new System.Drawing.Point(426, 19);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(100, 23);
-            this.txtDni.TabIndex = 10;
+            this.txtDni.TabIndex = 3;
             // 
             // txtEdad
             // 
             this.txtEdad.Location = new System.Drawing.Point(688, 19);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 23);
-            this.txtEdad.TabIndex = 11;
+            this.txtEdad.TabIndex = 5;
             // 
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(426, 90);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 23);
-            this.txtId.TabIndex = 12;
+            this.txtId.TabIndex = 9;
             // 
             // bttnVerMasAntecedentesMedicos
             // 
             this.bttnVerMasAntecedentesMedicos.Location = new System.Drawing.Point(451, 166);
             this.bttnVerMasAntecedentesMedicos.Name = "bttnVerMasAntecedentesMedicos";
             this.bttnVerMasAntecedentesMedicos.Size = new System.Drawing.Size(75, 23);
-            this.bttnVerMasAntecedentesMedicos.TabIndex = 13;
+            this.bttnVerMasAntecedentesMedicos.TabIndex = 15;
             this.bttnVerMasAntecedentesMedicos.Text = "Ver mas...";
             this.bttnVerMasAntecedentesMedicos.UseVisualStyleBackColor = true;
             this.bttnVerMasAntecedentesMedicos.Click += new System.EventHandler(this.bttnVerMasAntecedentesMedicos_Click);
@@ -170,7 +170,7 @@ namespace MenuPrincipal
             this.bttnVerMasAtencionesPrevias.Location = new System.Drawing.Point(130, 166);
             this.bttnVerMasAtencionesPrevias.Name = "bttnVerMasAtencionesPrevias";
             this.bttnVerMasAtencionesPrevias.Size = new System.Drawing.Size(75, 23);
-            this.bttnVerMasAtencionesPrevias.TabIndex = 15;
+            this.bttnVerMasAtencionesPrevias.TabIndex = 13;
             this.bttnVerMasAtencionesPrevias.Text = "Ver mas...";
             this.bttnVerMasAtencionesPrevias.UseVisualStyleBackColor = true;
             this.bttnVerMasAtencionesPrevias.Click += new System.EventHandler(this.bttnVerMasAtencionesPrevias_Click);
@@ -180,7 +180,7 @@ namespace MenuPrincipal
             this.txtTratamientoEnCurso.Location = new System.Drawing.Point(688, 90);
             this.txtTratamientoEnCurso.Name = "txtTratamientoEnCurso";
             this.txtTratamientoEnCurso.Size = new System.Drawing.Size(100, 23);
-            this.txtTratamientoEnCurso.TabIndex = 16;
+            this.txtTratamientoEnCurso.TabIndex = 11;
             // 
             // frmMostrarUnPaciente
             // 

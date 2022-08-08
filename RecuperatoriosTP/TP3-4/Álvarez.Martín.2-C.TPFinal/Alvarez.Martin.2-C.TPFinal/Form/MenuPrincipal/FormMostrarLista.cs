@@ -8,27 +8,38 @@ namespace MenuPrincipal
 {
     public partial class frmMostrarLista : Form
     {
-        private enum listaCargadaEnForm { Paciente, Medico, Atenciones };
+        private enum listaCargadaEnForm { Paciente, Medico, Atenciones, TurnoMedico };
 
         private listaCargadaEnForm entidadUsadaEnForm;
         List<Paciente> listaPaciente;
         List<Medico> listaMedicos;
         List<Atencion> listaAtenciones;
+        List<TurnoMedico> listaTurnoMedico;
 
         #region CONSTRUCTORES Y PROPIEDADES
 
         /// <summary>
         /// Constructor de frmMostrarLista, instancia la lista de médicos, pacientes y atencionés
         /// </summary>
-        public frmMostrarLista() : this(new List<Medico>(), new List<Paciente>(), new List<Atencion>())
+        public frmMostrarLista() : this(new List<Medico>(), new List<Paciente>(), new List<Atencion>(), new List<TurnoMedico>())
         {
         }
 
         /// <summary>
+        /// Constructor de frmMostarLista, inicializa la lista de TurnosMedicos  e instancia el DataGrid con ella.
+        /// </summary>
+        /// <param name="listaTurnosMedicos"></param>
+        public frmMostrarLista(List<TurnoMedico> listaTurnosMedicos) : this(new List<Medico>(), new List<Paciente>(), new List<Atencion>(), listaTurnosMedicos)
+        {
+            this.dgvLista.DataSource = listaTurnosMedicos;
+            this.entidadUsadaEnForm = listaCargadaEnForm.TurnoMedico;
+            this.OrdenarDataGridDeTurnoMedico();
+        }
+        /// <summary>
         /// Constructor de frmMostrarLista, inicializa la lista de médico, pacientes,  atencionés e instancia el dataGrid con la listaPacientes 
         /// </summary>
         /// <param name="listaPaciente">lista completa de los pacientes del sistema</param>
-        public frmMostrarLista(List<Paciente> listaPaciente) : this(new List<Medico>(), listaPaciente, new List<Atencion>())
+        public frmMostrarLista(List<Paciente> listaPaciente) : this(new List<Medico>(), listaPaciente, new List<Atencion>(), new List<TurnoMedico>())
         {
             this.dgvLista.DataSource = listaPaciente;
             this.entidadUsadaEnForm = listaCargadaEnForm.Paciente;
@@ -39,7 +50,7 @@ namespace MenuPrincipal
         /// Constructor de frmMostrarLista, inicializa la lista de médico, pacientes,  atencionés e instancia el dataGrid con la listaAtenciones 
         /// </summary>
         /// <param name="listaAtenciones">lista completa de las atenciones del sistema</param>
-        public frmMostrarLista(List<Atencion> listaAtenciones) : this(new List<Medico>(), new List<Paciente>(), listaAtenciones)
+        public frmMostrarLista(List<Atencion> listaAtenciones) : this(new List<Medico>(), new List<Paciente>(), listaAtenciones, new List<TurnoMedico>())
         {
             this.dgvLista.DataSource = listaAtenciones;
             tlsmiVer.Available = false;
@@ -52,7 +63,7 @@ namespace MenuPrincipal
         /// Constructor de frmMostrarLista, inicializa la lista de médico, pacientes,  atencionés e instancia el dataGrid con la listaMedicos 
         /// </summary>
         /// <param name="listaMedicos">lista completa de los medicos del sistema</param>
-        public frmMostrarLista(List<Medico> listaMedicos) : this(listaMedicos, new List<Paciente>(), new List<Atencion>())
+        public frmMostrarLista(List<Medico> listaMedicos) : this(listaMedicos, new List<Paciente>(), new List<Atencion>(), new List<TurnoMedico>())
         {
             this.dgvLista.DataSource = listaMedicos;
             this.Text = "Listado de medicos";
@@ -66,12 +77,13 @@ namespace MenuPrincipal
         /// <param name="listaMedicos">lista completa de los medicos del sistema</param>
         /// <param name="listaPacientes">lista completa de los pacientes del sistema</param>
         /// <param name="listaAtenciones">lista completa de las atenciones del sistema</param>
-        public frmMostrarLista(List<Medico> listaMedicos, List<Paciente> listaPacientes, List<Atencion> listaAtenciones)
+        public frmMostrarLista(List<Medico> listaMedicos, List<Paciente> listaPacientes, List<Atencion> listaAtenciones, List<TurnoMedico> listaTurnoMedico)
         {
             InitializeComponent();
             this.listaMedicos = listaMedicos;
             this.listaPaciente = listaPacientes;
             this.listaAtenciones = listaAtenciones;
+            this.listaTurnoMedico = listaTurnoMedico;
         }
 
         #endregion
@@ -86,7 +98,7 @@ namespace MenuPrincipal
         /// <param name="e">Información de dicho evento</param>
         private void frmMostrarLista_Load(object sender, EventArgs e)
         {
-            if (this.listaPaciente.Count == 0 && this.entidadUsadaEnForm == listaCargadaEnForm.Paciente || this.listaMedicos.Count == 0 && this.entidadUsadaEnForm == listaCargadaEnForm.Medico)
+            if (this.listaPaciente.Count == 0 && this.entidadUsadaEnForm == listaCargadaEnForm.Paciente || this.listaMedicos.Count == 0 && this.entidadUsadaEnForm == listaCargadaEnForm.Medico || this.entidadUsadaEnForm == listaCargadaEnForm.TurnoMedico)
             {
                 tlsmiArchivoExportar.Enabled = false;
                 tlsmiVer.Enabled = false;
@@ -199,7 +211,23 @@ namespace MenuPrincipal
 
         #region METODOS
 
+        /// <summary>
+        /// Ordena el datagridview de turno medico
+        /// </summary>
+        private void OrdenarDataGridDeTurnoMedico()
+        {
 
+
+            this.dgvLista.Columns[3].DisplayIndex = 0;
+
+            //this.dgvLista.Columns[1].DisplayIndex = 2;
+
+            this.dgvLista.Columns["idDeTurnoMedico"].HeaderText = "Id de turno medico";
+            this.dgvLista.Columns["fechaTurno"].HeaderText = "Fecha";
+            this.dgvLista.Columns["idDeMedico"].HeaderText = "Id de medico";
+            this.dgvLista.Columns["idDePaciente"].HeaderText = "Id de paciente";
+
+        }
         /// <summary>
         /// Ordena el datagridview del paciente
         /// </summary>
@@ -207,13 +235,19 @@ namespace MenuPrincipal
         {
             if (this.dgvLista is not null)
             {
-                this.dgvLista.Columns["IdDePaciente"].DisplayIndex = 0;
-                this.dgvLista.Columns["Nombre"].DisplayIndex = 1;
-                this.dgvLista.Columns["AntecedentesMedicos"].DisplayIndex = 2;
-                this.dgvLista.Columns["Edad"].DisplayIndex = 3;
-                this.dgvLista.Columns["Sexo"].DisplayIndex = 4;
-                this.dgvLista.Columns["TratamientoEnCurso"].DisplayIndex = 5;
-                this.dgvLista.Columns["Dni"].DisplayIndex = 6;
+
+
+                this.dgvLista.Columns[0].HeaderText = "Id de paciente";
+                this.dgvLista.Columns[1].HeaderText = "Antecedentes medicos";
+                this.dgvLista.Columns[2].HeaderText = "Tratamiento en curso";
+                this.dgvLista.Columns[3].HeaderText = "Dni";
+                this.dgvLista.Columns[4].HeaderText = "Edad";
+                this.dgvLista.Columns[5].HeaderText = "Nombre";
+                this.dgvLista.Columns[6].HeaderText = "Sexo";
+
+                this.dgvLista.Columns[5].DisplayIndex = 1;
+                this.dgvLista.Columns[2].DisplayIndex = 4;
+                this.dgvLista.Columns[3].DisplayIndex = 2;
             }
 
         }
@@ -225,11 +259,18 @@ namespace MenuPrincipal
         {
             if (this.dgvLista is not null)
             {
-                this.dgvLista.Columns["IdDeMedico"].DisplayIndex = 0;
-                this.dgvLista.Columns["Nombre"].DisplayIndex = 1;
-                this.dgvLista.Columns["Edad"].DisplayIndex = 2;
-                this.dgvLista.Columns["Sexo"].DisplayIndex = 3;
-                this.dgvLista.Columns["Matricula"].DisplayIndex = 4;
+
+
+
+                this.dgvLista.Columns[4].DisplayIndex = 1;
+
+                this.dgvLista.Columns[0].HeaderText = "Id de Medico";
+                this.dgvLista.Columns[1].HeaderText = "Matricula";
+                this.dgvLista.Columns[2].HeaderText = "Dni";
+                this.dgvLista.Columns[3].HeaderText = "Edad";
+                this.dgvLista.Columns[4].HeaderText = "Nombre";
+                this.dgvLista.Columns[5].HeaderText = "Sexo";
+
             }
         }
 
@@ -247,6 +288,15 @@ namespace MenuPrincipal
                 this.dgvLista.Columns["Tratamiento"].DisplayIndex = 4;
                 this.dgvLista.Columns["Diagnostico"].DisplayIndex = 5;
                 this.dgvLista.Columns["FechaDeLaAtencion"].DisplayIndex = 6;
+
+                this.dgvLista.Columns[0].HeaderText = "Id de Atencion";
+                this.dgvLista.Columns[1].HeaderText = "Id de Medico";
+                this.dgvLista.Columns[2].HeaderText = "Id de Paciente";
+                this.dgvLista.Columns[3].HeaderText = "Motivo de la consulta";
+                this.dgvLista.Columns[4].HeaderText = "Tratamiento";
+                this.dgvLista.Columns[5].HeaderText = "Diagnostico";
+                this.dgvLista.Columns[6].HeaderText = "Fecha de Atencion";
+
             }
 
         }

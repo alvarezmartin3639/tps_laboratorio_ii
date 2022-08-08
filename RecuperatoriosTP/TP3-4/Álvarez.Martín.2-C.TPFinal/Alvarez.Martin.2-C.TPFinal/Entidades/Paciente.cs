@@ -18,6 +18,7 @@ namespace Entidades
         {
             this.listaDeAtenciones = new();
             this.tratamientoEnCurso = false;
+            this.IdDePaciente = -1;
         }
 
         /// <summary>
