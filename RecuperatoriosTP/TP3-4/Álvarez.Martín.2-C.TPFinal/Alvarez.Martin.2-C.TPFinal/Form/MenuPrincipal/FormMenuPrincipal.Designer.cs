@@ -559,18 +559,6 @@ namespace MenuPrincipal
         private System.Windows.Forms.ToolStripMenuItem tlsmiArchivoImportarAtenciones;
         private System.Windows.Forms.ToolStripMenuItem tlsmiArchivoExportarAtenciones;
         private System.Windows.Forms.Label lblErrorSql;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem onToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem offToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem onToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem offToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tlsmiArchivoImportarTurnosMedicos;
         private System.Windows.Forms.GroupBox grpProximaAtencion;
         private System.Windows.Forms.Label lblProximoPaciente;
         private System.Windows.Forms.Label lblVerInformacion;

@@ -27,10 +27,7 @@ namespace MenuPrincipal
         private Thread threadVerificarConexionSql;
         private CancellationTokenSource cancellationToken;
         private string strConexionSql;
-<<<<<<< HEAD
-=======
 
->>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7
         #region CONSTRUCTORES Y PROPIEDADES
 
         /// <summary>
@@ -52,12 +49,9 @@ namespace MenuPrincipal
             this.cancellationToken = new();
             this.lblErrorSql.Text = "No se puede conectar con el servidor SQL, abra un ticket o trabaje de manera \n offline hasta que se solucione \nTrabaje de manera offline utilizando archivos, al terminar envielos a x@soporte.com";
             this.strConexionSql = "Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;";
-<<<<<<< HEAD
             this.estaLogeadoElMedico = false;
             txtNombrePaciente.ReadOnly = true;
 
-=======
->>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7
         }
 
         #endregion
@@ -1066,80 +1060,52 @@ namespace MenuPrincipal
             {
                 if (this.estaLogeadoElMedico = listaMedicosSeleccionados.Any(p => p.IdDeMedico == idMedico))
                 {
-<<<<<<< HEAD
                     //SE LOGEA EL MEDICO
                     medicoLogeado = this.listaMedicosSeleccionados.First(p => p.IdDeMedico == idMedico);
-=======
                     try
                     {
-                        PacienteSql nuevoPaciente = new(strConexionSql);
-                        AtencionSql nuevaAtencion = new(strConexionSql);
-                        MedicoSql nuevoMedico = new(strConexionSql);
->>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7
 
 
-                    //RETORNO LA LISTA DE TURNOS NO ATENDIDOS DE HOY PARA EL MEDICO LOGEADO
-                    this.listaTurnosRestanesDeHoy = this.listaTurnosMedicosSeleccionados.FindAll(turnoMedico => turnoMedico.IdDeMedico == idMedico && turnoMedico.FechaTurno.Day == DateTime.Now.Day && turnoMedico.SeRealizoAtencionDelTurno == false);
-                    if (this.listaTurnosRestanesDeHoy.Count > 0)
-                    {
-                        this.listaTurnosRestanesDeHoy.OrderByDescending(t => t.FechaTurno);
-                        //BUSCO AL PRIMER PACIENTE
-                        pacienteAtendido = this.listaPacientesSeleccionados.First(p => p.IdDePaciente == this.listaTurnosRestanesDeHoy[0].IdDePaciente);
-                        txtNombrePaciente.Text = $"{pacienteAtendido.Nombre}";
-                    }
-                    else
-                        this.txtNombrePaciente.Text = "Sin pacientes";
+                        //RETORNO LA LISTA DE TURNOS NO ATENDIDOS DE HOY PARA EL MEDICO LOGEADO
+                        this.listaTurnosRestanesDeHoy = this.listaTurnosMedicosSeleccionados.FindAll(turnoMedico => turnoMedico.IdDeMedico == idMedico && turnoMedico.FechaTurno.Day == DateTime.Now.Day && turnoMedico.SeRealizoAtencionDelTurno == false);
+                        if (this.listaTurnosRestanesDeHoy.Count > 0)
+                        {
+                            this.listaTurnosRestanesDeHoy.OrderByDescending(t => t.FechaTurno);
+                            //BUSCO AL PRIMER PACIENTE
+                            pacienteAtendido = this.listaPacientesSeleccionados.First(p => p.IdDePaciente == this.listaTurnosRestanesDeHoy[0].IdDePaciente);
+                            txtNombrePaciente.Text = $"{pacienteAtendido.Nombre}";
+                        }
+                        else
+                            this.txtNombrePaciente.Text = "Sin pacientes";
 
-                    if (this.txtNombrePaciente.Enabled == false)
-                    {
-                        this.txtNombrePaciente.Enabled = true;
-                        this.bttnComenzarAtencion.Enabled = true;
-                        this.bttnVerInformacion.Enabled = true;
-                        this.bttnVerTurnosRestantes.Enabled = true;
-                    }
-                }
-                if (this.estaLogeadoElMedico == false || this.txtNombrePaciente.Text == "Sin pacientes")
-                {
-                    this.txtNombrePaciente.Enabled = false;
-                    this.bttnComenzarAtencion.Enabled = false;
-                    this.bttnVerInformacion.Enabled = false;
-                    this.bttnVerTurnosRestantes.Enabled = false;
-                }
-            }
-
-        }
-
-        #endregion
-
-
-
-
-
-<<<<<<< HEAD
-
-=======
-            else
-            {
-                if (MessageBox.Show("¿Está seguro que exportar las listas a SQL?, verifique que toda la información esté correcta", "Guardando listas en el servidor SQL", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                {
-                    try
-                    {
-                        PacienteSql nuevoPaciente = new(strConexionSql);
-                        AtencionSql nuevaAtencion = new(strConexionSql);
-
-                        foreach (Paciente item in this.listaPacientesSeleccionados)
-                            nuevoPaciente.Agregar(item);
-                        foreach (Atencion item in this.listaAtencionesSeleccionadas)
-                            nuevaAtencion.Agregar(item);
-        
+                        if (this.txtNombrePaciente.Enabled == false)
+                        {
+                            this.txtNombrePaciente.Enabled = true;
+                            this.bttnComenzarAtencion.Enabled = true;
+                            this.bttnVerInformacion.Enabled = true;
+                            this.bttnVerTurnosRestantes.Enabled = true;
+                        }
+                        if (this.estaLogeadoElMedico == false || this.txtNombrePaciente.Text == "Sin pacientes")
+                        {
+                            this.txtNombrePaciente.Enabled = false;
+                            this.bttnComenzarAtencion.Enabled = false;
+                            this.bttnVerInformacion.Enabled = false;
+                            this.bttnVerTurnosRestantes.Enabled = false;
+                        }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "Error al utilizar base de datos SQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message,"Error al logear al medico", MessageBoxButtons.OK,MessageBoxIcon.Error);
                     }
+        
                 }
+
             }
+
+            #endregion
+
+
+
         }
->>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7
     }
 }

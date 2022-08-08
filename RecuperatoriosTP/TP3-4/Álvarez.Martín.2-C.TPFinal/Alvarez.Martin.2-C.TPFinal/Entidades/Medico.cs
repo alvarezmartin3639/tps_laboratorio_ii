@@ -59,13 +59,9 @@ namespace Entidades
         /// <returns>True si se encuentra en la lista, false si no se encuentra.</returns>
         public static bool ExisteMedicoEnLalista(List<Medico> list, int idDelMedico)
         {
-<<<<<<< HEAD
+
             bool retorno = false;
             if (list != null)
-=======
-         bool   retorno = false;
-            if(list != null)
->>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7
             {
                 foreach (Medico item in list)
                 {
