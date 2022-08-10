@@ -17,6 +17,7 @@ namespace GestorSql
         /// <param name="conexionSettings">La configuración para conectarse al servidor sql</param>
         public PacienteSql(string conexionSettings)
         {
+            sqlConnection = new();
             PacienteSql.conexion = conexionSettings;
         }
 
@@ -27,13 +28,13 @@ namespace GestorSql
         /// <returns>el paciente si lo encontró</returns>
         public Paciente BuscarPorId(int idDePaciente)
         {
-            Paciente pacienteNuevo = new Paciente();
+            Paciente pacienteNuevo = new();
 
             try
             {
 
                 string sentencia = "SELECT * FROM Paciente where idDePaciente=@idDePaciente";
-                SqlCommand comandoSql = new SqlCommand(sentencia, this.sqlConnection);
+                SqlCommand comandoSql = new(sentencia, this.sqlConnection);
                 comandoSql.Parameters.AddWithValue("idDePaciente", idDePaciente);
                 this.sqlConnection.Open();
                 SqlDataReader dataReader = comandoSql.ExecuteReader();
@@ -48,7 +49,7 @@ namespace GestorSql
                     pacienteNuevo.Sexo = (sexoEnum)int.Parse(dataReader["sexo"].ToString());
                     pacienteNuevo.AntecedentesMedicos = dataReader["antecedentesMedicos"].ToString();
                     pacienteNuevo.TratamientoEnCurso = bool.Parse(dataReader["tratamientoEnCurso"].ToString());
-                    pacienteNuevo.ListaDeAtenciones = tablaAtencion.buscarAtencionesDeUnPacienteMedianteSuId(pacienteNuevo.IdDePaciente);
+                    pacienteNuevo.ListaDeAtenciones = tablaAtencion.BuscarAtencionesDeUnPacienteMedianteSuId(pacienteNuevo.IdDePaciente);
                 }
 
                 return pacienteNuevo;
@@ -70,22 +71,22 @@ namespace GestorSql
         /// Importa todos los pacientes que existen en la tabla Paciente de la database TP4_AlvarezMartinAndres_DB
         /// </summary>
         /// <returns>List<Paciente> con todos los pacientes de la tabla </Paciente></returns>
-        public List<Paciente> Leer()
+        public static List<Paciente> Leer()
         {
-            List<Paciente> lista = new List<Paciente>();
+            List<Paciente> lista = new();
             try
             {
                 string sentencia = "SELECT * FROM Paciente";
-                using (SqlConnection sqlConnection = new SqlConnection(PacienteSql.conexion))
+                using (SqlConnection sqlConnection = new(PacienteSql.conexion))
                 {
                     sqlConnection.Open();
-                    SqlCommand sqlCommand = new SqlCommand(sentencia, sqlConnection);
+                    SqlCommand sqlCommand = new(sentencia, sqlConnection);
                     SqlDataReader dataReader = sqlCommand.ExecuteReader();
                     AtencionSql tablaAtencion = new("Server = (local)\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
 
                     while (dataReader.Read())
                     {
-                        Paciente pacienteNuevo = new Paciente();
+                        Paciente pacienteNuevo = new();
                         pacienteNuevo.IdDePaciente = int.Parse(dataReader["idDePaciente"].ToString());
                         pacienteNuevo.Nombre = dataReader["nombre"].ToString();
                         pacienteNuevo.Edad = int.Parse(dataReader["edad"].ToString());
@@ -93,7 +94,7 @@ namespace GestorSql
                         pacienteNuevo.Sexo = (sexoEnum)Enum.Parse(typeof(sexoEnum), dataReader["sexo"].ToString());
                         pacienteNuevo.AntecedentesMedicos = dataReader["antecedentesMedicos"].ToString();
                         pacienteNuevo.TratamientoEnCurso = bool.Parse(dataReader["tratamientoEnCurso"].ToString());
-                        pacienteNuevo.ListaDeAtenciones = tablaAtencion.buscarAtencionesDeUnPacienteMedianteSuId(pacienteNuevo.IdDePaciente);
+                        pacienteNuevo.ListaDeAtenciones = tablaAtencion.BuscarAtencionesDeUnPacienteMedianteSuId(pacienteNuevo.IdDePaciente);
                         lista.Add(pacienteNuevo);
                     }
                     return lista;
@@ -111,15 +112,17 @@ namespace GestorSql
         /// </summary>
         /// <param name="objetoParaAgregar">El paciente para agregar</param>
         /// <returns>Un string confirmando que se guardo un Paciente</returns>
-        public string Agregar(Paciente objetoParaAgregar)
+        public bool Agregar(Paciente objetoParaAgregar)
         {
-            string retunrAux = string.Empty;
 
             try
             {
-                if (MisComandosSql.VerificarSingularidad("Paciente", "idDePaciente", objetoParaAgregar.IdDePaciente, PacienteSql.conexion))
+                MisComandosSql misCommandosSql = new(PacienteSql.conexion);
+                bool retorno = false;
+                if (MisComandosSql.VerificarSingularidad("Paciente", "dni", objetoParaAgregar.Dni, PacienteSql.conexion))
                 {
-                    using (SqlConnection sqlConnection = new SqlConnection(PacienteSql.conexion))
+
+                    using (SqlConnection sqlConnection = new(PacienteSql.conexion))
                     {
                         sqlConnection.Open();
                         string sentencia = "INSERT INTO Paciente ( nombre, edad, dni," +
@@ -127,7 +130,7 @@ namespace GestorSql
                             "VALUES ( @nombre, @edad, @dni," +
                             " @sexo, @antecedentesMedicos, @tratamientoEnCurso)";
 
-                        SqlCommand sqlCommand = new SqlCommand(sentencia, sqlConnection);
+                        SqlCommand sqlCommand = new(sentencia, sqlConnection);
                         sqlCommand.Parameters.AddWithValue("nombre", objetoParaAgregar.Nombre);
                         sqlCommand.Parameters.AddWithValue("edad", objetoParaAgregar.Edad);
                         sqlCommand.Parameters.AddWithValue("dni", objetoParaAgregar.Dni);
@@ -136,11 +139,10 @@ namespace GestorSql
                         sqlCommand.Parameters.AddWithValue("tratamientoEnCurso", objetoParaAgregar.TratamientoEnCurso.ToString());
 
                         sqlCommand.ExecuteNonQuery();
-                        retunrAux = "Se guardo el Paciente";
+                        retorno = true;
                     }
                 }
-
-                return retunrAux;
+                return retorno;
             }
             catch (Exception)
             {
@@ -153,14 +155,14 @@ namespace GestorSql
         /// </summary>
         /// <param name="idDePaciente">El id del paciente a eliminar</param>
 
-        public void Borrar(int idDePaciente)
+        public static void Borrar(int idDePaciente)
         {
             try
             {
-                using (SqlConnection sqlConnection = new SqlConnection(PacienteSql.conexion))
+                using (SqlConnection sqlConnection = new(PacienteSql.conexion))
                 {
                     string sentencia = "DELETE FROM Paciente WHERE idDePaciente = @idDePaciente";
-                    SqlCommand comandoSql = new SqlCommand(sentencia, sqlConnection);
+                    SqlCommand comandoSql = new(sentencia, sqlConnection);
                     comandoSql.Parameters.Clear();
                     comandoSql.Parameters.AddWithValue("idDePaciente", idDePaciente);
                     sqlConnection.Open();

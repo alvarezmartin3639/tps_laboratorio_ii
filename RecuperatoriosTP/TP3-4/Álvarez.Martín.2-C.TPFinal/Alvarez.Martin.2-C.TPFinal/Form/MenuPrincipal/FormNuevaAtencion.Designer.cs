@@ -75,7 +75,7 @@ namespace MenuPrincipal
             this.lblNuevaAtencion.AutoSize = true;
             this.lblNuevaAtencion.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNuevaAtencion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNuevaAtencion.Location = new System.Drawing.Point(146, 2);
+            this.lblNuevaAtencion.Location = new System.Drawing.Point(119, 0);
             this.lblNuevaAtencion.Name = "lblNuevaAtencion";
             this.lblNuevaAtencion.Size = new System.Drawing.Size(115, 18);
             this.lblNuevaAtencion.TabIndex = 1;

@@ -17,6 +17,7 @@ namespace GestorSql
         /// <param name="conexionSettings">La información necesaria para conectarse</param>
         public TurnoMedicoSql(string conexionSettings)
         {
+            sqlConnection = new();
             TurnoMedicoSql.conexion = conexionSettings;
         }
 
@@ -27,11 +28,11 @@ namespace GestorSql
         /// <returns>El Medico que contiene dicho id</returns>
         public TurnoMedico BuscarPorId(int idDeTurnoMedico)
         {
-            TurnoMedico turnoMedicoNuevo = new TurnoMedico();
+            TurnoMedico turnoMedicoNuevo = new();
             try
             {
                 string sentencia = "SELECT * FROM TurnoMedico where idDeTurnoMedico=@idDeTurnoMedico";
-                SqlCommand comandoSql = new SqlCommand(sentencia, this.sqlConnection);
+                SqlCommand comandoSql = new(sentencia, this.sqlConnection);
                 comandoSql.Parameters.AddWithValue("idDeTurnoMedico", idDeTurnoMedico);
                 this.sqlConnection.Open();
                 SqlDataReader dataReader = comandoSql.ExecuteReader();
@@ -65,22 +66,22 @@ namespace GestorSql
         /// Importa todos los TurnoMedico que existen en la tabla Medico de la database TP4_AlvarezMartinAndres_DB
         /// </summary>
         /// <returns>List<turnoMedico> con todos los turnoMedico de la tabla </Paciente></returns>
-        public List<TurnoMedico> Leer()
+        public static List<TurnoMedico> Leer()
         {
-            List<TurnoMedico> lista = new List<TurnoMedico>();
+            List<TurnoMedico> lista = new();
             try
             {
                 string sentencia = "SELECT * FROM TurnoMedico";
-                using (SqlConnection conexion = new SqlConnection(TurnoMedicoSql.conexion))
+                using (SqlConnection conexion = new(TurnoMedicoSql.conexion))
                 {
                     conexion.Open();
-                    SqlCommand sqlCommand = new SqlCommand(sentencia, conexion);
+                    SqlCommand sqlCommand = new(sentencia, conexion);
                     SqlDataReader dataReader = sqlCommand.ExecuteReader();
                     AtencionSql tablaAtencion = new("Server = (local)\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
 
                     while (dataReader.Read())
                     {
-                        TurnoMedico turnoMedicoNuevo = new TurnoMedico();
+                        TurnoMedico turnoMedicoNuevo = new();
                         turnoMedicoNuevo.IdDeMedico = int.Parse(dataReader["idDeMedico"].ToString());
                         turnoMedicoNuevo.IdDePaciente = int.Parse(dataReader["idDePaciente"].ToString());
                         turnoMedicoNuevo.IdDeTurnoMedico = int.Parse(dataReader["idDeTurnoMedico"].ToString());
@@ -106,35 +107,30 @@ namespace GestorSql
         /// </summary>
         /// <param name="objetoParaAgregar">La Atencion para agregar</param>
         /// <returns>Un string confirmando que se guardo una Atencion</returns>
-        public string Agregar(TurnoMedico objetoParaAgregar)
+        public bool Agregar(TurnoMedico objetoParaAgregar)
         {
-            string retunrAux = string.Empty;
 
             try
             {
-                if (MisComandosSql.VerificarSingularidad("TurnoMedico", "idDeTurnoMedico", objetoParaAgregar.IdDeTurnoMedico, TurnoMedicoSql.conexion))
+                bool retorno = false;
+                using (SqlConnection sqlConnection = new(TurnoMedicoSql.conexion))
                 {
-                    using (SqlConnection sqlConnection = new SqlConnection(TurnoMedicoSql.conexion))
-                    {
-                        sqlConnection.Open();
-                        string sentencia = "INSERT INTO TurnoMedico ( fechaTurno, idDeMedico," +
-                            " idDePaciente, seRealizoAtencionDelTurno) " +
-                            "VALUES ( @fechaTurno, @idDeMedico," +
-                            " @idDePaciente, @seRealizoAtencionDelTurno)";
+                    sqlConnection.Open();
+                    string sentencia = "INSERT INTO TurnoMedico ( fechaTurno, idDeMedico," +
+                        " idDePaciente, seRealizoAtencionDelTurno) " +
+                        "VALUES ( @fechaTurno, @idDeMedico," +
+                        " @idDePaciente, @seRealizoAtencionDelTurno)";
 
-                        SqlCommand sqlCommand = new SqlCommand(sentencia, sqlConnection);
-                        sqlCommand.Parameters.AddWithValue("fechaTurno", objetoParaAgregar.FechaTurno);
-                        sqlCommand.Parameters.AddWithValue("idDeMedico", objetoParaAgregar.IdDeMedico);
-                        sqlCommand.Parameters.AddWithValue("idDePaciente", objetoParaAgregar.IdDePaciente);
-                        sqlCommand.Parameters.AddWithValue("seRealizoAtencionDelTurno", objetoParaAgregar.SeRealizoAtencionDelTurno.ToString());
+                    SqlCommand sqlCommand = new(sentencia, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("fechaTurno", objetoParaAgregar.FechaTurno);
+                    sqlCommand.Parameters.AddWithValue("idDeMedico", objetoParaAgregar.IdDeMedico);
+                    sqlCommand.Parameters.AddWithValue("idDePaciente", objetoParaAgregar.IdDePaciente);
+                    sqlCommand.Parameters.AddWithValue("seRealizoAtencionDelTurno", objetoParaAgregar.SeRealizoAtencionDelTurno.ToString());
 
-                        sqlCommand.ExecuteNonQuery();
-                        return retunrAux;
-                    }
+                    sqlCommand.ExecuteNonQuery();
+                    retorno = true;
                 }
-
-                return retunrAux;
-
+                return retorno;
             }
             catch (Exception)
             {
@@ -146,19 +142,18 @@ namespace GestorSql
         /// Modifica el atributo seRealizoAtencion de la tabla SQL TurnoMedico, con el valor dado en la lista
         /// </summary>
         /// <param name="lista">Lista de TurnoMedico, la cual se va a recorrer y sobrescribir el valor de seRealizoAtencion</param>
-        public void ModificarTurnoCompletado(TurnoMedico turnoMedico)
+        public static void ModificarTurnoCompletado(TurnoMedico turnoMedico)
         {
             try
             {
-                using (SqlConnection sqlConnection = new SqlConnection(TurnoMedicoSql.conexion))
+                using (SqlConnection sqlConnection = new(TurnoMedicoSql.conexion))
                 {
                     sqlConnection.Open();
 
                     string query = "UPDATE TurnoMedico SET seRealizoAtencionDelTurno = @seRealizoAtencionDelTurno WHERE idDeTurnoMedico = @IdDeTurnoMedico";
-                    SqlCommand command = new SqlCommand(query, sqlConnection);
+                    SqlCommand command = new(query, sqlConnection);
                     command.Parameters.Clear();
                     command.Parameters.AddWithValue("IdDeTurnoMedico", turnoMedico.IdDeTurnoMedico);
-
                     command.Parameters.AddWithValue("seRealizoAtencionDelTurno", turnoMedico.SeRealizoAtencionDelTurno.ToString());
                     command.ExecuteNonQuery();
 
@@ -176,14 +171,14 @@ namespace GestorSql
         /// Elimina un TurnoMedico de la tabla TurnoMedico de la database TP4_AlvarezMartinAndres_DB
         /// </summary>
         /// <param name="idDeTurnoMedico">El id del TurnoMedico a eliminar</param>
-        public void Borrar(int idDeTurnoMedico)
+        public static void Borrar(int idDeTurnoMedico)
         {
             try
             {
-                using (SqlConnection sqlConnection = new SqlConnection(TurnoMedicoSql.conexion))
+                using (SqlConnection sqlConnection = new(TurnoMedicoSql.conexion))
                 {
                     string sentencia = "DELETE FROM TurnoMedico WHERE idDeTurnoMedico = @idDeTurnoMedico";
-                    SqlCommand comandoSql = new SqlCommand(sentencia, sqlConnection);
+                    SqlCommand comandoSql = new(sentencia, sqlConnection);
                     comandoSql.Parameters.Clear();
                     comandoSql.Parameters.AddWithValue("idDeTurnoMedico", idDeTurnoMedico);
                     sqlConnection.Open();

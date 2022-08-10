@@ -35,8 +35,10 @@ namespace MenuPrincipal
             // 
             // rtbInformacionPedida
             // 
+            this.rtbInformacionPedida.Enabled = false;
             this.rtbInformacionPedida.Location = new System.Drawing.Point(0, 2);
             this.rtbInformacionPedida.Name = "rtbInformacionPedida";
+            this.rtbInformacionPedida.ReadOnly = true;
             this.rtbInformacionPedida.Size = new System.Drawing.Size(520, 352);
             this.rtbInformacionPedida.TabIndex = 0;
             this.rtbInformacionPedida.Text = "";

@@ -71,6 +71,7 @@ namespace MenuPrincipal
             this.OrdenarDataGridDeMedico();
         }
 
+
         /// <summary>
         /// Constructor de frmMostrarLista, inicializa la lista de médico, pacientes con sus parametros correspondientes
         /// </summary>
@@ -162,22 +163,27 @@ namespace MenuPrincipal
         {
             try
             {
-                if (this.entidadUsadaEnForm == listaCargadaEnForm.Paciente && this.listaPaciente is not null)
-                {
-                    Serializador<List<Paciente>> serializadorDePaciente = new Serializador<List<Paciente>>();
-                    serializadorDePaciente.EscribirPreguntandoRutaDelArhivo(this.listaPaciente);
-                }
-                else if (this.entidadUsadaEnForm == listaCargadaEnForm.Medico && this.listaMedicos is not null)
-                {
-                    Serializador<List<Medico>> serializadorDeMedico = new Serializador<List<Medico>>();
-                    serializadorDeMedico.EscribirPreguntandoRutaDelArhivo(this.listaMedicos);
-                }
+                //NO PERMITO SERIALIZAR ENTIDADES VACIAS, NI TURNOSMEDICOS
+                if (dgvLista.RowCount == 0 || this.entidadUsadaEnForm == listaCargadaEnForm.TurnoMedico)
+                    this.tlsmiArchivoExportar.Enabled = false;
+
                 else
                 {
-                    if (this.listaAtenciones is not null)
+                    this.tlsmiArchivoExportar.Enabled = true;
+                    if (this.entidadUsadaEnForm == listaCargadaEnForm.Paciente && this.listaPaciente is not null)
                     {
-                        Serializador<List<Atencion>> serializadorDeAtencion = new Serializador<List<Atencion>>();
-                        serializadorDeAtencion.EscribirPreguntandoRutaDelArhivo(this.listaAtenciones);
+                        Serializador<List<Paciente>> serializador = new();
+                        serializador.EscribirJsonPreguntandoRuta(this.listaPaciente);
+                    }
+                    else if (this.entidadUsadaEnForm == listaCargadaEnForm.Medico && this.listaMedicos is not null)
+                    {
+                        Serializador<List<Medico>> serializador = new();
+                        serializador.EscribirJsonPreguntandoRuta(this.listaMedicos);
+                    }
+                    else if (this.entidadUsadaEnForm == listaCargadaEnForm.Atenciones && this.listaAtenciones is not null)
+                    {
+                        Serializador<List<Atencion>> serializador = new();
+                        serializador.EscribirJsonPreguntandoRuta(this.listaAtenciones);
                     }
                 }
             }
@@ -199,10 +205,18 @@ namespace MenuPrincipal
         /// <param name="e">Información de dicho evento</param>
         private void dgvLista_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (this.dgvLista is not null)
             {
-                frmVentanaEmergenteConInformacion frmMuestraDelContenidoDelDataGridView = new(this.dgvLista[e.ColumnIndex, e.RowIndex].Value.ToString(), $"Mostrando información seleccionanda");
-                frmMuestraDelContenidoDelDataGridView.ShowDialog();
+                //NO MOSTRAR DATOS NO NECESARIOS
+                if (!(this.dgvLista.Columns[e.ColumnIndex].HeaderText == "Id de Paciente"
+                   || this.dgvLista.Columns[e.ColumnIndex].HeaderText == "Id de Atencion"
+                    || (this.dgvLista.Columns[e.ColumnIndex].HeaderText == "Id de Medico"
+                    || (this.dgvLista.Columns[e.ColumnIndex].HeaderText == "Id de Turno Medico"))))
+                {
+                    frmVentanaEmergenteConInformacion frmMuestraDelContenidoDelDataGridView = new(this.dgvLista[e.ColumnIndex, e.RowIndex].Value.ToString(), $"Mostrando información seleccionanda");
+                    frmMuestraDelContenidoDelDataGridView.ShowDialog();
+                }
             }
         }
 
@@ -216,18 +230,18 @@ namespace MenuPrincipal
         /// </summary>
         private void OrdenarDataGridDeTurnoMedico()
         {
-
-
             this.dgvLista.Columns[3].DisplayIndex = 0;
 
-            //this.dgvLista.Columns[1].DisplayIndex = 2;
-
-            this.dgvLista.Columns["idDeTurnoMedico"].HeaderText = "Id de turno medico";
+            this.dgvLista.Columns["idDeTurnoMedico"].HeaderText = "Id de Turno Medico";
             this.dgvLista.Columns["fechaTurno"].HeaderText = "Fecha";
-            this.dgvLista.Columns["idDeMedico"].HeaderText = "Id de medico";
-            this.dgvLista.Columns["idDePaciente"].HeaderText = "Id de paciente";
+            this.dgvLista.Columns["idDeMedico"].HeaderText = "Id de Medico";
+            this.dgvLista.Columns["idDePaciente"].HeaderText = "Id de Paciente";
+
+
 
         }
+
+
         /// <summary>
         /// Ordena el datagridview del paciente
         /// </summary>
@@ -235,9 +249,7 @@ namespace MenuPrincipal
         {
             if (this.dgvLista is not null)
             {
-
-
-                this.dgvLista.Columns[0].HeaderText = "Id de paciente";
+                this.dgvLista.Columns[0].HeaderText = "Id de Paciente";
                 this.dgvLista.Columns[1].HeaderText = "Antecedentes medicos";
                 this.dgvLista.Columns[2].HeaderText = "Tratamiento en curso";
                 this.dgvLista.Columns[3].HeaderText = "Dni";
@@ -249,7 +261,6 @@ namespace MenuPrincipal
                 this.dgvLista.Columns[2].DisplayIndex = 4;
                 this.dgvLista.Columns[3].DisplayIndex = 2;
             }
-
         }
 
         /// <summary>
@@ -259,9 +270,6 @@ namespace MenuPrincipal
         {
             if (this.dgvLista is not null)
             {
-
-
-
                 this.dgvLista.Columns[4].DisplayIndex = 1;
 
                 this.dgvLista.Columns[0].HeaderText = "Id de Medico";

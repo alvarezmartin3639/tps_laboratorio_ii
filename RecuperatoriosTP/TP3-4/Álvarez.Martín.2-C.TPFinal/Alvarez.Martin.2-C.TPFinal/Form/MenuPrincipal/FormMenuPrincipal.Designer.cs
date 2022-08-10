@@ -65,11 +65,11 @@ namespace MenuPrincipal
             this.lblErrorSql = new System.Windows.Forms.Label();
             this.grpProximaAtencion = new System.Windows.Forms.GroupBox();
             this.bttnIngresarIdMedico = new System.Windows.Forms.Button();
-            this.txtIngreseSuIdDeMedico = new System.Windows.Forms.TextBox();
-            this.lblIngreseSuIdDeMedico = new System.Windows.Forms.Label();
             this.bttnVerInformacion = new System.Windows.Forms.Button();
+            this.txtIngreseSuIdDeMedico = new System.Windows.Forms.TextBox();
             this.bttnComenzarAtencion = new System.Windows.Forms.Button();
             this.bttnVerTurnosRestantes = new System.Windows.Forms.Button();
+            this.lblIngreseSuIdDeMedico = new System.Windows.Forms.Label();
             this.lblVerTurnosRestantes = new System.Windows.Forms.Label();
             this.lblAtender = new System.Windows.Forms.Label();
             this.lblVerInformacion = new System.Windows.Forms.Label();
@@ -94,7 +94,7 @@ namespace MenuPrincipal
             this.tlsmSQL});
             this.mnsOpciones.Location = new System.Drawing.Point(0, 0);
             this.mnsOpciones.Name = "mnsOpciones";
-            this.mnsOpciones.Size = new System.Drawing.Size(745, 24);
+            this.mnsOpciones.Size = new System.Drawing.Size(715, 24);
             this.mnsOpciones.TabIndex = 0;
             this.mnsOpciones.Text = "menuStrip1";
             // 
@@ -375,19 +375,19 @@ namespace MenuPrincipal
             // grpProximaAtencion
             // 
             this.grpProximaAtencion.Controls.Add(this.bttnIngresarIdMedico);
-            this.grpProximaAtencion.Controls.Add(this.txtIngreseSuIdDeMedico);
-            this.grpProximaAtencion.Controls.Add(this.lblIngreseSuIdDeMedico);
             this.grpProximaAtencion.Controls.Add(this.bttnVerInformacion);
+            this.grpProximaAtencion.Controls.Add(this.txtIngreseSuIdDeMedico);
             this.grpProximaAtencion.Controls.Add(this.bttnComenzarAtencion);
             this.grpProximaAtencion.Controls.Add(this.bttnVerTurnosRestantes);
+            this.grpProximaAtencion.Controls.Add(this.lblIngreseSuIdDeMedico);
             this.grpProximaAtencion.Controls.Add(this.lblVerTurnosRestantes);
             this.grpProximaAtencion.Controls.Add(this.lblAtender);
             this.grpProximaAtencion.Controls.Add(this.lblVerInformacion);
             this.grpProximaAtencion.Controls.Add(this.txtNombrePaciente);
             this.grpProximaAtencion.Controls.Add(this.lblProximoPaciente);
-            this.grpProximaAtencion.Location = new System.Drawing.Point(162, 110);
+            this.grpProximaAtencion.Location = new System.Drawing.Point(161, 110);
             this.grpProximaAtencion.Name = "grpProximaAtencion";
-            this.grpProximaAtencion.Size = new System.Drawing.Size(362, 208);
+            this.grpProximaAtencion.Size = new System.Drawing.Size(354, 193);
             this.grpProximaAtencion.TabIndex = 1;
             this.grpProximaAtencion.TabStop = false;
             this.grpProximaAtencion.Text = "Proxima atención";
@@ -402,12 +402,42 @@ namespace MenuPrincipal
             this.bttnIngresarIdMedico.UseVisualStyleBackColor = true;
             this.bttnIngresarIdMedico.Click += new System.EventHandler(this.bttnIngresarIdMedico_Click);
             // 
+            // bttnVerInformacion
+            // 
+            this.bttnVerInformacion.Location = new System.Drawing.Point(13, 162);
+            this.bttnVerInformacion.Name = "bttnVerInformacion";
+            this.bttnVerInformacion.Size = new System.Drawing.Size(75, 23);
+            this.bttnVerInformacion.TabIndex = 4;
+            this.bttnVerInformacion.Text = "Ver";
+            this.bttnVerInformacion.UseVisualStyleBackColor = true;
+            this.bttnVerInformacion.Click += new System.EventHandler(this.bttnVerInformacion_Click);
+            // 
             // txtIngreseSuIdDeMedico
             // 
             this.txtIngreseSuIdDeMedico.Location = new System.Drawing.Point(8, 53);
             this.txtIngreseSuIdDeMedico.Name = "txtIngreseSuIdDeMedico";
             this.txtIngreseSuIdDeMedico.Size = new System.Drawing.Size(83, 23);
             this.txtIngreseSuIdDeMedico.TabIndex = 1;
+            // 
+            // bttnComenzarAtencion
+            // 
+            this.bttnComenzarAtencion.Location = new System.Drawing.Point(136, 162);
+            this.bttnComenzarAtencion.Name = "bttnComenzarAtencion";
+            this.bttnComenzarAtencion.Size = new System.Drawing.Size(75, 23);
+            this.bttnComenzarAtencion.TabIndex = 5;
+            this.bttnComenzarAtencion.Text = "Atender";
+            this.bttnComenzarAtencion.UseVisualStyleBackColor = true;
+            this.bttnComenzarAtencion.Click += new System.EventHandler(this.bttnComenzarAtencion_Click);
+            // 
+            // bttnVerTurnosRestantes
+            // 
+            this.bttnVerTurnosRestantes.Location = new System.Drawing.Point(254, 162);
+            this.bttnVerTurnosRestantes.Name = "bttnVerTurnosRestantes";
+            this.bttnVerTurnosRestantes.Size = new System.Drawing.Size(75, 23);
+            this.bttnVerTurnosRestantes.TabIndex = 6;
+            this.bttnVerTurnosRestantes.Text = "Ver";
+            this.bttnVerTurnosRestantes.UseVisualStyleBackColor = true;
+            this.bttnVerTurnosRestantes.Click += new System.EventHandler(this.bttnVerTurnosRestantes_Click);
             // 
             // lblIngreseSuIdDeMedico
             // 
@@ -418,40 +448,10 @@ namespace MenuPrincipal
             this.lblIngreseSuIdDeMedico.TabIndex = 10;
             this.lblIngreseSuIdDeMedico.Text = "Ingrese su id de Medico";
             // 
-            // bttnVerInformacion
-            // 
-            this.bttnVerInformacion.Location = new System.Drawing.Point(16, 164);
-            this.bttnVerInformacion.Name = "bttnVerInformacion";
-            this.bttnVerInformacion.Size = new System.Drawing.Size(75, 23);
-            this.bttnVerInformacion.TabIndex = 4;
-            this.bttnVerInformacion.Text = "Ver";
-            this.bttnVerInformacion.UseVisualStyleBackColor = true;
-            this.bttnVerInformacion.Click += new System.EventHandler(this.bttnVerInformacion_Click);
-            // 
-            // bttnComenzarAtencion
-            // 
-            this.bttnComenzarAtencion.Location = new System.Drawing.Point(139, 164);
-            this.bttnComenzarAtencion.Name = "bttnComenzarAtencion";
-            this.bttnComenzarAtencion.Size = new System.Drawing.Size(75, 23);
-            this.bttnComenzarAtencion.TabIndex = 5;
-            this.bttnComenzarAtencion.Text = "Atender";
-            this.bttnComenzarAtencion.UseVisualStyleBackColor = true;
-            this.bttnComenzarAtencion.Click += new System.EventHandler(this.bttnComenzarAtencion_Click);
-            // 
-            // bttnVerTurnosRestantes
-            // 
-            this.bttnVerTurnosRestantes.Location = new System.Drawing.Point(257, 164);
-            this.bttnVerTurnosRestantes.Name = "bttnVerTurnosRestantes";
-            this.bttnVerTurnosRestantes.Size = new System.Drawing.Size(75, 23);
-            this.bttnVerTurnosRestantes.TabIndex = 6;
-            this.bttnVerTurnosRestantes.Text = "Ver";
-            this.bttnVerTurnosRestantes.UseVisualStyleBackColor = true;
-            this.bttnVerTurnosRestantes.Click += new System.EventHandler(this.bttnVerTurnosRestantes_Click);
-            // 
             // lblVerTurnosRestantes
             // 
             this.lblVerTurnosRestantes.AutoSize = true;
-            this.lblVerTurnosRestantes.Location = new System.Drawing.Point(238, 146);
+            this.lblVerTurnosRestantes.Location = new System.Drawing.Point(235, 144);
             this.lblVerTurnosRestantes.Name = "lblVerTurnosRestantes";
             this.lblVerTurnosRestantes.Size = new System.Drawing.Size(110, 15);
             this.lblVerTurnosRestantes.TabIndex = 6;
@@ -460,7 +460,7 @@ namespace MenuPrincipal
             // lblAtender
             // 
             this.lblAtender.AutoSize = true;
-            this.lblAtender.Location = new System.Drawing.Point(122, 146);
+            this.lblAtender.Location = new System.Drawing.Point(119, 144);
             this.lblAtender.Name = "lblAtender";
             this.lblAtender.Size = new System.Drawing.Size(110, 15);
             this.lblAtender.TabIndex = 5;
@@ -469,7 +469,7 @@ namespace MenuPrincipal
             // lblVerInformacion
             // 
             this.lblVerInformacion.AutoSize = true;
-            this.lblVerInformacion.Location = new System.Drawing.Point(6, 146);
+            this.lblVerInformacion.Location = new System.Drawing.Point(3, 144);
             this.lblVerInformacion.Name = "lblVerInformacion";
             this.lblVerInformacion.Size = new System.Drawing.Size(104, 15);
             this.lblVerInformacion.TabIndex = 4;
@@ -477,7 +477,7 @@ namespace MenuPrincipal
             // 
             // txtNombrePaciente
             // 
-            this.txtNombrePaciente.Location = new System.Drawing.Point(8, 109);
+            this.txtNombrePaciente.Location = new System.Drawing.Point(6, 107);
             this.txtNombrePaciente.Name = "txtNombrePaciente";
             this.txtNombrePaciente.Size = new System.Drawing.Size(342, 23);
             this.txtNombrePaciente.TabIndex = 3;
@@ -485,7 +485,7 @@ namespace MenuPrincipal
             // lblProximoPaciente
             // 
             this.lblProximoPaciente.AutoSize = true;
-            this.lblProximoPaciente.Location = new System.Drawing.Point(6, 91);
+            this.lblProximoPaciente.Location = new System.Drawing.Point(4, 89);
             this.lblProximoPaciente.Name = "lblProximoPaciente";
             this.lblProximoPaciente.Size = new System.Drawing.Size(102, 15);
             this.lblProximoPaciente.TabIndex = 2;
@@ -496,7 +496,7 @@ namespace MenuPrincipal
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(745, 428);
+            this.ClientSize = new System.Drawing.Size(715, 428);
             this.Controls.Add(this.grpProximaAtencion);
             this.Controls.Add(this.grbSqlError);
             this.Controls.Add(this.mnsOpciones);

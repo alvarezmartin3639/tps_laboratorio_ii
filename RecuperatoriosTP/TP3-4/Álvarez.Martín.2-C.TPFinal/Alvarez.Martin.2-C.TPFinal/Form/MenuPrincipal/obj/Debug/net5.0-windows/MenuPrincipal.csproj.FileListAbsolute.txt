@@ -236,3 +236,46 @@ D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\ref\MenuPrincipal.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.pdb
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.genruntimeconfig.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.exe
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.deps.json
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.json
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.runtimeconfig.dev.json
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\ref\MenuPrincipal.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\MenuPrincipal.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Extension.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorSql.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Entidades.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Excepciones.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\Extension.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorArchivos.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\bin\Debug\net5.0-windows\GestorSql.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.AssemblyReference.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.FormMenuPrincipal.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmMostrarLista.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmMostrarUnPaciente.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmNuevaAtencion.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmNuevoPaciente.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInformacion.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInputBox.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.frmVentanaEmergenteConInputBoxSimple.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.Properties.Resources.resources
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.GenerateResource.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfoInputs.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.AssemblyInfo.cs
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CoreCompileInputs.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.csproj.CopyComplete
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\ref\MenuPrincipal.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Form\MenuPrincipal\obj\Debug\net5.0-windows\MenuPrincipal.genruntimeconfig.cache

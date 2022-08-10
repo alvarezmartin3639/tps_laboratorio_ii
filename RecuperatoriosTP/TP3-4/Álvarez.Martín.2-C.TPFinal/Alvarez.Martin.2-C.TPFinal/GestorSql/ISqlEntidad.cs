@@ -21,7 +21,7 @@
         /// </summary>
         /// <param name="objetoParaAgregar"></param>
         /// <returns></returns>
-        public string Agregar(T objetoParaAgregar);
+        public bool Agregar(T objetoParaAgregar);
 
     }
 }

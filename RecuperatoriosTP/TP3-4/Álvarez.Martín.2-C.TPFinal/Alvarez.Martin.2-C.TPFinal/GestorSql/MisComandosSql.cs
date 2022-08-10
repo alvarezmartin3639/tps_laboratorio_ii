@@ -5,8 +5,6 @@ namespace GestorSql
 {
     public class MisComandosSql
     {
-        private SqlConnection sqlConnection;
-        private SqlCommand comandoSql = new SqlCommand();
         private string conexion;
 
         public string Conexion { get => conexion; set => conexion = value; }
@@ -20,7 +18,6 @@ namespace GestorSql
         public MisComandosSql(string conexionSettings)
         {
             this.Conexion = conexionSettings;
-            this.sqlConnection = new SqlConnection(this.Conexion);
         }
 
         #endregion
@@ -34,7 +31,7 @@ namespace GestorSql
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(conexionSettings))
+                using (SqlConnection conn = new(conexionSettings))
                 {
                     conn.Open();
                     return true;
@@ -44,16 +41,16 @@ namespace GestorSql
             {
                 return false;
             }
-
         }
 
         /// <summary>
-        /// Verifica mediante un id que la entidad sea unica en la tabla seleccionada
+        /// Verifica que una tabla no repita una entidad, mediante su atributo único (dni,una fecha, un id...etc)
         /// </summary>
-        /// <param name="nombreDeLaTabla">Nombre de la tabla que contiene la entidad en SQL</param>
-        /// <param name="nombreIdEnTabla">Nombre de la columna que contiene la id unica</param>
-        /// <param name="id">El valor que se busca en el nombreIdEnTabla</param>
-        /// <returns>True = La id es única. False = La id no es única</returns>
+        /// <param name="nombreDeLaTabla">El nombre de la tabla donde va a buscar dicho id unico</param>
+        /// <param name="nombreSingularidadEnTabla">Nombre del atributo unico</param>
+        /// <param name="singularidad">Valor int que tiene dicho atributo unico de la tabla</param>
+        /// <param name="conexionSetting">El string para instanciar la conexión con el SqlConnection</param>
+        /// <returns>true si no existe dicho valor en la tabla, false si existe</returns>
         public static bool VerificarSingularidad(string nombreDeLaTabla, string nombreSingularidadEnTabla, int singularidad, string conexionSettings)
         {
             try
@@ -80,7 +77,40 @@ namespace GestorSql
                 throw;
             }
         }
-    }
 
+        /// <summary>
+        /// Verifica que una tabla no repita una entidad, mediante su atributo único (dni,una fecha, un id...etc)
+        /// </summary>
+        /// <param name="nombreDeLaTabla">El nombre de la tabla donde va a buscar dicho id unico</param>
+        /// <param name="nombreSingularidadEnTabla">Nombre del atributo unico</param>
+        /// <param name="singularidad">Valor DateTime que tiene dicho atributo unico de la tabla</param>
+        /// <param name="conexionSetting">El string para instanciar la conexión con el SqlConnection</param>
+        /// <returns>true si no existe dicho valor en la tabla, false si existe</returns>
+        public static bool VerificarSingularidad(string nombreDeLaTabla, string nombreSingularidadEnTabla, DateTime singularidad, string conexionSetting)
+        {
+            try
+            {
+                string sentencia = $"SELECT * FROM {nombreDeLaTabla} where {nombreSingularidadEnTabla}=@numeroUnico";
+                using (SqlConnection sqlConnection = new(conexionSetting))
+                {
+                    SqlCommand comandoSql = new(sentencia, sqlConnection);
+                    comandoSql.Parameters.AddWithValue("@numeroUnico", singularidad);
+
+                    sqlConnection.Open();
+                    if (comandoSql.ExecuteScalar() is null)
+                        return true;
+                }
+                return false;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+    }
 }
+
+
 

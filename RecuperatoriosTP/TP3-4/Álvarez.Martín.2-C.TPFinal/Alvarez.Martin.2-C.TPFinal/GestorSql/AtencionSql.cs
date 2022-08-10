@@ -48,7 +48,7 @@ namespace GestorSql
         /// <returns>Una List<Atencion> con el listado de atenciones seleccionadas</Atencion></returns>
         public List<Atencion> BuscarAtenciones(SqlCommand commandoSql)
         {
-            Atencion atencionNueva = new Atencion();
+            Atencion atencionNueva = new();
             List<Atencion> lista = new();
 
             try
@@ -88,7 +88,7 @@ namespace GestorSql
         /// </summary>
         /// <param name="idDeMedico">El id del medico a buscar</param>
         /// <returns>Un List<Atencion> con todas las atenciones del medico </Atencion></returns>
-        public List<Atencion> buscarAtencionesDeUnMedicoMedianteSuId(int idDeMedico)
+        public List<Atencion> BuscarAtencionesDeUnMedicoMedianteSuId(int idDeMedico)
         {
             try
             {
@@ -107,7 +107,7 @@ namespace GestorSql
         /// </summary>
         /// <param name="idDePaciente">El id del Paciente a buscar</param>
         /// <returns>Un List<Atencion> con todas las atenciones del Paciente</Atencion></returns>
-        public List<Atencion> buscarAtencionesDeUnPacienteMedianteSuId(int idDePaciente)
+        public List<Atencion> BuscarAtencionesDeUnPacienteMedianteSuId(int idDePaciente)
         {
             try
             {
@@ -125,21 +125,22 @@ namespace GestorSql
         /// Importa todas las Atenciones que existen en la tabla Atencion de la database TP4_AlvarezMartinAndres_DB
         /// </summary>
         /// <returns>List<Atencion> con todos las atenciones de la tabla </Paciente></returns>
-        public List<Atencion> Leer()
+        public static List<Atencion> Leer()
         {
-            List<Atencion> lista = new List<Atencion>();
+            List<Atencion> lista = new();
             try
             {
+
                 string sentencia = "SELECT * FROM Atencion";
-                using (SqlConnection sqlConnection = new SqlConnection(AtencionSql.conexion))
+                using (SqlConnection sqlConnection = new(AtencionSql.conexion))
                 {
                     sqlConnection.Open();
-                    SqlCommand sqlCommand = new SqlCommand(sentencia, sqlConnection);
+                    SqlCommand sqlCommand = new(sentencia, sqlConnection);
                     SqlDataReader dataReader = sqlCommand.ExecuteReader();
 
                     while (dataReader.Read())
                     {
-                        Atencion atencionNueva = new Atencion();
+                        Atencion atencionNueva = new();
                         atencionNueva.IdDeAtencion = int.Parse(dataReader["idDeAtencion"].ToString());
                         atencionNueva.IdDeMedico = int.Parse(dataReader["idDeMedico"].ToString());
                         atencionNueva.IdDePaciente = int.Parse(dataReader["idDePaciente"].ToString());
@@ -149,6 +150,7 @@ namespace GestorSql
                         atencionNueva.FechaDeLaAtencion = DateTime.Parse(dataReader["fechaDeLaAtencion"].ToString());
                         lista.Add(atencionNueva);
                     }
+
                     return lista;
                 }
             }
@@ -166,15 +168,14 @@ namespace GestorSql
         /// </summary>
         /// <param name="objetoParaAgregar">La Atencion para agregar</param>
         /// <returns>Un string confirmando que se guardo una Atencion</returns>
-        public string Agregar(Atencion objetoParaAgregar)
+        public bool Agregar(Atencion objetoParaAgregar)
         {
-            string retunrAux = string.Empty;
-
             try
             {
-                if (MisComandosSql.VerificarSingularidad("Atencion", "idDeAtencion", objetoParaAgregar.IdDeAtencion, AtencionSql.conexion))
+                bool retorno = false;
+                if (MisComandosSql.VerificarSingularidad("Atencion", "fechaDeLaAtencion", objetoParaAgregar.FechaDeLaAtencion, AtencionSql.conexion))
                 {
-                    using (SqlConnection sqlConnection = new SqlConnection(AtencionSql.conexion))
+                    using (SqlConnection sqlConnection = new(AtencionSql.conexion))
                     {
                         sqlConnection.Open();
                         string sentencia = "INSERT INTO Atencion ( idDeMedico, idDePaciente, motivoDeLaConsulta," +
@@ -182,19 +183,19 @@ namespace GestorSql
                             "VALUES ( @idDeMedico, @idDePaciente, @motivoDeLaConsulta," +
                             " @tratamiento, @diagnostico, @fechaDeLaAtencion)";
 
-                        SqlCommand sqlCommand = new SqlCommand(sentencia, sqlConnection);
+                        SqlCommand sqlCommand = new(sentencia, sqlConnection);
                         sqlCommand.Parameters.AddWithValue("idDeMedico", objetoParaAgregar.IdDeMedico);
                         sqlCommand.Parameters.AddWithValue("idDePaciente", objetoParaAgregar.IdDePaciente);
                         sqlCommand.Parameters.AddWithValue("motivoDeLaConsulta", objetoParaAgregar.MotivoDeLaConsulta);
                         sqlCommand.Parameters.AddWithValue("tratamiento", objetoParaAgregar.Tratamiento);
                         sqlCommand.Parameters.AddWithValue("diagnostico", objetoParaAgregar.Diagnostico);
-                        sqlCommand.Parameters.AddWithValue("fechaDeLaAtencion", DateTime.Parse(objetoParaAgregar.FechaDeLaAtencion.ToString()));
-
+                        sqlCommand.Parameters.AddWithValue("fechaDeLaAtencion", objetoParaAgregar.FechaDeLaAtencion);
                         sqlCommand.ExecuteNonQuery();
-                        retunrAux = "Se guardo la atencion con id " + objetoParaAgregar.IdDePaciente;
+
+                        retorno = true;
                     }
                 }
-                return retunrAux;
+                return retorno;
             }
             catch (Exception)
             {
@@ -206,14 +207,14 @@ namespace GestorSql
         /// Elimina una Atencion de la tabla Atencion de ladatabase TP4_AlvarezMartinAndres_DB
         /// </summary>
         /// <param name="idDeAtencion">El id de la atencion a eliminar</param>
-        public void Borrar(int idDeAtencion)
+        public static void Borrar(int idDeAtencion)
         {
             try
             {
-                using (SqlConnection sqlConnection = new SqlConnection(AtencionSql.conexion))
+                using (SqlConnection sqlConnection = new(AtencionSql.conexion))
                 {
                     string sentencia = "DELETE FROM Atencion WHERE idDeAtencion = @idDeAtencion";
-                    SqlCommand comandoSql = new SqlCommand(sentencia, sqlConnection);
+                    SqlCommand comandoSql = new(sentencia, sqlConnection);
                     comandoSql.Parameters.Clear();
                     comandoSql.Parameters.AddWithValue("idDeAtencion", idDeAtencion);
                     sqlConnection.Open();

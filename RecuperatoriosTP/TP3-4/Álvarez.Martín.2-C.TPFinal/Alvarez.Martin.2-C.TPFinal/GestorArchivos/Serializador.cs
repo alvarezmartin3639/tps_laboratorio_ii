@@ -10,7 +10,34 @@ namespace GestorArchivos
 {
     public class Serializador<T> : IArchivos<T> where T : class
     {
+        private DialogResult dialogResult;
 
+        public Serializador()
+        {
+        }
+
+        /// <summary>
+        /// Constructor de Serialziador, contiene un dialogResult que hace referencia a una acción de un openFIleDialog o saveFileDialog
+        /// </summary>
+        /// <param name="dialogResult"></param>
+        public Serializador(DialogResult dialogResult)
+
+        {
+            this.dialogResult = dialogResult;
+        }
+
+
+
+        /// <summary>
+        /// Retorna el dialogResult de Serializador
+        /// </summary>
+        public DialogResult DialogResult
+        {
+            get
+            {
+                return this.dialogResult;
+            }
+        }
 
         /// <summary>
         /// Propiedad que retorna un path validado para ser .Json
@@ -47,6 +74,7 @@ namespace GestorArchivos
             }
         }
 
+
         /// <summary>
         /// Propiedad que retorna un path validado para ser .Xml o .Json
         /// </summary>
@@ -64,9 +92,9 @@ namespace GestorArchivos
 
                     if (rutaDelArchivoParaAbrir.ShowDialog() == DialogResult.OK)
                         return rutaDelArchivoParaAbrir;
-
                     throw new Exception("Error al seleccionar ruta xml o json");
                 }
+
             }
             catch (Exception ex)
             { throw new Exception("Se encontró un problema en la propiedad PathXmlOJsonValido de la clase Serializador", ex); }
@@ -166,7 +194,7 @@ namespace GestorArchivos
         /// <param name="path">La ruta donde se va a guardar el archivo</param>
         /// <returns>un objeto serialziado, este puede ser json o xml</returns>
         /// <exception cref="Exception">Cuando sucede una excepcion al leer Json.</exception>
-        private static T LeerJson(string path)
+        public static T LeerJson(string path)
         {
             try
             {
@@ -186,7 +214,7 @@ namespace GestorArchivos
         /// <param name="path">La ruta donde se va a guardar el archivo</param>
         /// <returns>un objeto serialziado, este puede ser json o xml</returns>
         /// <exception cref="Exception">Cuando sucede una excepcion al leer Xml.</exception>
-        private static T LeerXml(string path)
+        public static T LeerXml(string path)
         {
             try
             {
@@ -230,7 +258,7 @@ namespace GestorArchivos
         /// <param name="dato">Lo que se va a guardar en el archivo</param>
         /// <param name="path">La ruta donde se va a guardar el archivo</param>
         /// <exception cref="Exception">Cuando sucede una excepcion al escribir Json.</exception>
-        private static void EscribirJson(T dato, string path)
+        public static void EscribirJson(T dato, string path)
         {
             try
             {
@@ -266,8 +294,8 @@ namespace GestorArchivos
         /// Pregunta el path donde guardar un objeto Json
         /// </summary>
         /// <param name="dato">Lo que va a guardar en el archivo</param>
-        /// <returns></returns>
-        public void EscribirJsonPreguntandoRuta(T dato)
+        /// <returns>True si se seralizó, false si el usuario cerró sin serializar</returns>
+        public bool EscribirJsonPreguntandoRuta(T dato)
         {
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
@@ -275,12 +303,46 @@ namespace GestorArchivos
                 saveFileDialog.DefaultExt = "json";
                 saveFileDialog.AddExtension = true;
 
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                this.dialogResult = saveFileDialog.ShowDialog();
+                if (this.dialogResult == DialogResult.OK)
                 {
                     Serializador<T>.EscribirJson(dato, saveFileDialog.FileName);
+                    return true;
                 }
             }
+            return false;
         }
+
+        /// <summary>
+        /// Da la opcion al usuario a elegir un archivo .json o .xml y lo deserealiza retornandoló como objeto
+        /// </summary>
+        /// <returns>un objeto serialziado, este puede ser json o xml. Null si el usuario cerró el openFildeDialog sin deserealizar</returns>
+        /// <exception cref="Exception">Cuando sucede una excepcion al leer.</exception>
+        public T LeerJsonPreguntandoRutaDelArhivo()
+        {
+            try
+            {
+
+                using (OpenFileDialog rutaDelArchivoParaAbrir = new OpenFileDialog())
+                {
+                    using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                    {
+                        openFileDialog.Filter = $"json Files (*.json)|*.json";
+                        openFileDialog.DefaultExt = "json";
+                        openFileDialog.AddExtension = true;
+
+                        this.dialogResult = openFileDialog.ShowDialog();
+                        if (dialogResult == DialogResult.OK)
+                            return LeerJson(openFileDialog.FileName);
+                    }
+                }
+                return null;
+            }
+            catch (Exception ex)
+            { throw new Exception("Se encontró un problema en el metodo LeerPreguntandoRutaDelArchivo de la clase Serializador", ex); }
+        }
+
+
         /// <summary>
         /// Da la opcion al usuario a elegir un archivo .json o .xml y lo deserealiza retornandoló como objeto
         /// </summary>

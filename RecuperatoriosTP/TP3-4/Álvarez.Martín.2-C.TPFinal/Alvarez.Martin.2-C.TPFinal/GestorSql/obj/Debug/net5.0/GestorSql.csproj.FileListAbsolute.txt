@@ -1,48 +1,30 @@
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.deps.json
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.dll
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\ref\GestorSql.dll
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.pdb
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.dll
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.pdb
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.AssemblyReference.cache
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfoInputs.cache
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfo.cs
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CoreCompileInputs.cache
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CopyComplete
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.dll
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\ref\GestorSql.dll
-C:\Users\kenyn\Desktop\Backup\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.pdb
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.deps.json
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.dll
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\ref\GestorSql.dll
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.pdb
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.dll
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.pdb
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.AssemblyReference.cache
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.GeneratedMSBuildEditorConfig.editorconfig
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfoInputs.cache
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfo.cs
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CoreCompileInputs.cache
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CopyComplete
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.dll
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\ref\GestorSql.dll
-D:\Github\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.pdb
-<<<<<<< HEAD
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.AssemblyReference.cache
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.GeneratedMSBuildEditorConfig.editorconfig
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfoInputs.cache
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfo.cs
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CoreCompileInputs.cache
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.dll
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\ref\GestorSql.dll
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.deps.json
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\ref\GestorSql.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.pdb
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.AssemblyReference.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfoInputs.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfo.cs
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CoreCompileInputs.cache
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CopyComplete
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\ref\GestorSql.dll
+D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.pdb
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.deps.json
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\ref\GestorSql.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\GestorSql.pdb
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.dll
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\bin\Debug\net5.0\Entidades.pdb
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.AssemblyReference.cache
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfoInputs.cache
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.AssemblyInfo.cs
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CoreCompileInputs.cache
 D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.csproj.CopyComplete
-=======
->>>>>>> 6034eb25c0e67492d0ee1803832e8d22be8646a7
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.dll
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\ref\GestorSql.dll
+D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\GestorSql\obj\Debug\net5.0\GestorSql.pdb

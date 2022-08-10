@@ -122,6 +122,7 @@ namespace MenuPrincipal
             // 
             // txtNombre
             // 
+            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(130, 19);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 23);
@@ -129,6 +130,7 @@ namespace MenuPrincipal
             // 
             // txtSexo
             // 
+            this.txtSexo.Enabled = false;
             this.txtSexo.Location = new System.Drawing.Point(130, 91);
             this.txtSexo.Name = "txtSexo";
             this.txtSexo.Size = new System.Drawing.Size(100, 23);
@@ -136,6 +138,7 @@ namespace MenuPrincipal
             // 
             // txtDni
             // 
+            this.txtDni.Enabled = false;
             this.txtDni.Location = new System.Drawing.Point(426, 19);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(100, 23);
@@ -143,6 +146,7 @@ namespace MenuPrincipal
             // 
             // txtEdad
             // 
+            this.txtEdad.Enabled = false;
             this.txtEdad.Location = new System.Drawing.Point(688, 19);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 23);
@@ -150,6 +154,7 @@ namespace MenuPrincipal
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(426, 90);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 23);
@@ -177,6 +182,7 @@ namespace MenuPrincipal
             // 
             // txtTratamientoEnCurso
             // 
+            this.txtTratamientoEnCurso.Enabled = false;
             this.txtTratamientoEnCurso.Location = new System.Drawing.Point(688, 90);
             this.txtTratamientoEnCurso.Name = "txtTratamientoEnCurso";
             this.txtTratamientoEnCurso.Size = new System.Drawing.Size(100, 23);

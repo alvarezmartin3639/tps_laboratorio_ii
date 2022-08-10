@@ -1,35 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPaciente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Paciente>
-    <Dni>34345234</Dni>
-    <Edad>22</Edad>
-    <Nombre>Roberto juan</Nombre>
-    <Sexo>Hombre</Sexo>
-    <IdDePaciente>1</IdDePaciente>
-    <ListaDeAtenciones>
-      <Atencion>
-        <IdDeAtencion>1</IdDeAtencion>
-        <IdDeMedico>1</IdDeMedico>
-        <IdDePaciente>1</IdDePaciente>
-        <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
-        <Tratamiento>En observación</Tratamiento>
-        <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8224042-03:00</FechaDeLaAtencion>
-      </Atencion>
-      <Atencion>
-        <IdDeAtencion>2</IdDeAtencion>
-        <IdDeMedico>1</IdDeMedico>
-        <IdDePaciente>1</IdDePaciente>
-        <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
-        <Tratamiento>Medicamento xxx</Tratamiento>
-        <Diagnostico>Cancer</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8224073-03:00</FechaDeLaAtencion>
-      </Atencion>
-    </ListaDeAtenciones>
-    <AntecedentesMedicos>AntecedentesMedico de Roberto juan</AntecedentesMedicos>
-    <TratamientoEnCurso>false</TratamientoEnCurso>
-  </Paciente>
-  <Paciente>
     <Dni>222222</Dni>
     <Edad>11</Edad>
     <Nombre>Perez juan</Nombre>
@@ -43,10 +14,10 @@
         <MotivoDeLaConsulta>Dolor de cabeza</MotivoDeLaConsulta>
         <Tratamiento>Medicamento yyy</Tratamiento>
         <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8224075-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4691562-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
-    <AntecedentesMedicos>AntecedentesMedico de Perez juan</AntecedentesMedicos>
+    <AntecedentesMedicos>Antecedentes Medicos de Perez juan</AntecedentesMedicos>
     <TratamientoEnCurso>false</TratamientoEnCurso>
   </Paciente>
   <Paciente>
@@ -63,10 +34,10 @@
         <MotivoDeLaConsulta>Fatiga </MotivoDeLaConsulta>
         <Tratamiento>Vitaminas aaa</Tratamiento>
         <Diagnostico>falta de vitamina</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8224078-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4691566-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
-    <AntecedentesMedicos>AntecedentesMedico de Hernesto juan</AntecedentesMedicos>
+    <AntecedentesMedicos>Antecedentes Medicos de Hernesto juan</AntecedentesMedicos>
     <TratamientoEnCurso>false</TratamientoEnCurso>
   </Paciente>
   <Paciente>
@@ -83,10 +54,10 @@
         <MotivoDeLaConsulta>Dolor de rodilla </MotivoDeLaConsulta>
         <Tratamiento>Descanso</Tratamiento>
         <Diagnostico>dolor articular</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8224081-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4691569-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
-    <AntecedentesMedicos>AntecedentesMedico de Francisco</AntecedentesMedicos>
+    <AntecedentesMedicos>Antecedentes Medicos de Francisco</AntecedentesMedicos>
     <TratamientoEnCurso>true</TratamientoEnCurso>
   </Paciente>
   <Paciente>
@@ -103,10 +74,50 @@
         <MotivoDeLaConsulta>Descamación en la piel </MotivoDeLaConsulta>
         <Tratamiento>Pomada xxx</Tratamiento>
         <Diagnostico>Hongos</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8224084-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4691572-03:00</FechaDeLaAtencion>
       </Atencion>
     </ListaDeAtenciones>
-    <AntecedentesMedicos>AntecedentesMedico de Julia Lopez</AntecedentesMedicos>
+    <AntecedentesMedicos>Antecedentes Medicos de Julia Lopez</AntecedentesMedicos>
     <TratamientoEnCurso>true</TratamientoEnCurso>
+  </Paciente>
+  <Paciente>
+    <Dni>34345234</Dni>
+    <Edad>22</Edad>
+    <Nombre>Roberto juan</Nombre>
+    <Sexo>Hombre</Sexo>
+    <IdDePaciente>1</IdDePaciente>
+    <ListaDeAtenciones>
+      <Atencion>
+        <IdDeAtencion>1</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
+        <Tratamiento>En observación</Tratamiento>
+        <Diagnostico>Esperando resultados de los analisis</Diagnostico>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4691494-03:00</FechaDeLaAtencion>
+      </Atencion>
+      <Atencion>
+        <IdDeAtencion>2</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
+        <Tratamiento>Medicamento xxx</Tratamiento>
+        <Diagnostico>Cancer</Diagnostico>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.469156-03:00</FechaDeLaAtencion>
+      </Atencion>
+      <Atencion>
+        <IdDeAtencion>7</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>NuevaAtencion</MotivoDeLaConsulta>
+        <Tratamiento>NuevaAtencion
+</Tratamiento>
+        <Diagnostico>NuevaAtencion
+</Diagnostico>
+        <FechaDeLaAtencion>2022-08-10T02:23:12.9094583-03:00</FechaDeLaAtencion>
+      </Atencion>
+    </ListaDeAtenciones>
+    <AntecedentesMedicos>Antecedentes Medicos de Roberto juan</AntecedentesMedicos>
+    <TratamientoEnCurso>false</TratamientoEnCurso>
   </Paciente>
 </ArrayOfPaciente>

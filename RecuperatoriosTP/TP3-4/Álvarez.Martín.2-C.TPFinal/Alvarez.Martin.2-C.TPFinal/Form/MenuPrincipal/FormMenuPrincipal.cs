@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace MenuPrincipal
 {
@@ -24,8 +25,8 @@ namespace MenuPrincipal
         private bool estadoAnteriorDelServidorSql;
         public delegate void ComprobadorConexionSqlHandler();
         public event ComprobadorConexionSqlHandler OnCambioEnElEstadoDelServidorSql;
-        private Thread threadVerificarConexionSql;
-        private CancellationTokenSource cancellationToken;
+        private Task threadVerificarConexionSql;
+        private CancellationTokenSource cancellationTokenSource;
         private string strConexionSql;
 
         #region CONSTRUCTORES Y PROPIEDADES
@@ -37,21 +38,20 @@ namespace MenuPrincipal
         {
             InitializeComponent();
             this.grbSqlError.Hide();
-
             this.listaMedicosSeleccionados = new();
             this.listaPacientesSeleccionados = new();
             this.listaAtencionesSeleccionadas = new();
             this.listaTurnosMedicosSeleccionados = new();
             this.listaTurnosRestanesDeHoy = new();
+            //AL INICIAR ME FIJO SI ESTA ONLINE U OFFLINE, INSTANCIO Y CAMBIO EL MODO DEPENDIENDO EL ESTADO DEL SERVIDOR
             this.estadoActualDelServidorSql = MisComandosSql.VerificarConexionConSql("Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
             this.estadoAnteriorDelServidorSql = !this.estadoActualDelServidorSql;
-            this.tlsmiArchivo.Available = false;
-            this.cancellationToken = new();
-            this.lblErrorSql.Text = "No se puede conectar con el servidor SQL, abra un ticket o trabaje de manera \n offline hasta que se solucione \nTrabaje de manera offline utilizando archivos, al terminar envielos a x@soporte.com";
+            this.CambiarEntreModoOnlineUOffline(this.estadoActualDelServidorSql);
+            this.cancellationTokenSource = new();
+            this.lblErrorSql.Text = "No se puede conectar con el servidor SQL, abra un ticket o trabaje de manera \n offline utilizando archivos y generando atenciones desde el menu 'Atencion'\n hasta que se solucione , al terminar envielos a x@soporte.com";
             this.strConexionSql = "Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;";
             this.estaLogeadoElMedico = false;
             txtNombrePaciente.ReadOnly = true;
-
         }
 
         #endregion
@@ -70,11 +70,10 @@ namespace MenuPrincipal
             this.HarcodeoPaciente();
             this.HarcodeoMedicos();
             this.HarcodeoTurnosMedicos();
+            this.CambiarEstadoDePacientesEnProximaAtencion(false);
             this.OnCambioEnElEstadoDelServidorSql += this.c_CambiarControlesFormDependiendoEstadoDeConexion;
-            this.threadVerificarConexionSql = new Thread(() => ComprobarEstadoDelServidor());
+            this.threadVerificarConexionSql = new Task(() => ComprobarEstadoDelServidor());
             threadVerificarConexionSql.Start();
-
-
         }
 
         /// <summary>
@@ -87,10 +86,30 @@ namespace MenuPrincipal
             if (MessageBox.Show("¿Está seguro que desea salir?, todos los datos no guardados se perderán.", "Está apunto de salir del programa...", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
             {
                 e.Cancel = true;
-                this.cancellationToken.Cancel();
+
+            }
+            else
+            {
+                //SIEMPRE VA A ESTAR ACTIVO EN ESTE SISTEMA,PERO ME PARECE BUENA PRACTICA VALIDAR
+                if (this.EstaActivoThreadVerificarConexionSql)
+                    this.cancellationTokenSource.Cancel();
             }
         }
 
+        /// <summary>
+        /// Si el hilo está activo devuelve true
+        /// <returns>True = hilo activo. False = hilo no activo</returns>
+        /// </summary>
+        public bool EstaActivoThreadVerificarConexionSql
+        {
+            get
+            {
+                return threadVerificarConexionSql is not null &&
+                    (threadVerificarConexionSql.Status == TaskStatus.Running ||
+                    threadVerificarConexionSql.Status == TaskStatus.WaitingToRun ||
+                    threadVerificarConexionSql.Status == TaskStatus.WaitingForActivation); ;
+            }
+        }
 
         /// <summary>
         /// Muestra la información del paciente que está siendo atendido
@@ -234,7 +253,7 @@ namespace MenuPrincipal
             {
                 if (this.listaPacientesSeleccionados is not null)
                 {
-                    frmNuevoPaciente agregarPaciente = new frmNuevoPaciente(listaPacientesSeleccionados);
+                    frmNuevoPaciente agregarPaciente = new(listaPacientesSeleccionados);
                     agregarPaciente.ShowDialog();
                     if (agregarPaciente.NuevaListaDePacientes is not null)
                         this.listaPacientesSeleccionados = agregarPaciente.NuevaListaDePacientes;
@@ -260,7 +279,7 @@ namespace MenuPrincipal
             {
                 if (this.listaPacientesSeleccionados is not null)
                 {
-                    frmMostrarLista mostrarListaPacientes = new frmMostrarLista(this.listaPacientesSeleccionados);
+                    frmMostrarLista mostrarListaPacientes = new(this.listaPacientesSeleccionados);
                     mostrarListaPacientes.Show();
                 }
                 else
@@ -304,7 +323,7 @@ namespace MenuPrincipal
                     }
                 }
 
-                frmMostrarLista mostrarListaPacientes = new frmMostrarLista(listaDeMisPacientes);
+                frmMostrarLista mostrarListaPacientes = new(listaDeMisPacientes);
                 mostrarListaPacientes.Show();
             }
             catch (Exception ex)
@@ -414,7 +433,6 @@ namespace MenuPrincipal
         {
             try
             {
-                // List<Atencion> auxAtencion = this.generarListaAtencionDePacientesYMedicos();
                 if (this.listaAtencionesSeleccionadas is not null)
                 {
                     frmMostrarLista mostrarTodasLasAtenciones = new(this.listaAtencionesSeleccionadas);
@@ -462,29 +480,7 @@ namespace MenuPrincipal
 
         }
 
-        /// <summary>
-        /// Se serializa el campo listaPacientesSeleccionados, preguntando la ruta donde está el archivo
-        /// </summary>
-        /// <param name="sender">emisor del evento</param>
-        /// <param name="e">Información de dicho evento</param>
-        private void tlsmiArchivoImportarPacientes_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                List<Paciente> auxListaPacientes = new();
-                Serializador<List<Paciente>> serializadorDePaciente = new Serializador<List<Paciente>>();
-                auxListaPacientes = serializadorDePaciente.LeerPreguntandoRutaDelArhivo();
 
-                if (auxListaPacientes is not null && auxListaPacientes[0].IdDePaciente is not 0)
-                    this.listaPacientesSeleccionados = auxListaPacientes;
-                else
-                    MessageBox.Show("Los datos cargados no coinciden con un paciente", "Error importar paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error al intentar importar paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         /// <summary>
         /// Se serializa el campo listaPacientesSeleccionados, preguntando la ruta donde se guardará el archivo
@@ -497,9 +493,8 @@ namespace MenuPrincipal
             {
                 if (this.listaPacientesSeleccionados is not null)
                 {
-
-                    Serializador<List<Paciente>> serializadorDePaciente = new Serializador<List<Paciente>>();
-                    serializadorDePaciente.EscribirJsonPreguntandoRuta(this.listaPacientesSeleccionados);
+                    Serializador<List<Paciente>> serializador = new();
+                    serializador.EscribirJsonPreguntandoRuta(this.listaPacientesSeleccionados);
                 }
                 else
                     MessageBox.Show("No hay pacientes en la lista", "Error exportar paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -510,30 +505,7 @@ namespace MenuPrincipal
             }
         }
 
-        /// <summary>
-        /// Se serializa el campo listaMedicoSeleccionados, preguntando la ruta donde está el archivo
-        /// </summary>
-        /// <param name="sender">emisor del evento</param>
-        /// <param name="e">Información de dicho evento</param>
-        private void tlsmiArchivoImportarMedicos_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                List<Medico> auxListaMedicos = new();
-                Serializador<List<Medico>> serializadorDeMedico = new Serializador<List<Medico>>();
 
-                auxListaMedicos = serializadorDeMedico.LeerPreguntandoRutaDelArhivo();
-
-                if (auxListaMedicos is not null && auxListaMedicos[0].Matricula is not 0 && auxListaMedicos[0].IdDeMedico is not 0)
-                    this.listaMedicosSeleccionados = auxListaMedicos;
-                else
-                    MessageBox.Show("Los datos cargados no coinciden con un medico", "Error importar medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error al intentar importar medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         /// <summary>
         /// Se serializa el campo listaMedicoSeleccionados, preguntando la ruta donde se guardará el archivo
@@ -546,8 +518,8 @@ namespace MenuPrincipal
             {
                 if (this.listaMedicosSeleccionados is not null)
                 {
-                    Serializador<List<Medico>> serializadorDeMedico = new Serializador<List<Medico>>();
-                    serializadorDeMedico.EscribirJsonPreguntandoRuta(this.listaMedicosSeleccionados);
+                    Serializador<List<Medico>> serializador = new();
+                    serializador.EscribirJsonPreguntandoRuta(this.listaMedicosSeleccionados);
                 }
                 else
                     MessageBox.Show("Los datos cargados no coinciden con un medico", "Error exportar medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -555,54 +527,6 @@ namespace MenuPrincipal
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error al intentar exportar medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        /// <summary>
-        /// Se serializa el campo listaAtencionesSeleccionados, preguntando la ruta donde está el archivo
-        /// </summary>
-        /// <param name="sender">emisor del evento</param>
-        /// <param name="e">Información de dicho evento</param>
-        private void tlsmiArchivoImportarAtenciones_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                List<Atencion> auxListaAtencion = new();
-                Serializador<List<Atencion>> serializadorDeAtencion = new Serializador<List<Atencion>>();
-                auxListaAtencion = serializadorDeAtencion.LeerPreguntandoRutaDelArhivo();
-
-                if (auxListaAtencion is not null)
-                    this.listaAtencionesSeleccionadas = auxListaAtencion;
-                else
-                    MessageBox.Show("Los datos cargados no coinciden con una Atencion", "Error importar Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error al intentar importar Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        /// <summary>
-        /// Se serializa el campo listaTurnosMedicosSeleccionados, preguntando la ruta donde está el archivo
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tlsmiArchivoImportarTurnosMedicos_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                List<TurnoMedico> auxListaTurnoMedico = new();
-                Serializador<List<TurnoMedico>> serializadorDeTurnoMedico = new Serializador<List<TurnoMedico>>();
-                auxListaTurnoMedico = serializadorDeTurnoMedico.LeerPreguntandoRutaDelArhivo();
-
-                if (auxListaTurnoMedico is not null)
-                    this.listaTurnosMedicosSeleccionados = auxListaTurnoMedico;
-                else
-                    MessageBox.Show("Los datos cargados no coinciden con un Turno Medico", "Error importar Turno Medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error al intentar importar Turnos Medicos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -617,9 +541,8 @@ namespace MenuPrincipal
             {
                 if (listaAtencionesSeleccionadas is not null)
                 {
-
-                    Serializador<List<Atencion>> serializadorDeAtencion = new Serializador<List<Atencion>>();
-                    serializadorDeAtencion.EscribirJsonPreguntandoRuta(this.listaAtencionesSeleccionadas);
+                    Serializador<List<Atencion>> serializador = new();
+                    serializador.EscribirJsonPreguntandoRuta(this.listaAtencionesSeleccionadas);
                 }
                 else
                     MessageBox.Show("Los datos cargados no coinciden con una Atención", "Error exportar Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -629,6 +552,78 @@ namespace MenuPrincipal
                 MessageBox.Show(ex.Message, "Error al exportar Atencion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        /// <summary>
+        /// Se serializa el campo listaPacientesSeleccionados, preguntando la ruta donde está el archivo
+        /// </summary>
+        /// <param name="sender">emisor del evento</param>
+        /// <param name="e">Información de dicho evento</param>
+        private void tlsmiArchivoImportarPacientes_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Serializador<List<Paciente>> serializador = new();
+                List<Paciente> auxListaPacientes = serializador.LeerJsonPreguntandoRutaDelArhivo();
+
+                if (auxListaPacientes is not null && auxListaPacientes[0].IdDePaciente is not 0)
+                    this.listaPacientesSeleccionados = auxListaPacientes;
+                //PARA EVITAR QUE CUANDO CIERRE EL FORM LANCE EL MESSAGEBOX
+                else if (serializador.DialogResult == DialogResult.OK)
+                    MessageBox.Show("Los datos cargados no coinciden con un paciente", "Error importar paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error al intentar importar paciente", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        /// <summary>
+        /// Se serializa el campo listaMedicoSeleccionados, preguntando la ruta donde está el archivo
+        /// </summary>
+        /// <param name="sender">emisor del evento</param>
+        /// <param name="e">Información de dicho evento</param>
+        private void tlsmiArchivoImportarMedicos_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Serializador<List<Medico>> serializador = new();
+                List<Medico> auxListaMedicos = serializador.LeerJsonPreguntandoRutaDelArhivo();
+
+                if (auxListaMedicos is not null && auxListaMedicos[0].Matricula is not 0 && auxListaMedicos[0].IdDeMedico is not 0)
+                    this.listaMedicosSeleccionados = auxListaMedicos;
+                else if (serializador.DialogResult == DialogResult.OK)
+                    MessageBox.Show("Los datos cargados no coinciden con un medico", "Error importar medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error al intentar importar medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Se serializa el campo listaAtencionesSeleccionados, preguntando la ruta donde está el archivo
+        /// </summary>
+        /// <param name="sender">emisor del evento</param>
+        /// <param name="e">Información de dicho evento</param>
+        private void tlsmiArchivoImportarAtenciones_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Serializador<List<Atencion>> serializador = new();
+                List<Atencion> auxListaAtencion = serializador.LeerJsonPreguntandoRutaDelArhivo();
+
+                if (auxListaAtencion is not null)
+                    this.listaAtencionesSeleccionadas = auxListaAtencion;
+                else if (serializador.DialogResult == DialogResult.OK)
+                    MessageBox.Show("Los datos cargados no coinciden con una Atencion", "Error importar Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error al intentar importar Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         /// <summary>
         ///  Se ejecuta el form frmMostrarLista para mostrar la lista de todos los médicos
         /// </summary>
@@ -640,7 +635,7 @@ namespace MenuPrincipal
             {
                 if (listaMedicosSeleccionados is not null)
                 {
-                    frmMostrarLista mostrarListaDeMedicos = new frmMostrarLista(this.listaMedicosSeleccionados);
+                    frmMostrarLista mostrarListaDeMedicos = new(this.listaMedicosSeleccionados);
                     mostrarListaDeMedicos.ShowDialog();
                 }
                 else
@@ -671,16 +666,11 @@ namespace MenuPrincipal
                 {
                     try
                     {
-                        PacienteSql nuevoPaciente = new(strConexionSql);
-                        AtencionSql nuevaAtencion = new(strConexionSql);
-                        MedicoSql nuevoMedico = new(strConexionSql);
-                        TurnoMedicoSql nuevoTurno = new(strConexionSql);
-
                         // INCIALIZO LAS LISTAS CON LOS DATOS SQL
-                        this.listaPacientesSeleccionados = nuevoPaciente.Leer();
-                        this.listaMedicosSeleccionados = nuevoMedico.Leer();
-                        this.listaAtencionesSeleccionadas = nuevaAtencion.Leer();
-                        this.listaTurnosMedicosSeleccionados = nuevoTurno.Leer();
+                        this.listaPacientesSeleccionados = PacienteSql.Leer();
+                        this.listaMedicosSeleccionados = MedicoSql.Leer();
+                        this.listaAtencionesSeleccionadas = AtencionSql.Leer();
+                        this.listaTurnosMedicosSeleccionados = TurnoMedicoSql.Leer();
                     }
                     catch (Exception ex)
                     {
@@ -712,16 +702,16 @@ namespace MenuPrincipal
                         PacienteSql nuevoPaciente = new(strConexionSql);
                         AtencionSql nuevaAtencion = new(strConexionSql);
                         MedicoSql nuevoMedico = new(strConexionSql);
-                        TurnoMedicoSql nuevoTurnoMedico = new(strConexionSql);
 
+                        foreach (Medico item in this.listaMedicosSeleccionados)
+                            nuevoMedico.Agregar(item);
                         foreach (Paciente item in this.listaPacientesSeleccionados)
                             nuevoPaciente.Agregar(item);
                         foreach (Atencion item in this.listaAtencionesSeleccionadas)
                             nuevaAtencion.Agregar(item);
-                        foreach (Medico item in this.listaMedicosSeleccionados)
-                            nuevoMedico.Agregar(item);
+                        //MODIFICO UNICAMENTE SI SE ATENDIÓ O NO EL TURNO
                         foreach (TurnoMedico item in this.listaTurnosMedicosSeleccionados)
-                            nuevoTurnoMedico.ModificarTurnoCompletado(item);
+                            TurnoMedicoSql.ModificarTurnoCompletado(item);
                     }
                     catch (Exception ex)
                     {
@@ -730,7 +720,6 @@ namespace MenuPrincipal
                 }
             }
         }
-
 
         #endregion
 
@@ -777,28 +766,13 @@ namespace MenuPrincipal
             {
                 if (this.txtConexionSql.InvokeRequired)
                 {
-                    ComprobadorConexionSqlHandler del = new ComprobadorConexionSqlHandler(this.c_CambiarControlesFormDependiendoEstadoDeConexion);
+                    ComprobadorConexionSqlHandler del = new(this.c_CambiarControlesFormDependiendoEstadoDeConexion);
                     if (this.threadVerificarConexionSql != null)
                         this.txtConexionSql.Invoke(del);
                 }
                 else
                 {
-                    if (this.estadoActualDelServidorSql == true)
-                    {
-                        grbSqlError.Hide();
-                        this.grpProximaAtencion.Show();
-                        this.tlsmiArchivo.Available = false;
-                        this.estadoAnteriorDelServidorSql = this.estadoActualDelServidorSql;
-
-                    }
-                    if (this.estadoActualDelServidorSql == false)
-                    {
-                        grbSqlError.Show();
-                        this.grpProximaAtencion.Hide();
-                        this.tlsmiArchivo.Available = true;
-                        this.estadoAnteriorDelServidorSql = this.estadoActualDelServidorSql;
-                        this.CrearBackUpDeDatos();
-                    }
+                    this.CambiarEntreModoOnlineUOffline(this.estadoActualDelServidorSql);
                 }
             }
             catch (Exception)
@@ -806,6 +780,28 @@ namespace MenuPrincipal
                 throw;
             }
 
+        }
+
+        public void CambiarEntreModoOnlineUOffline(bool estadoDelServidor)
+        {
+            //SI EL SERVER ESTA CONECTADO HABILITO EL MODO ONLINE
+            if (this.estadoActualDelServidorSql == true)
+            {
+                grbSqlError.Hide();
+                this.grpProximaAtencion.Show();
+                this.tlsmiArchivo.Available = false;
+                this.estadoAnteriorDelServidorSql = this.estadoActualDelServidorSql;
+
+            }
+            //SI EL SERVER ESTA DESCONECTADO HABILITO EL MODO OFFLINE
+            if (this.estadoActualDelServidorSql == false)
+            {
+                grbSqlError.Show();
+                this.grpProximaAtencion.Hide();
+                this.tlsmiArchivo.Available = true;
+                this.estadoAnteriorDelServidorSql = this.estadoActualDelServidorSql;
+                this.CrearBackUpDeDatos();
+            }
         }
 
         /// <summary>
@@ -824,10 +820,10 @@ namespace MenuPrincipal
                         if (this.estadoActualDelServidorSql != this.estadoAnteriorDelServidorSql)
                         {
                             this.OnCambioEnElEstadoDelServidorSql.Invoke();
-                            MessageBox.Show($"Servidor {this.estadoActualDelServidorSql.ToString()}");
                         }
-                        Thread.Sleep(3000);
-                    } while (threadVerificarConexionSql.IsAlive);
+                        Thread.Sleep(2000);
+                    } while (this.EstaActivoThreadVerificarConexionSql);
+
 
                 }
             }
@@ -902,27 +898,6 @@ namespace MenuPrincipal
         }
 
 
-
-        /// <summary>
-        /// Deshabilita los MenuStrips dependiendo si al lista de pacientes y médicos está vacia
-        /// </summary>
-        private void DeshabilitarMenuStripSiLaListaEstaVacia()
-        {
-            if (this.listaPacientesSeleccionados.Count == 0)
-            {
-                tlsmPaciente.Enabled = false;
-                tlsmiNuevaAtencion.Enabled = false;
-            }
-            if (this.listaMedicosSeleccionados.Count == 0)
-            {
-                this.tlsmMedico.Enabled = false;
-                tlsmiNuevaAtencion.Enabled = false;
-            }
-        }
-
-
-
-
         /// <summary>
         /// Harcodea Médicos para una correción mas rápida del TP
         /// </summary>
@@ -954,6 +929,7 @@ namespace MenuPrincipal
             this.listaMedicosSeleccionados.Add(medicoCuatro);
             this.listaMedicosSeleccionados.Add(medicoCinco);
 
+
         }
 
 
@@ -977,12 +953,11 @@ namespace MenuPrincipal
             listaAtencionCuatro.Add(new Atencion(5, 4, 4, "Dolor de rodilla ", "Descanso", "dolor articular", DateTime.Now));
             listaAtencionCinco.Add(new Atencion(6, 5, 5, "Descamación en la piel ", "Pomada xxx", "Hongos", DateTime.Now));
 
-            this.listaPacientesSeleccionados.Add(new Paciente(34345234, 22, "Roberto juan", sexoEnum.Hombre, 1, listaAtencionUna, false, "AntecedentesMedico de Roberto juan"));
-            this.listaPacientesSeleccionados.Add(new Paciente(222222, 11, "Perez juan", sexoEnum.Hombre, 2, listaAtencionDos, false, "AntecedentesMedico de Perez juan"));
-            this.listaPacientesSeleccionados.Add(new Paciente(44444, 33, "Hernesto juan", sexoEnum.Hombre, 3, listaAtencionTres, false, "AntecedentesMedico de Hernesto juan"));
-            this.listaPacientesSeleccionados.Add(new Paciente(3434343, 21, "Francisco", sexoEnum.Hombre, 4, listaAtencionCuatro, true, "AntecedentesMedico de Francisco"));
-            this.listaPacientesSeleccionados.Add(new Paciente(212121, 16, "Julia Lopez", sexoEnum.Mujer, 5, listaAtencionCinco, true, "AntecedentesMedico de Julia Lopez"));
-
+            this.listaPacientesSeleccionados.Add(new Paciente(34345234, 22, "Roberto juan", sexoEnum.Hombre, 1, listaAtencionUna, false, "Antecedentes Medicos de Roberto juan"));
+            this.listaPacientesSeleccionados.Add(new Paciente(222222, 11, "Perez juan", sexoEnum.Hombre, 2, listaAtencionDos, false, "Antecedentes Medicos de Perez juan"));
+            this.listaPacientesSeleccionados.Add(new Paciente(44444, 33, "Hernesto juan", sexoEnum.Hombre, 3, listaAtencionTres, false, "Antecedentes Medicos de Hernesto juan"));
+            this.listaPacientesSeleccionados.Add(new Paciente(3434343, 21, "Francisco", sexoEnum.Hombre, 4, listaAtencionCuatro, true, "Antecedentes Medicos de Francisco"));
+            this.listaPacientesSeleccionados.Add(new Paciente(212121, 16, "Julia Lopez", sexoEnum.Mujer, 5, listaAtencionCinco, true, "Antecedentes Medicos de Julia Lopez"));
         }
 
 
@@ -992,12 +967,12 @@ namespace MenuPrincipal
         /// </summary>
         public void HarcodeoAtenciones()
         {
-            this.listaAtencionesSeleccionadas.Add(new Atencion(1, 1, 1, "Bulto en el abdomen", "En observación", "Esperando resultados de los analisis", DateTime.Now));
-            this.listaAtencionesSeleccionadas.Add(new Atencion(2, 1, 1, "Trajo los resultados del analasis", "Medicamento xxx", "Cancer", DateTime.Now));
-            this.listaAtencionesSeleccionadas.Add(new Atencion(3, 2, 2, "Dolor de cabeza", "Medicamento yyy", "Esperando resultados de los analisis", DateTime.Now));
-            this.listaAtencionesSeleccionadas.Add(new Atencion(4, 3, 3, "Fatiga ", "Vitaminas aaa", "falta de vitamina", DateTime.Now));
-            this.listaAtencionesSeleccionadas.Add(new Atencion(5, 4, 4, "Dolor de rodilla ", "Descanso", "dolor articular", DateTime.Now));
-            this.listaAtencionesSeleccionadas.Add(new Atencion(6, 5, 5, "Descamación en la piel ", "Pomada xxx", "Hongos", DateTime.Now));
+            this.listaAtencionesSeleccionadas.Add(new Atencion(1, 1, 1, "Bulto en el abdomen", "En observación", "Esperando resultados de los analisis", new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 1, DateTime.Now.Minute, 1)));
+            this.listaAtencionesSeleccionadas.Add(new Atencion(2, 1, 1, "Trajo los resultados del analasis", "Medicamento xxx", "Cancer", new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 2, DateTime.Now.Minute, 2)));
+            this.listaAtencionesSeleccionadas.Add(new Atencion(3, 2, 2, "Dolor de cabeza", "Medicamento yyy", "Esperando resultados de los analisis", new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 2, DateTime.Now.Minute, 3)));
+            this.listaAtencionesSeleccionadas.Add(new Atencion(4, 3, 3, "Fatiga ", "Vitaminas aaa", "falta de vitamina", new DateTime(2000, 5, 22)));
+            this.listaAtencionesSeleccionadas.Add(new Atencion(5, 4, 4, "Dolor de rodilla ", "Descanso", "dolor articular", new DateTime(2000, 6, 23)));
+            this.listaAtencionesSeleccionadas.Add(new Atencion(6, 5, 5, "Descamación en la piel ", "Pomada xxx", "Hongos", new DateTime(2000, 6, 24)));
 
         }
 
@@ -1007,18 +982,20 @@ namespace MenuPrincipal
         public void HarcodeoTurnosMedicos()
         {
             this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(1, 1, 1, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 1, DateTime.Now.Minute, 1), false));
-            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(2, 1, 1, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 2, DateTime.Now.Minute, 2), false));
-            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(3, 2, 2, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 3, DateTime.Now.Minute, 3), false));
-            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(4, 3, 3, new DateTime(2022, 5, 18, 5, 2, 23), false));
-            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(5, 4, 4, new DateTime(2022, 5, 19, 5, 2, 23), false));
-            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(6, 5, 5, new DateTime(2022, 5, 20, 5, 2, 23), false));
+            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(2, 1, 2, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 2, DateTime.Now.Minute, 1), false));
+            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(3, 1, 3, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 3, DateTime.Now.Minute, 2), false));
+            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(4, 2, 2, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 4, DateTime.Now.Minute, 3), false));
+            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(5, 3, 3, new DateTime(2022, 5, 18, 5, 2, 23), false));
+            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(6, 4, 4, new DateTime(2022, 5, 19, 5, 2, 23), false));
+            this.listaTurnosMedicosSeleccionados.Add(new TurnoMedico(7, 5, 5, new DateTime(2022, 5, 20, 5, 2, 23), false));
+
         }
 
         /// <summary>
         /// Retorna una lista de atenciones nuevas, la cual es una combinación de la lista de Medicos y Pacientes, eliminando los id de atenciones repetidos 
         /// </summary>
         /// <returns>Una list<Atencion> con todas las atenciones, null si no está instanciada la lista de pacientes o medicos</Atencion></returns>
-        public List<Atencion> generarListaAtencionDePacientesYMedicos()
+        public List<Atencion> GenerarListaAtencionDePacientesYMedicos()
         {
             if (this.listaPacientesSeleccionados is not null && this.listaMedicosSeleccionados is not null)
             {
@@ -1055,23 +1032,23 @@ namespace MenuPrincipal
         private void LogeadMedico()
         {
             int idMedico;
-
-            if (!string.IsNullOrEmpty(txtIngreseSuIdDeMedico.Text) && int.TryParse(this.txtIngreseSuIdDeMedico.Text, out idMedico) && this.listaTurnosRestanesDeHoy is not null)
+            try
             {
-                if (this.estaLogeadoElMedico = listaMedicosSeleccionados.Any(p => p.IdDeMedico == idMedico))
+                if (!string.IsNullOrEmpty(txtIngreseSuIdDeMedico.Text) && int.TryParse(this.txtIngreseSuIdDeMedico.Text, out idMedico) && this.listaTurnosRestanesDeHoy is not null)
                 {
-                    //SE LOGEA EL MEDICO
-                    medicoLogeado = this.listaMedicosSeleccionados.First(p => p.IdDeMedico == idMedico);
-                    try
+                    //SI EXISTE EL MEDICO SE LOGEA
+                    if (this.estaLogeadoElMedico = listaMedicosSeleccionados.Any(p => p.IdDeMedico == idMedico))
                     {
-
+                        //SE LOGEA EL MEDICO
+                        medicoLogeado = this.listaMedicosSeleccionados.First(p => p.IdDeMedico == idMedico);
 
                         //RETORNO LA LISTA DE TURNOS NO ATENDIDOS DE HOY PARA EL MEDICO LOGEADO
                         this.listaTurnosRestanesDeHoy = this.listaTurnosMedicosSeleccionados.FindAll(turnoMedico => turnoMedico.IdDeMedico == idMedico && turnoMedico.FechaTurno.Day == DateTime.Now.Day && turnoMedico.SeRealizoAtencionDelTurno == false);
                         if (this.listaTurnosRestanesDeHoy.Count > 0)
                         {
-                            this.listaTurnosRestanesDeHoy.OrderByDescending(t => t.FechaTurno);
-                            //BUSCO AL PRIMER PACIENTE
+                            //ORDENO PARA QUE APAREZCA LOS TURNOS ATENDIDOS POR ORDEN
+                            this.listaTurnosRestanesDeHoy.Sort((x, y) => x.FechaTurno.CompareTo(y.FechaTurno));
+                            //BUSCO AL PROXIMO PACIENTE PARA ATENDER
                             pacienteAtendido = this.listaPacientesSeleccionados.First(p => p.IdDePaciente == this.listaTurnosRestanesDeHoy[0].IdDePaciente);
                             txtNombrePaciente.Text = $"{pacienteAtendido.Nombre}";
                         }
@@ -1079,33 +1056,33 @@ namespace MenuPrincipal
                             this.txtNombrePaciente.Text = "Sin pacientes";
 
                         if (this.txtNombrePaciente.Enabled == false)
-                        {
-                            this.txtNombrePaciente.Enabled = true;
-                            this.bttnComenzarAtencion.Enabled = true;
-                            this.bttnVerInformacion.Enabled = true;
-                            this.bttnVerTurnosRestantes.Enabled = true;
-                        }
+                            this.CambiarEstadoDePacientesEnProximaAtencion(true);
+
                         if (this.estaLogeadoElMedico == false || this.txtNombrePaciente.Text == "Sin pacientes")
-                        {
-                            this.txtNombrePaciente.Enabled = false;
-                            this.bttnComenzarAtencion.Enabled = false;
-                            this.bttnVerInformacion.Enabled = false;
-                            this.bttnVerTurnosRestantes.Enabled = false;
-                        }
+                            this.CambiarEstadoDePacientesEnProximaAtencion(false);
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message,"Error al logear al medico", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    }
-        
                 }
-
             }
-
-            #endregion
-
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error al logear al medico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        /// <summary>
+        /// Cambia el estado a true o false de los controles dentro del grp
+        /// </summary>
+        /// <param name="nuevoEstado"></param>
+        public void CambiarEstadoDePacientesEnProximaAtencion(bool nuevoEstado)
+        {
+            this.txtNombrePaciente.Enabled = nuevoEstado;
+            this.bttnComenzarAtencion.Enabled = nuevoEstado;
+            this.bttnVerInformacion.Enabled = nuevoEstado;
+            this.bttnVerTurnosRestantes.Enabled = nuevoEstado;
+        }
+
+        #endregion
+
+
     }
 }

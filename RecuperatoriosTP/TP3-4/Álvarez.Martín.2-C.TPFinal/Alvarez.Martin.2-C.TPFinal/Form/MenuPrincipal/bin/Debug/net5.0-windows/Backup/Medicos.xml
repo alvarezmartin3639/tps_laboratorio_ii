@@ -1,34 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfMedico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Medico>
-    <Dni>363434343</Dni>
-    <Edad>30</Edad>
-    <Nombre>Álvarez Martín Andrés</Nombre>
-    <Sexo>Hombre</Sexo>
-    <IdDeMedico>1</IdDeMedico>
-    <Matricula>23232</Matricula>
-    <PacientesAtendidos>
-      <Atencion>
-        <IdDeAtencion>1</IdDeAtencion>
-        <IdDeMedico>1</IdDeMedico>
-        <IdDePaciente>1</IdDePaciente>
-        <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
-        <Tratamiento>En observación</Tratamiento>
-        <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8234537-03:00</FechaDeLaAtencion>
-      </Atencion>
-      <Atencion>
-        <IdDeAtencion>2</IdDeAtencion>
-        <IdDeMedico>1</IdDeMedico>
-        <IdDePaciente>1</IdDePaciente>
-        <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
-        <Tratamiento>Medicamento xxx</Tratamiento>
-        <Diagnostico>Cancer</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8234558-03:00</FechaDeLaAtencion>
-      </Atencion>
-    </PacientesAtendidos>
-  </Medico>
-  <Medico>
     <Dni>232323211</Dni>
     <Edad>34</Edad>
     <Nombre>Roberto de la fuente</Nombre>
@@ -43,7 +15,7 @@
         <MotivoDeLaConsulta>Dolor de cabeza</MotivoDeLaConsulta>
         <Tratamiento>Medicamento yyy</Tratamiento>
         <Diagnostico>Esperando resultados de los analisis</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8234561-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4703324-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
@@ -62,7 +34,7 @@
         <MotivoDeLaConsulta>Fatiga </MotivoDeLaConsulta>
         <Tratamiento>Vitaminas aaa</Tratamiento>
         <Diagnostico>falta de vitamina</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8234563-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4703327-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
@@ -81,7 +53,7 @@
         <MotivoDeLaConsulta>Dolor de rodilla </MotivoDeLaConsulta>
         <Tratamiento>Descanso</Tratamiento>
         <Diagnostico>dolor articular</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8234566-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.470333-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
@@ -100,7 +72,46 @@
         <MotivoDeLaConsulta>Descamación en la piel </MotivoDeLaConsulta>
         <Tratamiento>Pomada xxx</Tratamiento>
         <Diagnostico>Hongos</Diagnostico>
-        <FechaDeLaAtencion>2022-08-08T01:12:51.8234568-03:00</FechaDeLaAtencion>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4703333-03:00</FechaDeLaAtencion>
+      </Atencion>
+    </PacientesAtendidos>
+  </Medico>
+  <Medico>
+    <Dni>363434343</Dni>
+    <Edad>30</Edad>
+    <Nombre>Álvarez Martín Andrés</Nombre>
+    <Sexo>Hombre</Sexo>
+    <IdDeMedico>1</IdDeMedico>
+    <Matricula>23232</Matricula>
+    <PacientesAtendidos>
+      <Atencion>
+        <IdDeAtencion>1</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>Bulto en el abdomen</MotivoDeLaConsulta>
+        <Tratamiento>En observación</Tratamiento>
+        <Diagnostico>Esperando resultados de los analisis</Diagnostico>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4703163-03:00</FechaDeLaAtencion>
+      </Atencion>
+      <Atencion>
+        <IdDeAtencion>2</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>Trajo los resultados del analasis</MotivoDeLaConsulta>
+        <Tratamiento>Medicamento xxx</Tratamiento>
+        <Diagnostico>Cancer</Diagnostico>
+        <FechaDeLaAtencion>2022-08-10T02:22:57.4703321-03:00</FechaDeLaAtencion>
+      </Atencion>
+      <Atencion>
+        <IdDeAtencion>7</IdDeAtencion>
+        <IdDeMedico>1</IdDeMedico>
+        <IdDePaciente>1</IdDePaciente>
+        <MotivoDeLaConsulta>NuevaAtencion</MotivoDeLaConsulta>
+        <Tratamiento>NuevaAtencion
+</Tratamiento>
+        <Diagnostico>NuevaAtencion
+</Diagnostico>
+        <FechaDeLaAtencion>2022-08-10T02:23:12.9094583-03:00</FechaDeLaAtencion>
       </Atencion>
     </PacientesAtendidos>
   </Medico>
