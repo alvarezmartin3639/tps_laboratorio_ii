@@ -702,16 +702,18 @@ namespace MenuPrincipal
                         PacienteSql nuevoPaciente = new(strConexionSql);
                         AtencionSql nuevaAtencion = new(strConexionSql);
                         MedicoSql nuevoMedico = new(strConexionSql);
-
-                        foreach (Medico item in this.listaMedicosSeleccionados)
-                            nuevoMedico.Agregar(item);
+                      //  TurnoMedicoSql nuevoTurnoMedico = new(strConexionSql);
                         foreach (Paciente item in this.listaPacientesSeleccionados)
                             nuevoPaciente.Agregar(item);
+                        foreach (Medico item in this.listaMedicosSeleccionados)
+                            nuevoMedico.Agregar(item);              
                         foreach (Atencion item in this.listaAtencionesSeleccionadas)
                             nuevaAtencion.Agregar(item);
-                        //MODIFICO UNICAMENTE SI SE ATENDIÓ O NO EL TURNO
+                        //MODIFICO UNICAMENTE SI SE ATENDIÓ O NO EL TURNO 
                         foreach (TurnoMedico item in this.listaTurnosMedicosSeleccionados)
-                            TurnoMedicoSql.ModificarTurnoCompletado(item);
+                             TurnoMedicoSql.ModificarTurnoCompletado(item);
+                           // nuevoTurnoMedico.Agregar(item);
+
                     }
                     catch (Exception ex)
                     {

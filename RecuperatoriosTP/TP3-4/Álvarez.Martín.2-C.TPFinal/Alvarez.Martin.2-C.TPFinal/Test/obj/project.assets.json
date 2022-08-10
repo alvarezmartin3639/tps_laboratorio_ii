@@ -6136,11 +6136,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\Test.csproj",
+      "projectUniqueName": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\Test.csproj",
+      "projectPath": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\obj\\",
+      "outputPath": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6161,8 +6161,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
-              "projectPath": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
+            "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Entidades\\Entidades.csproj"
             }
           }
         }

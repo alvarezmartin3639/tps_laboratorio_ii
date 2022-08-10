@@ -10,6 +10,15 @@ namespace GestorSql
     {
         private SqlConnection sqlConnection;
         private static string conexion;
+        private string conexionSql;
+
+        /// <summary>
+        /// Constructor estatico, instancia el atributo estatico conexion con la información del server
+        /// </summary>
+        static PacienteSql()
+        {
+           conexion = "Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;";
+        }
 
         /// <summary>
         /// Constructor encargado de instanciar el string conexion y el sqlConnection
@@ -17,8 +26,8 @@ namespace GestorSql
         /// <param name="conexionSettings">La configuración para conectarse al servidor sql</param>
         public PacienteSql(string conexionSettings)
         {
-            sqlConnection = new();
-            PacienteSql.conexion = conexionSettings;
+            this.sqlConnection = new SqlConnection(conexionSettings);
+            this.conexionSql = conexionSettings;
         }
 
         /// <summary>
@@ -122,7 +131,7 @@ namespace GestorSql
                 if (MisComandosSql.VerificarSingularidad("Paciente", "dni", objetoParaAgregar.Dni, PacienteSql.conexion))
                 {
 
-                    using (SqlConnection sqlConnection = new(PacienteSql.conexion))
+                    using (SqlConnection sqlConnection = new(this.conexionSql))
                     {
                         sqlConnection.Open();
                         string sentencia = "INSERT INTO Paciente ( nombre, edad, dni," +

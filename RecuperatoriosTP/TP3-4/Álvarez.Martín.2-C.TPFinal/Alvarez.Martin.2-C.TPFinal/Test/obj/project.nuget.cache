@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E2qOZ+jokeFG4jILBUTEK08oPSS5KXuAUiWku37gBkPeiicofgO10/sdAqi8w1AOuAHsesqSGehjGvJwzbdh/Q==",
+  "dgSpecHash": "k0yWw9KfE311hPuVr4kAAxwgbP4K1+DK4AT58gKJIGrsIGa1fwDoqnygecDE8WgYp82u9CiJwSB8abOjkjBvOQ==",
   "success": true,
-  "projectFilePath": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\Test.csproj",
+  "projectFilePath": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\Test\\Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenyn\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\kenyn\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

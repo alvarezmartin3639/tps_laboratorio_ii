@@ -9,15 +9,3 @@ D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.
 D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
 D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 D:\Github backup\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.deps.json
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.dll
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\ref\Entidades.dll
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\bin\Debug\net5.0\Entidades.pdb
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.dll
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\ref\Entidades.dll
-D:\Github\tps_laboratorio_ii\RecuperatoriosTP\TP3-4\Álvarez.Martín.2-C.TPFinal\Alvarez.Martin.2-C.TPFinal\Entidades\obj\Debug\net5.0\Entidades.pdb

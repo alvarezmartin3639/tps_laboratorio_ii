@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z0/MFjEiCVx++3HuXuQ8CGwYEZ/aC4yp3zsMvEnlWJiAtnWNid0HxRhB+ZfYwujcpNMjknODTeMe3f9Mv5C6uQ==",
+  "dgSpecHash": "2tqcrJCQNeoGyN5JExnH3Rgac8pX7GolHPrn0Vk/n7C/H6o64XRlbiBpWs3EdQF/xekRebh4H99ckjKHBzVgqQ==",
   "success": true,
-  "projectFilePath": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorSql\\GestorSql.csproj",
+  "projectFilePath": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorSql\\GestorSql.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenyn\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\kenyn\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

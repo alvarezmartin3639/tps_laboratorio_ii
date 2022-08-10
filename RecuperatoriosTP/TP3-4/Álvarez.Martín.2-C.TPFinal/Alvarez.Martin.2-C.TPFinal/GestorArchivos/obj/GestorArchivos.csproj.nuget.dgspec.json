@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {}
+    "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {}
   },
   "projects": {
-    "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
+    "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
+        "projectUniqueName": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
         "projectName": "GestorArchivos",
-        "projectPath": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
+        "projectPath": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\GestorArchivos.csproj",
         "packagesPath": "C:\\Users\\kenyn\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\obj\\",
+        "outputPath": "D:\\Github backup\\tps_laboratorio_ii\\RecuperatoriosTP\\TP3-4\\Álvarez.Martín.2-C.TPFinal\\Alvarez.Martin.2-C.TPFinal\\GestorArchivos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

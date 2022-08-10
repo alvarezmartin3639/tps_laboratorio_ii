@@ -10,6 +10,15 @@ namespace GestorSql
     {
         private SqlConnection sqlConnection;
         private static string conexion;
+        private string conexionSql;
+
+        /// <summary>
+        /// Constructor estatico de MedicoSql, instancia el atributo conexion con la información del server
+        /// </summary>
+        static MedicoSql()
+        {
+            conexion = "Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;";
+        }
 
         /// <summary>
         /// Construye un Medico, pasando por parametro la información para conectarse a Sql server;
@@ -17,8 +26,8 @@ namespace GestorSql
         /// <param name="conexionSettings">La información necesaria para conectarse</param>
         public MedicoSql(string conexionSettings)
         {
-            sqlConnection = new();
-            MedicoSql.conexion = conexionSettings;
+            this.sqlConnection = new SqlConnection(conexionSettings);
+            this.conexionSql = conexionSettings;
         }
 
         /// <summary>
@@ -74,10 +83,10 @@ namespace GestorSql
             try
             {
                 string sentencia = "SELECT * FROM Medico";
-                using (SqlConnection conexion = new(MedicoSql.conexion))
+                using (SqlConnection sqlConnection = new(MedicoSql.conexion))
                 {
-                    conexion.Open();
-                    SqlCommand sqlCommand = new(sentencia, conexion);
+                    sqlConnection.Open();
+                    SqlCommand sqlCommand = new(sentencia, sqlConnection);
                     SqlDataReader dataReader = sqlCommand.ExecuteReader();
                     AtencionSql tablaAtencion = new("Server = (local)\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;");
 
@@ -117,7 +126,7 @@ namespace GestorSql
                 bool retorno = false;
                 if (MisComandosSql.VerificarSingularidad("Medico", "matricula", objetoParaAgregar.Matricula, MedicoSql.conexion))
                 {
-                    using (SqlConnection sqlConnection = new(MedicoSql.conexion))
+                    using (SqlConnection sqlConnection = new(this.conexionSql))
                     {
                         sqlConnection.Open();
                         string sentencia = "INSERT INTO Medico ( nombre, edad, dni," +

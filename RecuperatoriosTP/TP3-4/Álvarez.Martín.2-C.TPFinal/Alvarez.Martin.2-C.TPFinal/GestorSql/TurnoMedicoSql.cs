@@ -9,7 +9,15 @@ namespace GestorSql
     public class TurnoMedicoSql : ISqlEntidad<TurnoMedico>
     {
         private SqlConnection sqlConnection;
-        private static string conexion;
+        private  static string conexion;
+        private string conexionSql;
+
+        /// <summary>
+        /// Constructor  que instancia el atributo estatico conexion
+        /// </summary>
+        static TurnoMedicoSql(){
+            conexion = "Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;";
+            }
 
         /// <summary>
         /// Construye un Turno Medico, pasando por parametro la información para conectarse a Sql server;
@@ -17,8 +25,8 @@ namespace GestorSql
         /// <param name="conexionSettings">La información necesaria para conectarse</param>
         public TurnoMedicoSql(string conexionSettings)
         {
-            sqlConnection = new();
-            TurnoMedicoSql.conexion = conexionSettings;
+            this.sqlConnection = new SqlConnection(conexionSettings);
+            this.conexionSql = conexionSettings;
         }
 
         /// <summary>
@@ -113,7 +121,7 @@ namespace GestorSql
             try
             {
                 bool retorno = false;
-                using (SqlConnection sqlConnection = new(TurnoMedicoSql.conexion))
+                using (SqlConnection sqlConnection = new SqlConnection(this.conexionSql))
                 {
                     sqlConnection.Open();
                     string sentencia = "INSERT INTO TurnoMedico ( fechaTurno, idDeMedico," +
@@ -146,7 +154,7 @@ namespace GestorSql
         {
             try
             {
-                using (SqlConnection sqlConnection = new(TurnoMedicoSql.conexion))
+                using (SqlConnection sqlConnection = new SqlConnection(TurnoMedicoSql.conexion))
                 {
                     sqlConnection.Open();
 
@@ -171,11 +179,11 @@ namespace GestorSql
         /// Elimina un TurnoMedico de la tabla TurnoMedico de la database TP4_AlvarezMartinAndres_DB
         /// </summary>
         /// <param name="idDeTurnoMedico">El id del TurnoMedico a eliminar</param>
-        public static void Borrar(int idDeTurnoMedico)
+        public  static void Borrar(int idDeTurnoMedico)
         {
             try
             {
-                using (SqlConnection sqlConnection = new(TurnoMedicoSql.conexion))
+                using (SqlConnection sqlConnection = new SqlConnection(TurnoMedicoSql.conexion))
                 {
                     string sentencia = "DELETE FROM TurnoMedico WHERE idDeTurnoMedico = @idDeTurnoMedico";
                     SqlCommand comandoSql = new(sentencia, sqlConnection);

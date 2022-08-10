@@ -11,6 +11,15 @@ namespace GestorSql
     {
         private SqlConnection sqlConnection;
         private static string conexion;
+        private string conexionSql;
+
+        /// <summary>
+        /// Constructor estatico de AtencionSql, instancia el atributo conexion con la información del servidor
+        /// </summary>
+        static AtencionSql()
+        {
+            conexion = "Server = .\\sqlexpress ; Database = TP4_AlvarezMartinAndres_DB; Trusted_Connection = true ;";
+        }
 
         /// <summary>
         /// Construye una Atencion, pasando por parametro la información para conectarse a Sql server;
@@ -19,7 +28,7 @@ namespace GestorSql
         public AtencionSql(string conexionSettings)
         {
             this.sqlConnection = new SqlConnection(conexionSettings);
-            AtencionSql.conexion = conexionSettings;
+            this.conexionSql = conexionSettings;
         }
 
         /// <summary>
@@ -175,7 +184,7 @@ namespace GestorSql
                 bool retorno = false;
                 if (MisComandosSql.VerificarSingularidad("Atencion", "fechaDeLaAtencion", objetoParaAgregar.FechaDeLaAtencion, AtencionSql.conexion))
                 {
-                    using (SqlConnection sqlConnection = new(AtencionSql.conexion))
+                    using (SqlConnection sqlConnection = new SqlConnection(this.conexionSql))
                     {
                         sqlConnection.Open();
                         string sentencia = "INSERT INTO Atencion ( idDeMedico, idDePaciente, motivoDeLaConsulta," +
